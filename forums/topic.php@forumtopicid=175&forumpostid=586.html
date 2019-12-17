@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic writing keyboard installers - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=13.html'>General</a> &gt; <a href='topic.php@forumtopicid=175.html'>writing keyboard installers</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic writing keyboard installers</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=175&amp;forumpostid=586.html#ForumPost_586'>#</a></span><a style='text-decoration:none' name='ForumPost_586'></a> writing keyboard installers &nbsp; <span class='date'>2007-11-20 15:27:48.080</span></th></tr><tr id='forumpost_586'><td class='nickname' width='25%'>Martin Hosken<br /></td><td class='text' width='75%'><div class='text'>I realise I could make a keyman package but what I would like to do is to create an nsis installer that can take a .kmx and install it in the right place for Keyman to pick up on it. Probably the best way to do this is to use the Keyman.exe to install it silently. Can you tell me the command line options to Keyman.exe?
+<br />
+
+<br />
+What do I have to do for the various versions of Keyman that are out there (say from 6.0 up).
+<br />
+
+<br />
+My main reason for doing this is to be able to install silently as part of another installer.
+<br />
+
+<br />
+A secondary question is the ability to look at version information to ensure I don&#039;t install an older keyboard over a newer one. Is version information stored anywhere for a keyboard that I could interact with?
+<br />
+
+<br />
+TIA,
+<br />
+GB,
+<br />
+Martin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=175&amp;forumpostid=589.html#ForumPost_589'>#</a></span><a style='text-decoration:none' name='ForumPost_589'></a> RE: writing keyboard installers &nbsp; <span class='date'>2007-11-20 21:29:57.143</span></th></tr><tr id='forumpost_589'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Hi Martin,
+<br />
+
+<br />
+It&#039;s been a long time since I&#039;ve heard from you!
+<br />
+
+<br />
+You would want to use kmshell.exe to install a Keyman keyboard.  For version 6.x, kmshell can be found in the path referred in HKLM\Software\Tavultesoft\Keyman\6.0\[root path]
+<br />
+
+<br />
+For version 7.x, you can use kmshell.exe or the COM API.  To find kmshell.exe, you will need to check: HKLM\Software\Tavultesoft\Keyman\7.0\[root path]
+<br />
+
+<br />
+The KMSHELL command line to install a keyboard is:
+<br />
+  kmshell -i &quot;keyboardfilename&quot; [-s]
+<br />
+Where [-s] can be provided for a mostly silent install.  If a keyboard is already installed, the user will still be prompted as to whether they wish to upgrade even if the -s option is provided.
+<br />
+
+<br />
+  kmshell -u &quot;keyboardfilename&quot; [-s]
+<br />
+This can be used to uninstall a keyboard or package.  You can use just the filename of the keyboard (you don&#039;t need to refer to a file that actually exists).
+<br />
+
+<br />
+If installing on Vista, you need to take into account elevation so that keyboards and packages are installed for all users.
+<br />
+
+<br />
+Preferably, for version 7.x, use the COM API.  To install a keyboard with the COM API, have a look at:
+<br />
+
+<br />
+* <a href="http://tavultesoft.com/keymandev/documentation/70/comapi.html" target="_blank" class="postlink">COMAPI docs</a>
+<br />
+* <a href="http://tavultesoft.com/keymandev/documentation/70/comapi_interface_IKeymanKeyboardsInstalled_Install.html" target="_blank" class="postlink">Install Keyboard</a>
+<br />
+* <a href="http://tavultesoft.com/keymandev/documentation/70/comapi_interface_IKeymanPackagesInstalled_Install.html" target="_blank" class="postlink">Install Package</a>
+<br />
+
+<br />
+When you use these functions, you also need to call the Apply function in order to tell all applications on the system that the new keyboard is installed.
+<br />
+
+<br />
+Keyman Configuration (kmshell.exe) uses the COM API internally for all its communication with the Keyman Engine.
+<br />
+
+<br />
+Last but not least - do consider distributing a kmp package and not a kmx anyway.  The installation process is identical but a kmp has a number of advantages in what it can include:
+<br />
+
+<br />
+* An on screen keyboard
+<br />
+* A welcome.htm introductory help file that is displayed when the keyboard is installed (unless -s is used); this welcome.htm is  accessible at any time within the Keyman Desktop UI (right-click the Keyman icon, select &quot;Active Keyboard Help&quot; among other locations)
+<br />
+* Start menu shortcuts (for documentation, etc)
+<br />
+* Fonts (managed by Keyman for install and uninstall)
+<br />
+
+<br />
+GB,
+<br />
+
+<br />
+Marc Durdin
+<br />
+Tavultesoft Pty Ltd</div></td></tr></table></p>

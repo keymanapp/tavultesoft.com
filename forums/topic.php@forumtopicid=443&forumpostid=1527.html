@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Catchalls. - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=8.html'>Bugs and Features</a> &gt; <a href='topic.php@forumtopicid=443.html'>Catchalls.</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Catchalls.</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=443&amp;forumpostid=1516.html#ForumPost_1516'>#</a></span><a style='text-decoration:none' name='ForumPost_1516'></a> Catchalls. &nbsp; <span class='date'>2016-03-02 10:17:39.457</span></th></tr><tr id='forumpost_1516'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>I was pondering your idea of <span style="font-weight: bold">Nomatch</span>(<span style="font-style: italic">All</span>).
+<br />
+
+<br />
+   Is this the wrong place for this type of test? <span style="font-weight: bold">Match</span> and <span style="font-weight: bold">Nomatch</span> are catchalls for the Rules of the Group they are in. To me, it seems a more logical to have &#039;<span style="font-style: italic">All</span>&#039; in <span style="font-weight: bold">Any</span>(<span style="font-style: italic">All</span>). &#039;<span style="font-weight: bold">All</span>&#039; in this case would be all possible keys within a particular hardware/operating system configuration. &#039;<span style="font-weight: bold">All</span>&#039;s would cover all possible modifiers of all possible keys: <span style="font-style: italic">Shift</span>, <span style="font-style: italic">Left Shift</span>, <span style="font-style: italic">Right Shift</span>, <span style="font-style: italic">Ctrl</span>, <span style="font-style: italic">Left Ctrl</span>, <span style="font-style: italic">Right Ctrl</span>, <span style="font-style: italic">Alt</span>, <span style="font-style: italic">Left Alt</span>, <span style="font-style: italic">Right Alt</span>, <span style="font-style: italic">AltGr</span>, <span style="font-style: italic">Caps Lock</span>.
+<br />
+
+<br />
+   This may suggest other uses for types of &#039;<span style="font-weight: bold">All</span>&#039;:
+<br />
+      <span style="font-weight: bold">AllGlyphs</span>              Any possible displayable symbol.
+<br />
+      <span style="font-weight: bold">AllCursorKeys</span>      Up, Down, Left, Right, Page Up, Page Down, Home, End.
+<br />
+      <span style="font-weight: bold">AllTextEffectors</span>   Tab, Enter, Backspace, Delete, Insert, Caps Lock.
+<br />
+      <span style="font-weight: bold">AllNumericPad</span>     All the keys on the numeric key pad.
+<br />
+      <span style="font-weight: bold">AllFunctionKeys</span>   All possible function-keys.
+<br />
+      <span style="font-weight: bold">AllSpecials</span>           Esc, Num Lock, PtrSc, SysRq, ScrLk, Pause, Break.
+<br />
+      <span style="font-weight: bold">AllModifiers</span>          All modifiers listed above.
+<br />
+
+<br />
+   This also suggests the syntax &#039;<span style="font-weight: bold">NotAny</span>(<span style="font-style: italic">All…</span>)&#039;.
+<br />
+
+<br />
+   This would allow the reliable matching of whole sections of the keyboard. Allowing code like:
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code"> + &#91;K_UP&#93; &gt; …
+<br />
+ + &#91;K_DOWN&#93; &gt; …
+<br />
+ + &#91;K_RIGHT&#93; &gt; …
+<br />
+ + Any&#40;AllCursorKeys&#41; &gt; nul</td>
+	</tr>
+</table>
+
+<br />
+   Meaning the Up, Down, and Right cursor keys will have a function but no other cursor movements will function.
+<br />
+
+<br />
+   To trap all possible modifiers of a key:
+<br />
+      <span style="font-weight: bold">AllModifiers</span>   Could be used as <table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code"> + &#91;CTRL K_ENTER &gt; …
+<br />
+ + &#91;AllModifiers K_ENTER&#93; &gt; nul</td>
+	</tr>
+</table>
+
+<br />
+   Meaning Ctrl Enter has a function but no other modified Enter will work.
+<br />
+
+<br />
+Regards
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=443&amp;forumpostid=1520.html#ForumPost_1520'>#</a></span><a style='text-decoration:none' name='ForumPost_1520'></a> RE: Catchalls. &nbsp; <span class='date'>2016-03-03 20:44:23.000</span></th></tr><tr id='forumpost_1520'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Yes, that&#039;s a feature I have discussed in the past with others; it could be useful, although mostly as a way of blocking keystrokes rather than for actual input.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=443&amp;forumpostid=1523.html#ForumPost_1523'>#</a></span><a style='text-decoration:none' name='ForumPost_1523'></a> RE: Catchalls. &nbsp; <span class='date'>2016-03-04 08:05:09.127</span></th></tr><tr id='forumpost_1523'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>Agreed. But inhibiting keys can be as important as emitting keys.
+<br />
+
+<br />
+   In my case, I wish to allow the user to enter, what might loosely be called a &#039;<span style="font-style: italic">phonetic spelling</span>&#039;, of just a few words, <span style="text-decoration: underline">not long text</span>. TPA&#039;s phonetic graphemes are very tightly defined. The only valid graphemes are for the 45 phonemes of English and a TPA space. No other symbols, punctuation, numbers, or glyphs are valid. So, in Grapheme Input Mode (<span style="font-style: italic">GiM</span>), the only valid keys from the keyboard are the <span style="font-weight: bold">26 Latin letters</span>, the <span style="font-weight: bold">Modifiers</span>: <span style="font-style: italic">Shift</span>, <span style="font-style: italic">Ctrl+Alt</span>, &amp; <span style="font-style: italic">Shift+Ctrl+Alt</span> or (<span style="font-style: italic">AltGr</span>, <span style="font-style: italic">if I can ever get it to work</span>), a Space, and a Starting &amp; Ending key. So, whilst in any WIMP system, this type of modal control is rarely achievable, and particularly not from just the keyboard control (TSF?), limiting what can be done from the keyboard is a good start.
+<br />
+
+<br />
+   So if I create a Group that defines input protocols for the 45 graphemes, Space, Start &amp; End. I would then like to inhibit all other key presses. So code something like {<span style="font-style: italic">this not valid code, just an exemplar</span>}:
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">Group&#40;GiM&#41; Using Keys
+<br />
+&nbsp;+ &#039;A&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&gt; Grapheme1
+<br />
+&nbsp;&#58; &#123;Modifiers&#125; &#039;A&#039; &gt; Grapheme2
+<br />
+&nbsp;&#58;&nbsp; &nbsp; &nbsp; &#58;&nbsp; &nbsp; &nbsp; &nbsp;&#58;&nbsp; &gt; Grapheme44
+<br />
+&nbsp;&#58; &#039;Z&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&gt; Grapheme45
+<br />
+&nbsp;+ Any&#40;OtherKey&#41;&nbsp; &nbsp;&gt; nul
+<br />
+</td>
+	</tr>
+</table>
+
+<br />
+   This would allow me to use/utilize just the keys I wish and dump all other keyboard activity.
+<br />
+
+<br />
+   So yes, I agree, this would be of most use in inhibiting key presses or to put it another way, mandating only the keys the keyboard designer wish the user to be able to access.
+<br />
+
+<br />
+   There seems no reason, to me, to use the &#039;<span style="font-weight: bold">All</span>&#039;s in <span style="font-weight: bold">Outs</span>(), <span style="font-weight: bold">Index</span>(), <span style="font-weight: bold">Notany</span>(); but:
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">+ Any&#40;ALL&#41; &gt; …
+<br />
+… + Any&#40;ALL&#41; &gt; …
+<br />
+Any&#40;ALL&#41; + … &gt; …</td>
+	</tr>
+</table>
+
+<br />
+   Would all seem valid.
+<br />
+
+<br />
+   But I am not sure that <span style="font-weight: bold">Any</span>(<span style="font-style: italic">ALL</span>) &gt; … in a Context Only group makes and real sense.
+<br />
+
+<br />
+Regards
+<br />
+Julian Griffin.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=443&amp;forumpostid=1527.html#ForumPost_1527'>#</a></span><a style='text-decoration:none' name='ForumPost_1527'></a> RE: Catchalls. &nbsp; <span class='date'>2016-03-07 06:45:52.850</span></th></tr><tr id='forumpost_1527'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>So, the difficulty is blocking keys that are not character keys is not a helpful user interface pattern. A user may wish to press Esc at any time to cancel a dialog. Or press F1 for help. Or the keys may have other meanings that we cannot be aware of. For character keys, it is reasonable for an input method to block them in specific situations, but it isn&#039;t really reasonable to block all other keys in the same way.
+<br />
+
+<br />
+Have I got the right end of the stick?</div></td></tr></table></p>

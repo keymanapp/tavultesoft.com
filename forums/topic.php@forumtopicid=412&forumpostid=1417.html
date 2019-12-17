@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Comments stop the keyboard from compiling. - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=8.html'>Bugs and Features</a> &gt; <a href='topic.php@forumtopicid=412.html'>Comments stop the keyboard from compiling.</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Comments stop the keyboard from compiling.</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=412&amp;forumpostid=1412.html#ForumPost_1412'>#</a></span><a style='text-decoration:none' name='ForumPost_1412'></a> Comments stop the keyboard from compiling. &nbsp; <span class='date'>2016-02-07 04:17:18.527</span></th></tr><tr id='forumpost_1412'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>Hi
+<br />
+
+<br />
+   Now this is very odd.
+<br />
+
+<br />
+   The line:<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">Store&#40;StrickOuts&#41; U+E061 U+E062 U+E063 U+E064 \
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; U+E065 U+E066 U+E067 U+E068</td>
+	</tr>
+</table>
+   Compiles.
+<br />
+
+<br />
+   But the line:<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">Store&#40;StrickOuts&#41; U+E061 U+E062 U+E063 U+E064 \ c abcd
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; U+E065 U+E066 U+E067 U+E068</td>
+	</tr>
+</table>
+   Does not.
+<br />
+
+<br />
+   The error text is:
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none'  class="bb_quote">TPA.kmn: Error: line 187  error 4029: No tokens found in line chr:35
+<br />
+TPA.kmn: Error: line 187  error 402A: Invalid line continuation</td>
+	</tr>
+</table>
+<br />
+   What is even weirder, is the error line listed in the error text [<span style="font-weight: bold">187</span>] is the line <span style="font-style: italic">above</span> the line that has the comment [<span style="font-weight: bold">\ c abcd</span>].
+<br />
+ie
+<br />
+
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none'  class="bb_quote">c TPA strickout and phonic clue superscripts.
+<br />
+Store(StrickOuts) U+E061 U+E062 U+E063 U+E064 \ c abcd
+<br />
+                  U+E065 U+E066 U+E067 U+E068 \</td>
+	</tr>
+</table>
+<br />
+   The lines are 187, 188, 189 respectively.
+<br />
+
+<br />
+   If I remove the <span style="font-weight: bold">c abcd</span>, the keyboard compiles. If I put it back, it does not compile; and lists the line number before the line with the <span style="font-weight: bold">c abcd</span> comment on it.
+<br />
+
+<br />
+Regards
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=412&amp;forumpostid=1417.html#ForumPost_1417'>#</a></span><a style='text-decoration:none' name='ForumPost_1417'></a> RE: Comments stop the keyboard from compiling. &nbsp; <span class='date'>2016-02-08 06:27:44.647</span></th></tr><tr id='forumpost_1417'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>This is per specification for the compiler; see <a href="http://help.keyman.com/developer/language/guide/long-lines" target="_blank">http://help.keyman.com/developer/language/guide/long-lines</a> for details.
+<br />
+
+<br />
+The incorrect line number is curious but I am going to put that as low priority to investigate for now.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=412&amp;forumpostid=1418.html#ForumPost_1418'>#</a></span><a style='text-decoration:none' name='ForumPost_1418'></a> RE: Comments stop the keyboard from compiling. &nbsp; <span class='date'>2016-02-08 08:03:00.880</span></th></tr><tr id='forumpost_1418'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>Thank you.
+<br />
+
+<br />
+   I should know by now, RTFM.
+<br />
+
+<br />
+God bless.
+<br />
+Julian Griffin</div></td></tr></table></p>

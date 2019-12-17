@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Dynamically add & remove keyboard via javascript - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=12.html'>Deployment</a> &gt; <a href='topic.php@forumtopicid=367.html'>Dynamically add & remove keyboard via javascript</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Dynamically add & remove keyboard via javascript</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=367&amp;forumpostid=1237.html#ForumPost_1237'>#</a></span><a style='text-decoration:none' name='ForumPost_1237'></a> Dynamically add & remove keyboard via javascript &nbsp; <span class='date'>2014-12-11 09:06:27.980</span></th></tr><tr id='forumpost_1237'><td class='nickname' width='25%'>Matt<br /></td><td class='text' width='75%'><div class='text'>I am using KeymanWeb 2.0 (build 376).
+<br />
+
+<br />
+I have a HTML select list of languages on my test form.
+<br />
+
+<br />
+When the user selects a language name from the select list, the keyboard is dynamically added to the form.
+<br />
+
+<br />
+I can do this with the following code:
+<br />
+
+<br />
+    <table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">
+<br />
+&nbsp; &nbsp; &#40;function&#40;kmw&#41; &#123;
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; kmw.init&#40;&#41;;
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; ....
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &#125; else if &#40;$&#40;&quot;#id_language_code&quot;&#41;.val&#40;&#41; == &#039;sq&#039; &#41; &#123;
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; kmw.addKeyboards&#40;&#039;albanian&#039;&#41;;
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &#125;
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; ....
+<br />
+&nbsp; &nbsp; &#125;&#41;&#40;tavultesoft.keymanweb&#41;;
+<br />
+&nbsp; &nbsp; </td>
+	</tr>
+</table>
+
+<br />
+
+<br />
+<span style="font-weight: bold">As I only want to display one KeymanWeb keyboard at any time, how do I dynamically remove the existing keyboard from the form?</span></div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=367&amp;forumpostid=1238.html#ForumPost_1238'>#</a></span><a style='text-decoration:none' name='ForumPost_1238'></a> RE: Dynamically add & remove keyboard via javascript &nbsp; <span class='date'>2014-12-11 11:25:58.017</span></th></tr><tr id='forumpost_1238'><td class='nickname' width='25%'>Tavultesoft<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Thanks for the question.  There as an API call to remove keyboards as well, and we will post the answer on this forum after confirming that it works correctly.  </div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=367&amp;forumpostid=1239.html#ForumPost_1239'>#</a></span><a style='text-decoration:none' name='ForumPost_1239'></a> RE: Dynamically add & remove keyboard via javascript &nbsp; <span class='date'>2014-12-11 11:49:12.630</span></th></tr><tr id='forumpost_1239'><td class='nickname' width='25%'>Tavultesoft<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>The call:
+<br />
+
+<br />
+<span style="font-weight: bold">keymanweb.removeKeyboards(keyboardName1,keyboardName2,...);
+<br />
+</span>
+<br />
+will unload previously loaded keyboards by name.
+<br />
+
+<br />
+So, for example, if you have used:
+<br />
+
+<br />
+<span style="font-weight: bold"> keymanweb.addKeyboards(&quot;georgian&quot;);</span> 
+<br />
+
+<br />
+to load the standard keyboard layout for Georgian (Keyboard_georgian), you would use:
+<br />
+
+<br />
+<span style="font-weight: bold">keymanweb.removeKeyboards(&quot;georgian&quot;);</span>
+<br />
+
+<br />
+to unload it again.
+<br />
+
+<br />
+Hope this helps!</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=367&amp;forumpostid=1240.html#ForumPost_1240'>#</a></span><a style='text-decoration:none' name='ForumPost_1240'></a> RE: Dynamically add & remove keyboard via javascript &nbsp; <span class='date'>2014-12-11 14:02:04.010</span></th></tr><tr id='forumpost_1240'><td class='nickname' width='25%'>Matt<br /></td><td class='text' width='75%'><div class='text'>Thank you for the response.
+<br />
+
+<br />
+That did help me enormously.
+<br />
+
+<br />
+To complete this task, how do I confirm the name of the KeymanWeb keyboard that is loaded or in use on the form.
+<br />
+
+<br />
+Attempting to remove a keyboard that does not exist, returns an error.
+<br />
+
+<br />
+Thanks in advance.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=367&amp;forumpostid=1241.html#ForumPost_1241'>#</a></span><a style='text-decoration:none' name='ForumPost_1241'></a> RE: Dynamically add & remove keyboard via javascript &nbsp; <span class='date'>2014-12-12 07:28:34.567</span></th></tr><tr id='forumpost_1241'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>You should be able to call <span style="font-weight: bold">keymanweb.getKeyboards()</span> to retrieve an array of the currently registered keyboards. See <a href="http://help.keyman.com/developer/engine/web/2.0/reference_kmw20_core_getKeyboards.php" target="_blank">http://help.keyman.com/developer/engine/web/2.0/reference_kmw20_core_getKeyboards.php</a> for more detail (and yeah, we&#039;re working on the documentation...)</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=367&amp;forumpostid=1242.html#ForumPost_1242'>#</a></span><a style='text-decoration:none' name='ForumPost_1242'></a> RE: Dynamically add & remove keyboard via javascript &nbsp; <span class='date'>2014-12-12 07:29:08.250</span></th></tr><tr id='forumpost_1242'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>I&#039;ve also logged an issue to address the error attempting to remove an unregistered keyboard. It should return false but not an error in this case, I guess.</div></td></tr></table></p>

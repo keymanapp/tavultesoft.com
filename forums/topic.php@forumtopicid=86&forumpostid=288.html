@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Can you do this? - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=14.html'>General</a> &gt; <a href='topic.php@forumtopicid=86.html'>Can you do this?</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Can you do this?</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><p class='forumnav' style='font-size: x-small'>&laquo; First Page&nbsp;|&nbsp;&lsaquo; Previous 10&nbsp;|&nbsp;<a href='topic.php@forumtopicid=86&amp;start=10.html'>Next 10 &rsaquo;</a>&nbsp;|&nbsp;<a href='topic.php@forumtopicid=86&amp;start=10.html'>Last Page &raquo;</a></p><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=86&amp;forumpostid=275.html#ForumPost_275'>#</a></span><a style='text-decoration:none' name='ForumPost_275'></a> Can you do this? &nbsp; <span class='date'>2006-11-28 13:06:24.017</span></th></tr><tr id='forumpost_275'><td class='nickname' width='25%'>John Dlugosz<br /></td><td class='text' width='75%'><div class='text'>I bought a 16-key USB &quot;stick&quot; from PI-Engineering so I can have more buttons to type with.  The hardware is nice, but the software stinks.
+<br />
+
+<br />
+I&#039;m thinking I can get it to be useful with Keyman.  Assuming I succeed in setting the firmware so it is identifies itself as a USB keyboard (not using their funny drivers at all) and sends HID codes for some keys that are not on my regular keyboard (e.g. F13-F24 and International Keys 1-4), will Keyman take that?
+<br />
+
+<br />
+--John
+<br />
+
+<br />
+</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=86&amp;forumpostid=276.html#ForumPost_276'>#</a></span><a style='text-decoration:none' name='ForumPost_276'></a> RE: Can you do this? &nbsp; <span class='date'>2006-11-28 13:24:31.690</span></th></tr><tr id='forumpost_276'><td class='nickname' width='25%'>Tavultesoft<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Hi John,
+<br />
+
+<br />
+It should work if you can get it sending the correct virtual key codes. You might have to use the Virtual Key Identifier in Keyman Developer to get the correct mappings in the keyboard, but it should be possible.
+<br />
+
+<br />
+
+<br />
+Kind regards,
+<br />
+
+<br />
+Paul Durdin
+<br />
+Tavultesoft Pty Ltd</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=86&amp;forumpostid=278.html#ForumPost_278'>#</a></span><a style='text-decoration:none' name='ForumPost_278'></a> RE: Can you do this? &nbsp; <span class='date'>2006-11-28 17:06:20.157</span></th></tr><tr id='forumpost_278'><td class='nickname' width='25%'>John Dlugosz<br /></td><td class='text' width='75%'><div class='text'>Well, I got it programmed to send F12 on one key and F14 on another key.  Using the vkey identifier in Keyman Developer, it shows F12 as expected, but nothing happens with F14.  None of the &quot;added&quot; keys work.  It only takes things that are on my regular keyboard (though I&#039;ve not tried <span style="font-style: italic">everything</span>).
+<br />
+
+<br />
+To be sure that the normal Windows key map isn&#039;t tossing them, I made sure that Keyman was active with a downloaded keyboard mapping.
+<br />
+
+<br />
+Can you point me to a utility that runs at a sufficiently low level to make sure the hardware (USB HID Keyboard/keypad per usage page 0x07) is working?
+<br />
+
+<br />
+</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=86&amp;forumpostid=279.html#ForumPost_279'>#</a></span><a style='text-decoration:none' name='ForumPost_279'></a> RE: Can you do this? &nbsp; <span class='date'>2006-11-29 09:26:06.790</span></th></tr><tr id='forumpost_279'><td class='nickname' width='25%'>Tavultesoft<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Hi John,
+<br />
+
+<br />
+Winspector (available from <a href="http://www.windows-spy.com" target="_blank">www.windows-spy.com</a>) should be able to tell you if the hardware is sending the right information.
+<br />
+
+<br />
+Another good test would be to turn on Keyman debugging (under options in Keyman Configuration), enable a keyboard, and try using the extra keys. Keyman will log anything it generates to c:\keyman.log -- you can have a look at that or, if you can&#039;t make sense of it, send it <a href="mailto:support@tavultesoft.com">support@tavultesoft.com</a>.
+<br />
+
+<br />
+Make sure you disable debugging after testing it, though, as otherwise the logfile can become very large.
+<br />
+
+<br />
+
+<br />
+Paul Durdin
+<br />
+Tavultesoft Pty Ltd</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=86&amp;forumpostid=280.html#ForumPost_280'>#</a></span><a style='text-decoration:none' name='ForumPost_280'></a> RE: Can you do this? &nbsp; <span class='date'>2006-11-30 15:35:28.910</span></th></tr><tr id='forumpost_280'><td class='nickname' width='25%'>John Dlugosz<br /></td><td class='text' width='75%'><div class='text'>I sent the log via email.
+<br />
+
+<br />
+Windows-spy looks interesting, but I don&#039;t see how it would tell me about the keyboard driver.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=86&amp;forumpostid=281.html#ForumPost_281'>#</a></span><a style='text-decoration:none' name='ForumPost_281'></a> RE: Can you do this? &nbsp; <span class='date'>2006-12-01 09:20:19.770</span></th></tr><tr id='forumpost_281'><td class='nickname' width='25%'>Tavultesoft<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Hi John,
+<br />
+
+<br />
+Winspector should be able to tell you if anything at all is being returned when you press a key on the USB keypad.
+<br />
+
+<br />
+Thanks for the logfile, I have replied to your email as well.
+<br />
+
+<br />
+
+<br />
+Paul Durdin
+<br />
+Tavultesoft Pty Ltd</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=86&amp;forumpostid=282.html#ForumPost_282'>#</a></span><a style='text-decoration:none' name='ForumPost_282'></a> RE: Can you do this? &nbsp; <span class='date'>2006-12-02 13:43:28.567</span></th></tr><tr id='forumpost_282'><td class='nickname' width='25%'>John Dlugosz<br /></td><td class='text' width='75%'><div class='text'>Paul, I still don&#039;t understand.  What window should Winspector be pointing to, to spy on drivers and keyboard mapping?
+<br />
+
+<br />
+I ran a free USB Sniffer, and I see the expected codes coming through when I press buttons, talking to &quot;Windows NT WDM version 1.32&quot;
+<br />
+
+<br />
+When Keyman is engaged, is the ordinary Windows keyboard map still being used, first?  I&#039;m wondering if that is what is throwing it away.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=86&amp;forumpostid=288.html#ForumPost_288'>#</a></span><a style='text-decoration:none' name='ForumPost_288'></a> RE: Can you do this? &nbsp; <span class='date'>2006-12-04 16:49:19.660</span></th></tr><tr id='forumpost_288'><td class='nickname' width='25%'>Tavultesoft<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Hi John,
+<br />
+
+<br />
+Try the following:
+<br />
+
+<br />
+1) Make sure Keyman is NOT running -- exit it if it is.
+<br />
+2) Start Winspector.
+<br />
+3) Start Notepad.
+<br />
+4) Select Notepad as the window for Winspector to watch.
+<br />
+5) Open the Messages for the Notepad window in Winspector.
+<br />
+6) In Notepad, press the F14 or other keys on the keypad.
+<br />
+
+<br />
+Winspector will show a whole heap of messages (it will also show some when you swap from Winspector back to Notepad).
+<br />
+
+<br />
+7) Swap back to Winspector and click the Stop button to stop receiving the messages.
+<br />
+
+<br />
+If the keypad is sending the correct virtual key codes they will appear in the list as &#039;KEYDOWN&#039; and &#039;KEYUP&#039; events with a message of &#039;Virtual Key F14&#039; or similar beside them.
+<br />
+
+<br />
+If they do not have the KEYDOWN and KEYUP events, the keypad is not sending the correct virtual key codes.
+<br />
+
+<br />
+
+<br />
+Kind regards,
+<br />
+
+<br />
+Paul Durdin
+<br />
+Tavultesoft Pty Ltd</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=86&amp;forumpostid=289.html#ForumPost_289'>#</a></span><a style='text-decoration:none' name='ForumPost_289'></a> RE: Can you do this? &nbsp; <span class='date'>2006-12-05 04:33:56.050</span></th></tr><tr id='forumpost_289'><td class='nickname' width='25%'>John Dlugosz<br /></td><td class='text' width='75%'><div class='text'>I see.  That is bascially the same test as using a keystroke widget like the one in Keyman Developer.  It will tell me that everything is working correctly or not, but doesn&#039;t look at the low-level USB stuff.  That is, I knew it&#039;s not getting through, but wanted to see if the problem was with the keyboard (is it sending the USB HID codes) or with XP (not translating those into virtual keys).
+<br />
+
+<br />
+--John</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=86&amp;forumpostid=291.html#ForumPost_291'>#</a></span><a style='text-decoration:none' name='ForumPost_291'></a> RE: Can you do this? &nbsp; <span class='date'>2006-12-05 15:20:26.317</span></th></tr><tr id='forumpost_291'><td class='nickname' width='25%'>Tavultesoft<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Hi John,
+<br />
+
+<br />
+Winspector does return more information than Keyman Developer&#039;s virtual keycode trap, but as you say it&#039;s not low-level enough.
+<br />
+
+<br />
+It may be that the Windows input layout does not include mappings for the extra keys; if that is the case, you would have to install a layout that did. I&#039;m not sure if such a thing exists, or how to create on if it doesn&#039;t -- you&#039;d have to contact Microsoft support to get an answer.
+<br />
+
+<br />
+
+<br />
+Kind regards,
+<br />
+
+<br />
+Paul Durdin
+<br />
+Tavultesoft Pty Ltd</div></td></tr></table><p class='forumnav' style='font-size: x-small'>&laquo; First Page&nbsp;|&nbsp;&lsaquo; Previous 10&nbsp;|&nbsp;<a href='topic.php@forumtopicid=86&amp;start=10.html'>Next 10 &rsaquo;</a>&nbsp;|&nbsp;<a href='topic.php@forumtopicid=86&amp;start=10.html'>Last Page &raquo;</a></p></p>

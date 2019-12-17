@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Creating Custom Keyboards For Keyman For Android - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=13.html'>General</a> &gt; <a href='topic.php@forumtopicid=351.html'>Creating Custom Keyboards For Keyman For Android</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Creating Custom Keyboards For Keyman For Android</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=351&amp;forumpostid=1177.html#ForumPost_1177'>#</a></span><a style='text-decoration:none' name='ForumPost_1177'></a> Creating Custom Keyboards For Keyman For Android &nbsp; <span class='date'>2014-05-14 20:17:39.090</span></th></tr><tr id='forumpost_1177'><td class='nickname' width='25%'>Tano Fotang<br /></td><td class='text' width='75%'><div class='text'>The tutorial (at blog.tavultesoft.com/2014/04/creating-custom-keyboards-for-keyman-for-android-and-keyman-for-iphone-and-ipad.html) says:
+<br />
+&quot;id: (ID of the keyboard. It must always match the internal name of the keyboard in the keyboard .js file)&quot;
+<br />
+
+<br />
+What is the id if the js file starts as follows:
+<br />
+KeymanWeb.KR(new Keyboard_xx());function Keyboard_xx(){this.KI=&quot;Keyboard_xx&quot;;this.KN=&quot;Mykeyb&quot;;...
+<br />
+
+<br />
+Is it &quot;Keyboard_xx&quot;, &quot;Mykeyb&quot; or &quot;xx&quot;?</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=351&amp;forumpostid=1178.html#ForumPost_1178'>#</a></span><a style='text-decoration:none' name='ForumPost_1178'></a> RE: Creating Custom Keyboards For Keyman For Android &nbsp; <span class='date'>2014-05-15 07:54:33.473</span></th></tr><tr id='forumpost_1178'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Thanks for the question.  The ID, in your example, should be &quot;xx&quot; -- that is, the same as the KI variable, without the &quot;Keyboard_&quot; prefix.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=351&amp;forumpostid=1179.html#ForumPost_1179'>#</a></span><a style='text-decoration:none' name='ForumPost_1179'></a> RE: Creating Custom Keyboards For Keyman For Android &nbsp; <span class='date'>2014-05-15 15:40:23.803</span></th></tr><tr id='forumpost_1179'><td class='nickname' width='25%'>Tano Fotang<br /></td><td class='text' width='75%'><div class='text'>Thank you. Now I&#039;m one step closer.</div></td></tr></table></p>

@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic $TPAcursor + Any(CursorKeys) > $TPAcursor Beep - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=8.html'>Bugs and Features</a> &gt; <a href='topic.php@forumtopicid=448.html'>$TPAcursor + Any(CursorKeys) > $TPAcursor Beep</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic $TPAcursor + Any(CursorKeys) > $TPAcursor Beep</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=448&amp;forumpostid=1532.html#ForumPost_1532'>#</a></span><a style='text-decoration:none' name='ForumPost_1532'></a> $TPAcursor + Any(CursorKeys) > $TPAcursor Beep &nbsp; <span class='date'>2016-03-17 10:56:39.990</span></th></tr><tr id='forumpost_1532'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>I am lost.
+<br />
+
+<br />
+   This Rule
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">$TPAcursor + Any&#40;CursorKeys&#41; &gt; $TPAcursor Beep</td>
+	</tr>
+</table>
+
+<br />
+   Works correctly in the TIKE Test Keyboard. It ignores all cursor keys and beeps to show an error.
+<br />
+   And also works when installed and used in Word 2007. It ignores all cursor keys and beeps to show an error.
+<br />
+
+<br />
+   But, and this is a odd bit, all the cursor keys stop functioning at all, not just in a specific Context. Which makes no sense. And no beep is emitted. But only when installed and used in an application does it not work. However, I still functions correctly in TIKE Test Keybvoard.
+<br />
+
+<br />
+   If I remove the line the cursor keys function again. But of course the cursor keys work within a Menu, which I don&#039;t want.
+<br />
+
+<br />
+   I have put the entire keyboard definition here <a href="https://onedrive.live.com/embed?cid=1F64F0F2FE6747F1&amp;resid=1F64F0F2FE6747F1%2149130&amp;authkey=AIsmbAplnBrVUXM" target="_blank" class="postlink">https://onedrive.live.com/embed?cid=1F64F0F2FE6747F1&amp;resid=1F64F0F2FE6747F1%2149130&amp;authkey=AIsmbAplnBrVUXM</a>
+<br />
+
+<br />
+Regards
+<br />
+Julian Griffin.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=448&amp;forumpostid=1533.html#ForumPost_1533'>#</a></span><a style='text-decoration:none' name='ForumPost_1533'></a> RE: $TPAcursor + Any(CursorKeys) > $TPAcursor Beep &nbsp; <span class='date'>2016-03-18 07:48:30.477</span></th></tr><tr id='forumpost_1533'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>This is due to a limitation or bug in Keyman 9. There are some difficulties with how to handle non-character keys with the Text Services Framework and I have not yet come to a comfortable conclusion as to the best way to resolve this.
+<br />
+
+<br />
+I am looking at some options, but I don&#039;t really have a complete solution right now. It relates to the previous discussion we had and my notes at <a href="http://www.tavultesoft.com/forums/topic.php?ForumTopicID=439&amp;ForumPostID=1518#ForumPost_1518" target="_blank">http://www.tavultesoft.com/forums/topic.php?ForumTopicID=439&amp;ForumPostID=1518#ForumPost_1518</a></div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=448&amp;forumpostid=1534.html#ForumPost_1534'>#</a></span><a style='text-decoration:none' name='ForumPost_1534'></a> RE: $TPAcursor + Any(CursorKeys) > $TPAcursor Beep &nbsp; <span class='date'>2016-03-18 11:16:16.563</span></th></tr><tr id='forumpost_1534'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>Thank you for your quite response. I thought it might be something like that.
+<br />
+
+<br />
+   I am simply trying to make the menu more robust. And as we have discussed before, in a WIMP system this is hard to achieve from the keyboard alone.
+<br />
+
+<br />
+   I feel the &#039;Input Method Extensions&#039; or &#039;Input Method Composition (IMC) window&#039; may offer an answer, but these are outside my area of competence. But I would be interested in a discussion with anybody who would like to develop something like these with me.
+<br />
+
+<br />
+   So for now, I&#039;ll put a note in the documentation requesting the user be gentle when selecting from an option from a menu. I have been able to make the Grapheme input Mode (GiM) reasonably robust, but care still needs to be taken. But GiM will only be used for the creation of TPA Constructions for a dictionary for TPA; where words are listed by how they are said, rather how they are spelt.
+<br />
+
+<br />
+God Bless.
+<br />
+Julian
+<br />
+
+<br />
+PS Do you have a road map for expected further releases of Keyman 9 beta or otherwise?</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=448&amp;forumpostid=1536.html#ForumPost_1536'>#</a></span><a style='text-decoration:none' name='ForumPost_1536'></a> RE: $TPAcursor + Any(CursorKeys) > $TPAcursor Beep &nbsp; <span class='date'>2016-03-18 14:56:17.357</span></th></tr><tr id='forumpost_1536'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>   Just for information&#039;s sake, these virtual keys work correctly:
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">&#91;K_oE2&#93; &#91;K_ESC&#93; &#91;K_TAB&#93; &#91;K_BKSP&#93; &#91;K_ENTER&#93; &#91;K_NPENTER&#93;</td>
+	</tr>
+</table>
+
+<br />
+   These virtual keys stop functioning in any application if they are used in a keyboard definition:
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">&#91;K_DEL&#93; &#91;K_UP&#93; &#91;K_END&#93; &#91;K_LEFT&#93; &#91;K_DOWN&#93; &#91;K_HOME&#93; &#91;K_PGUP&#93; &#91;K_PGDN&#93; &#91;K_RIGHT&#93;</td>
+	</tr>
+</table>
+
+<br />
+   They stop functioning at all, regardless of the context in the keyboard definition.
+<br />
+
+<br />
+   I hope this helps you create a solution to this.
+<br />
+
+<br />
+Regards
+<br />
+Julian Griffin.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=448&amp;forumpostid=1537.html#ForumPost_1537'>#</a></span><a style='text-decoration:none' name='ForumPost_1537'></a> RE: $TPAcursor + Any(CursorKeys) > $TPAcursor Beep &nbsp; <span class='date'>2016-03-18 15:00:58.213</span></th></tr><tr id='forumpost_1537'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Yes, for now those extra keys will not function correctly with Keyman 9. I expect they would function with Keyman 8, because it doesn&#039;t link into the Text Services Framework in the same way, but that&#039;s not a great solution.
+<br />
+
+<br />
+This is on my roadmap to resolve but I have to find time to dig into it. Timeline-wise, I should have some more detail in the next few weeks, I hope.</div></td></tr></table></p>

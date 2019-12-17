@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic automatically display keyboard after dynamically adding keyboard - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=12.html'>Deployment</a> &gt; <a href='topic.php@forumtopicid=369.html'>automatically display keyboard after dynamically adding keyboard</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic automatically display keyboard after dynamically adding keyboard</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=369&amp;forumpostid=1246.html#ForumPost_1246'>#</a></span><a style='text-decoration:none' name='ForumPost_1246'></a> automatically display keyboard after dynamically adding keyboard &nbsp; <span class='date'>2014-12-14 19:15:09.573</span></th></tr><tr id='forumpost_1246'><td class='nickname' width='25%'>Matt<br /></td><td class='text' width='75%'><div class='text'>I am using Keymanweb 2.0 build 396.
+<br />
+
+<br />
+I am able to dynamically add a keyboard from a html select list on a form.
+<br />
+
+<br />
+However, after the keyboard is added to the form I would like the keyboard to be automatically displayed to the user.
+<br />
+
+<br />
+The following code does add the keyboard to the form, but does not display the keyboard to the form. The user must manually mouse click on the keyboard from the keyboard menu to display the keyboard.
+<br />
+
+<br />
+Here is my code:
+<br />
+    
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">
+<br />
+&nbsp; &nbsp; .......
+<br />
+
+<br />
+&nbsp; &nbsp; &#40;function&#40;kmw&#41; &#123;
+<br />
+&nbsp; &nbsp; 
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; kmw.init&#40;&#41;;
+<br />
+&nbsp; &nbsp; 
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; if &#40;$&#40;&quot;#id_language_code&quot;&#41;.val&#40;&#41; == &#039;ar&#039; &#41; &#123;
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; 
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; kmw.addKeyboards&#40;&#039;arabic_101&#039;&#41;; // this will add the keyboard.
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; 
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; kmw.setActiveKeyboard&#40;&#039;Keyboard_arabic_101&#039;,&#039;arb&#039;&#41;; // this should display the vkb to the user.
+<br />
+
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &#125; else if &#40;$&#40;&quot;#id_language_code&quot;&#41;.val&#40;&#41; == &#039;ru&#039; &#41; &#123;
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; 
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; kmw.addKeyboards&#40;&#039;russian&#039;&#41;; // this will add the keyboard.
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; 
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; kmw.setActiveKeyboard&#40;&#039;Keyboard_russian&#039;,&#039;rus&#039;&#41;; // this should display the vkb to the user.
+<br />
+
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &#125;
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; 
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; .........
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; 
+<br />
+&nbsp; &nbsp; &#125;
+<br />
+</td>
+	</tr>
+</table>
+
+<br />
+
+<br />
+Am I using <span style="font-weight: bold">setActiveKeyboard</span> correctly and the <span style="font-weight: bold">internal keyboard name</span> &amp; <span style="font-weight: bold">language code</span> correctly?
+<br />
+
+<br />
+I have noticed that after the keyboard has been manually activated the first time (manually mouse click on the keyboard in the keyboard menu), the keyboard is displayed whenever the language code / keyboard is again selected from the html select list by the user. 
+<br />
+
+<br />
+It seems that the keyboard must be selected by the user manually after being added.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=369&amp;forumpostid=1247.html#ForumPost_1247'>#</a></span><a style='text-decoration:none' name='ForumPost_1247'></a> RE: automatically display keyboard after dynamically adding keyboard &nbsp; <span class='date'>2014-12-15 15:51:17.470</span></th></tr><tr id='forumpost_1247'><td class='nickname' width='25%'>Matt<br /></td><td class='text' width='75%'><div class='text'>Doh! That should be Keymanweb 2.0 build 374 - not 396!</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=369&amp;forumpostid=1248.html#ForumPost_1248'>#</a></span><a style='text-decoration:none' name='ForumPost_1248'></a> RE: automatically display keyboard after dynamically adding keyboard &nbsp; <span class='date'>2014-12-15 16:07:45.957</span></th></tr><tr id='forumpost_1248'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Sorry Matt, I don&#039;t have an immediate answer -- John will be back in the morning and can respond then.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=369&amp;forumpostid=1262.html#ForumPost_1262'>#</a></span><a style='text-decoration:none' name='ForumPost_1262'></a> RE: automatically display keyboard after dynamically adding keyboard &nbsp; <span class='date'>2014-12-18 15:53:42.463</span></th></tr><tr id='forumpost_1262'><td class='nickname' width='25%'>Matt<br /></td><td class='text' width='75%'><div class='text'>Any suggestions would be appreciated.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=369&amp;forumpostid=1263.html#ForumPost_1263'>#</a></span><a style='text-decoration:none' name='ForumPost_1263'></a> RE: automatically display keyboard after dynamically adding keyboard &nbsp; <span class='date'>2014-12-18 16:10:29.560</span></th></tr><tr id='forumpost_1263'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>I&#039;ll ask John to take a look when he gets a chance. Hopefully in next couple of days.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=369&amp;forumpostid=1267.html#ForumPost_1267'>#</a></span><a style='text-decoration:none' name='ForumPost_1267'></a> RE: automatically display keyboard after dynamically adding keyboard &nbsp; <span class='date'>2014-12-19 11:43:22.580</span></th></tr><tr id='forumpost_1267'><td class='nickname' width='25%'>John Durdin<br /></td><td class='text' width='75%'><div class='text'>Hi Matt,
+<br />
+
+<br />
+The steps needed are:
+<br />
+1. add the keyboard (using addKeyboards).
+<br />
+2. wait until it has been added and is available to be selected
+<br />
+3. select that keyboard, specifying both the (internal) keyboard name and language code
+<br />
+4. set the focus to any editable element (otherwise the OSK will not appear)
+<br />
+5. tell KeymanWeb to display the OSK
+<br />
+
+<br />
+Here is one way you can do that:
+<br />
+
+<br />
+Include the following function:
+<br />
+
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">&nbsp;function useKeyboard&#40;kbdName,elId&#41;
+<br />
+&nbsp; &#123;
+<br />
+&nbsp; &nbsp; var kmw=tavultesoft.keymanweb,kbd=kmw.getKeyboard&#40;&#039;Keyboard_&#039;+kbdName&#41;;&nbsp; 
+<br />
+&nbsp; &nbsp; if&#40;kbd == null&#41;
+<br />
+&nbsp; &nbsp; &#123;
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp;var tWait=&#40;arguments.length &gt; 2 ? arguments&#91;2&#93; &#58; 10000&#41;;
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp;if &#40;tWait &gt; 0&#41; window.setTimeout&#40;function &#40;&#41; &#123; useKeyboard&#40;kbdName, elId, tWait - 50&#41;; &#125;, 50&#41;; 
+<br />
+&nbsp; &nbsp; &#125;
+<br />
+&nbsp; &nbsp; else
+<br />
+&nbsp; &nbsp; &#123;
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; kmw.setActiveKeyboard&#40;kbd.InternalName, kbd.LanguageCode&#41;;
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; document.getElementById&#40;elId&#41;.focus&#40;&#41;;
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; kmw.osk.show&#40;1&#41;;&nbsp; &nbsp; &nbsp; 
+<br />
+&nbsp; &nbsp; &#125;
+<br />
+&nbsp; &#125;</td>
+	</tr>
+</table>
+
+<br />
+
+<br />
+then call it with the keyboard name and an element id after your call to addKeyboards(), for example:
+<br />
+
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">
+<br />
+&nbsp; &nbsp; &nbsp; kmw.addKeyboards&#40;&#039;arabic_101&#039;&#41;;
+<br />
+&nbsp; &nbsp; &nbsp; useKeyboard&#40;&#039;arabic_101&#039;,&#039;ta1&#039;&#41;;
+<br />
+</td>
+	</tr>
+</table>
+ 
+<br />
+
+<br />
+Hope that helps.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=369&amp;forumpostid=1269.html#ForumPost_1269'>#</a></span><a style='text-decoration:none' name='ForumPost_1269'></a> RE: automatically display keyboard after dynamically adding keyboard &nbsp; <span class='date'>2014-12-20 10:22:42.943</span></th></tr><tr id='forumpost_1269'><td class='nickname' width='25%'>Matt<br /></td><td class='text' width='75%'><div class='text'>Thanks John.
+<br />
+
+<br />
+That works a treat.</div></td></tr></table></p>

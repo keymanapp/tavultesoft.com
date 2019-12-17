@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Two letter context question. - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=14.html'>General</a> &gt; <a href='topic.php@forumtopicid=410.html'>Two letter context question.</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Two letter context question.</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=410&amp;forumpostid=1400.html#ForumPost_1400'>#</a></span><a style='text-decoration:none' name='ForumPost_1400'></a> Two letter context question. &nbsp; <span class='date'>2016-02-05 23:17:37.197</span></th></tr><tr id='forumpost_1400'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>Hi,
+<br />
+
+<br />
+   The code below was created to meet two requirements:
+<br />
+<ul>1. To allow for two characters and a symbol key to fire a rule that outputs two character with a Unicode symbol between the two characters.
+<br />
+&amp;
+<br />
+2. To match the case of the Left-Hand-Side in the Right-Hand-Side of the rule.</ul><table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">&quot;oo&quot; + $TieKey &gt; &quot;o&quot; $Tie1 &quot;o&quot; 
+<br />
+&quot;Oo&quot; + $TieKey &gt; &quot;O&quot; $Tie1 &quot;o&quot; 
+<br />
+&quot;OO&quot; + $TieKey &gt; &quot;O&quot; $Tie1 &quot;O&quot;
+<br />
+&quot;oO&quot; + $TieKey &gt; &quot;o&quot; $Tie1 &quot;O&quot;
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<br />
+&quot;sh&quot; + $TieKey &gt; &quot;s&quot; $Tie2 &quot;h&quot; 
+<br />
+&quot;Sh&quot; + $TieKey &gt; &quot;S&quot; $Tie2 &quot;h&quot; 
+<br />
+&quot;SH&quot; + $TieKey &gt; &quot;S&quot; $Tie2 &quot;H&quot;
+<br />
+&quot;sH&quot; + $TieKey &gt; &quot;s&quot; $Tie2 &quot;H&quot;
+<br />
+
+<br />
+&quot;th&quot; + $TieKey &gt; &quot;t&quot; $Tie2 &quot;h&quot; 
+<br />
+&quot;Th&quot; + $TieKey &gt; &quot;T&quot; $Tie2 &quot;h&quot; 
+<br />
+&quot;TH&quot; + $TieKey &gt; &quot;T&quot; $Tie2 &quot;H&quot;
+<br />
+&quot;tH&quot; + $TieKey &gt; &quot;t&quot; $Tie2 &quot;H&quot;</td>
+	</tr>
+</table>
+
+<br />
+   Although this works, I have 23 blocks like these. So to my question, is there a way to simplify this code? Can this code be placed in an external file which is then included in the project? [<span style="font-style: italic">Hopefully, making the main code easier to understand read and understand.</span>]
+<br />
+
+<br />
+Regards
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=410&amp;forumpostid=1404.html#ForumPost_1404'>#</a></span><a style='text-decoration:none' name='ForumPost_1404'></a> RE: Two letter context question. &nbsp; <span class='date'>2016-02-06 08:02:34.953</span></th></tr><tr id='forumpost_1404'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>It is possible to reduce the number of rules with use of stores and the context() statement, for example:
+<br />
+
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">store&#40;oo&#41; &#039;oO&#039;
+<br />
+store&#40;ss&#41; &#039;sS&#039;
+<br />
+store&#40;tt&#41; &#039;tT&#039;
+<br />
+store&#40;hh&#41; &#039;hH&#039;
+<br />
+
+<br />
+any&#40;oo&#41; any&#40;oo&#41; + $TieKey &gt; context&#40;1&#41; $Tie1 context&#40;2&#41;
+<br />
+any&#40;ss&#41; any&#40;hh&#41; + $TieKey &gt; context&#40;1&#41; $Tie2 context&#40;2&#41;
+<br />
+any&#40;tt&#41; any&#40;hh&#41; + $TieKey &gt; context&#40;1&#41; $Tie2 context&#40;2&#41;
+<br />
+</td>
+	</tr>
+</table>
+
+<br />
+
+<br />
+However, this would probably be the cleanest you could get. Keyman Developer does not currently have a way to import rules from an external file.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=410&amp;forumpostid=1410.html#ForumPost_1410'>#</a></span><a style='text-decoration:none' name='ForumPost_1410'></a> RE: Two letter context question. &nbsp; <span class='date'>2016-02-06 10:32:25.940</span></th></tr><tr id='forumpost_1410'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>Thank you, that&#039;s great, it works well. It will shorten the code. But, I fear, at the expence of readability.
+<br />
+
+<br />
+   I did explore <table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">context&#40;1&#41; $Tie context&#40;2&#41;</td>
+	</tr>
+</table>
+
+<br />
+   But I could not get it to work, it did not occur to me to split the context and to store Caps and Lowercase in the same Store().
+<br />
+
+<br />
+   It seems to me that I am only just scratching the surface of what Keyman can do. I&#039;m looking at Deadkeys and Groups next.
+<br />
+
+<br />
+Thank you.
+<br />
+Regards
+<br />
+Julian Griffin
+<br />
+</div></td></tr></table></p>

@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Excel bug.. - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=8.html'>Bugs and Features</a> &gt; <a href='topic.php@forumtopicid=445.html'>Excel bug..</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Excel bug..</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=445&amp;forumpostid=1524.html#ForumPost_1524'>#</a></span><a style='text-decoration:none' name='ForumPost_1524'></a> Excel bug.. &nbsp; <span class='date'>2016-03-05 20:30:19.460</span></th></tr><tr id='forumpost_1524'><td class='nickname' width='25%'>CTB<br /></td><td class='text' width='75%'><div class='text'>Hi,
+<br />
+
+<br />
+I am trying to work in Excel 2013 with one of my keyboards.
+<br />
+I have the following rules
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">
+<br />
+store&#40;vowelkeys&#41;&nbsp; &nbsp; &nbsp; &#91;K_O&#93; &nbsp; &nbsp; &#91;SHIFT K_O&#93; &nbsp; &nbsp; &#91;SHIFT K_E&#93; &nbsp; &nbsp; &#91;K_E&#93; &nbsp; &nbsp; &#91;SHIFT K_U&#93; &nbsp; &nbsp; &#91;K_U&#93; &nbsp; &nbsp; &#91;SHIFT K_I&#93; &nbsp; &nbsp; &#91;K_I&#93; &nbsp; &nbsp; &#91;SHIFT K_A&#93; &nbsp; &nbsp; &#91;K_A&#93; 
+<br />
+store &#40;vowelunicode&#41; &nbsp; &nbsp; &#039;ඔ&#039;&nbsp; &nbsp; &#039;ඕ&#039;&nbsp; &nbsp; &#039;ඒ&#039;&nbsp; &nbsp; &#039;එ&#039;&nbsp; &nbsp; &#039;ඌ&#039;&nbsp; &nbsp; &#039;උ&#039;&nbsp; &nbsp; &#039;ඊ&#039;&nbsp; &nbsp; &#039;ඉ&#039;&nbsp; &nbsp; &#039;ආ&#039;&nbsp; &nbsp; &#039;අ&#039;
+<br />
+group&#40;main&#41; using keys
+<br />
++ any&#40;vowelkeys&#41;&gt; index&#40;vowelunicode,1&#41;
+<br />
+&#039;අ&#039;+&#91;K_A&#93; &gt; &#039;ආ&#039;</td>
+	</tr>
+</table>
+
+<br />
+
+<br />
+the idea is that one press of &#039;a&#039; will produce &#039;අ&#039; and two consecutive presses &#039;ආ&#039;. In Excel 2013, this works fine unless I do it in the beginning of an empty cell. for example if I select an empty cell and type &#039;aa&#039; it will produce &#039;අඅ&#039;. However if I delete them and retype &#039;aa&#039; it will produce &#039;ආ&#039; as intended. </div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=445&amp;forumpostid=1526.html#ForumPost_1526'>#</a></span><a style='text-decoration:none' name='ForumPost_1526'></a> RE: Excel bug.. &nbsp; <span class='date'>2016-03-07 06:43:18.540</span></th></tr><tr id='forumpost_1526'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Yes, this is a known limitation of using Keyman in Excel. The problem is that the first letter is actually typed into a different place than subsequent letters, so it does not appear to Keyman that it is part of the same sequence. Workarounds include pressing F2 to start editing the cell, or pressing e.g. space,backspace.
+<br />
+
+<br />
+It&#039;s not great, but there&#039;s not a lot we can do at present to improve this.</div></td></tr></table></p>

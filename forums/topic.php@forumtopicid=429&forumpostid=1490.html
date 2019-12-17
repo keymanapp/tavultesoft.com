@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Transparent icons - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=8.html'>Bugs and Features</a> &gt; <a href='topic.php@forumtopicid=429.html'>Transparent icons</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Transparent icons</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=429&amp;forumpostid=1472.html#ForumPost_1472'>#</a></span><a style='text-decoration:none' name='ForumPost_1472'></a> Transparent icons &nbsp; <span class='date'>2016-02-21 01:56:11.837</span></th></tr><tr id='forumpost_1472'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>If I import a PNG image, with a transparent background, into my keyboard definition, the background is changed to black.
+<br />
+
+<br />
+   If, in the TIKE icon edit, I change the background to transparent, the icon that appears in the notification area has a white background.
+<br />
+
+<br />
+   If I change the background back to black, it works ok in my notification area because it is dark. On other Window Themes, this would not look good.
+<br />
+
+<br />
+Please advise if I am doing something wrong or is this a bug?
+<br />
+
+<br />
+Regards
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=429&amp;forumpostid=1477.html#ForumPost_1477'>#</a></span><a style='text-decoration:none' name='ForumPost_1477'></a> RE: Transparent icons &nbsp; <span class='date'>2016-02-22 07:37:28.320</span></th></tr><tr id='forumpost_1477'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>The icon should not appear as having a white background in the notification area but will have a white background in the menu, for example.
+<br />
+
+<br />
+So I&#039;m not sure what is going on - transparent is selected in the colour picker by clicking the colour box with an [X] in it. The PNG import will probably not support transparency as PNG files support full alpha transparency, whereas the Keyman Developer icon editor only supports simple transparency.
+<br />
+
+<br />
+You can edit the .ico file for a keyboard in any icon editor tool and add full alpha transparent versions and multiple sizes for High DPI screens.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=429&amp;forumpostid=1489.html#ForumPost_1489'>#</a></span><a style='text-decoration:none' name='ForumPost_1489'></a> RE: Transparent icons &nbsp; <span class='date'>2016-02-24 08:57:08.373</span></th></tr><tr id='forumpost_1489'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>Hi,
+<br />
+
+<br />
+   I have uploaded a number of screen shots of the problem, to my OneDrive:
+<br />
+URL: <a href="http://1drv.ms/1PsCtnU" target="_blank" class="postlink">http://1drv.ms/1PsCtnU</a>
+<br />
+
+<br />
+   I hope this helps.
+<br />
+
+<br />
+Regards
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=429&amp;forumpostid=1490.html#ForumPost_1490'>#</a></span><a style='text-decoration:none' name='ForumPost_1490'></a> RE: Transparent icons &nbsp; <span class='date'>2016-02-24 09:19:08.597</span></th></tr><tr id='forumpost_1490'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>Hi again,
+<br />
+
+<br />
+   I&#039;ve just been looking at trying to point the keyboard definition to another icon file, without success.
+<br />
+
+<br />
+   I modified the &amp;Bitmap and renaming the ICO file. I only ever get a white square.
+<br />
+
+<br />
+   Please advise.
+<br />
+
+<br />
+Regards
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=429&amp;forumpostid=1505.html#ForumPost_1505'>#</a></span><a style='text-decoration:none' name='ForumPost_1505'></a> RE: Transparent icons &nbsp; <span class='date'>2016-02-26 08:02:10.837</span></th></tr><tr id='forumpost_1505'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>I&#039;ll look into this further; I&#039;m not sure what&#039;s going on -- may be a bug in the Keyman Developer beta.</div></td></tr></table></p>

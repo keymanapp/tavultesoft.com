@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic arrow keys skip extra characters - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=8.html'>Bugs and Features</a> &gt; <a href='topic.php@forumtopicid=465.html'>arrow keys skip extra characters</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic arrow keys skip extra characters</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=465&amp;forumpostid=1578.html#ForumPost_1578'>#</a></span><a style='text-decoration:none' name='ForumPost_1578'></a> arrow keys skip extra characters &nbsp; <span class='date'>2016-08-22 16:34:50.307</span></th></tr><tr id='forumpost_1578'><td class='nickname' width='25%'>CTB<br /></td><td class='text' width='75%'><div class='text'>Hi,
+<br />
+
+<br />
+I was testing a keyboard under the developer and keyman desktop. With a certain combinations of 3 unicode characters, starting with the cursor at extreme right and pressing left arrow three times brings the cursor to the start of the word under the test mode of developer (expected behaviour). In keyman desktop pressing the left arrow key two times does the same (unexpected behaviour). 
+<br />
+I can pass the keyboard and a test case if you want to check on your side.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=465&amp;forumpostid=1579.html#ForumPost_1579'>#</a></span><a style='text-decoration:none' name='ForumPost_1579'></a> RE: arrow keys skip extra characters &nbsp; <span class='date'>2016-08-23 18:08:58.633</span></th></tr><tr id='forumpost_1579'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Yes, arrow key behaviour does depend on the application. This is especially true for conjoined characters, diacritics, invisible marks, and clusters. Keyman Developer treats each character separately because it is important for keyboard developers to be able to manipulate each character separately. In normal editing scenarios, most applications don&#039;t allow the cursor to be placed in the middle of a cluster of characters because it is (a) hard to know where the cursor is placed, and (b) editing in the middle of the cluster tends to lead to malformation of characters which is very confusing to the user.
+<br />
+
+<br />
+Are you using the arrow keys in your keyboard? If so, that is also an unsupported behaviour -- it doesn&#039;t work cross platform and has limited applicability in Windows applications, partly for the reasons above.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=465&amp;forumpostid=1580.html#ForumPost_1580'>#</a></span><a style='text-decoration:none' name='ForumPost_1580'></a> RE: arrow keys skip extra characters &nbsp; <span class='date'>2016-08-23 22:26:24.777</span></th></tr><tr id='forumpost_1580'><td class='nickname' width='25%'>CTB<br /></td><td class='text' width='75%'><div class='text'>I see, this does happen in the case of a conjoined character. I have not programmed arrow keys and its handled by the application.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=465&amp;forumpostid=1581.html#ForumPost_1581'>#</a></span><a style='text-decoration:none' name='ForumPost_1581'></a> RE: arrow keys skip extra characters &nbsp; <span class='date'>2016-08-27 11:16:46.453</span></th></tr><tr id='forumpost_1581'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Then in this case, it&#039;s definitely expected behaviour -- hope that it&#039;s fine with you because there&#039;s probably not much we can do about it!</div></td></tr></table></p>

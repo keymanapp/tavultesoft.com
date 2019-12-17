@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Cherokee Upper/Lower Case - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=349.html'>Cherokee Unicode</a> &gt; <a href='topic.php@forumtopicid=472.html'>Cherokee Upper/Lower Case</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Cherokee Upper/Lower Case</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><p><img src='../images/kmxicon.gif' alt='Keyboard Details' style='vertical-align: middle; border: none' /> <a href='http://tavultesoft.com/keyman/downloads/keyboards/details.php?KeyboardID=639'>Cherokee Unicode Keyboard Downloads and Details</a></p><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=472&amp;forumpostid=1596.html#ForumPost_1596'>#</a></span><a style='text-decoration:none' name='ForumPost_1596'></a> Cherokee Upper/Lower Case &nbsp; <span class='date'>2016-10-26 07:24:56.367</span></th></tr><tr id='forumpost_1596'><td class='nickname' width='25%'>Roy Boney<br /></td><td class='text' width='75%'><div class='text'>With Unicode 8, Cherokee lower case was added as well as one historical character called &quot;mv.&quot; I would like to update the Cherokee Unicode keyboard to support the new characters. This keyboard is one of the most popular Cherokee keyboards because it allows for three character input phonetically: for example, typing the sequence &quot;tsa&quot; to result in the Cherokee syllable Ꮳ as opposed to &quot;ja.&quot; While both are suitable, the three 3 character input matches what most users of Cherokee are accustomed to. I&#039;m fairly new to Keyman as a developer, but if I could a tutorial on how to string 3 typed characters together to equal 1, I could develop the keyboard myself. I&#039;ve already started an updated Cherokee phonetic keyboard in Keyman Developer to incorporate the upper and lower case. The place where I have run into a wall is stringing 3 characters together rather than 2. I can do 2 easily.  </div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=472&amp;forumpostid=1600.html#ForumPost_1600'>#</a></span><a style='text-decoration:none' name='ForumPost_1600'></a> RE: Cherokee Upper/Lower Case &nbsp; <span class='date'>2016-10-27 01:39:06.820</span></th></tr><tr id='forumpost_1600'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Hi Roy!
+<br />
+
+<br />
+Stringing characters together is fairly straightforward once you understand the input model for Keyman keyboards. Instead of thinking of sequences of keystrokes, think of a transform, which has two components: what you see on screen already, and a keystroke.
+<br />
+
+<br />
+Then, for example, you&#039;d have something like the following, where you are pressing the &#039;a&#039; key:
+<br />
+
+<br />
+&#039;ts&#039; + &#039;a&#039; &gt; &#039;Ꮳ&#039;.
+<br />
+
+<br />
+However, the twist is that if &#039;ts&#039; already generated something else, for example (using Z because I don&#039;t know!):
+<br />
+
+<br />
+&#039;t&#039; + &#039;s&#039; &gt; &#039;Z&#039;
+<br />
+
+<br />
+you&#039;d need the following rules instead:
+<br />
+
+<br />
+&#039;t&#039; + &#039;s&#039; &gt; &#039;Z&#039;
+<br />
+&#039;Z&#039; + &#039;a&#039; &gt; &#039;Ꮳ&#039;
+<br />
+
+<br />
+Does that make sense? The &#039;t&#039; + &#039;s&#039; are transformed into &#039;Z&#039;. Then &#039;Z&#039; + &#039;a&#039; are transformed into &#039;Ꮳ&#039;.
+<br />
+
+<br />
+If that&#039;s not quite enough to make sense out of the problem, please feel free to send me the keyboard file as it stands and I can work through the answer with you.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=472&amp;forumpostid=1603.html#ForumPost_1603'>#</a></span><a style='text-decoration:none' name='ForumPost_1603'></a> RE: Cherokee Upper/Lower Case &nbsp; <span class='date'>2016-11-01 02:15:49.230</span></th></tr><tr id='forumpost_1603'><td class='nickname' width='25%'>Roy Boney<br /></td><td class='text' width='75%'><div class='text'>Hey Marc! Long time no see! Your explanation made perfect sense to me. I managed to get the output I am needing. Now I just need to finish the rest of the characters. Appreciate the help! And good luck on your new adventure!</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=472&amp;forumpostid=1604.html#ForumPost_1604'>#</a></span><a style='text-decoration:none' name='ForumPost_1604'></a> RE: Cherokee Upper/Lower Case &nbsp; <span class='date'>2016-11-02 19:25:54.767</span></th></tr><tr id='forumpost_1604'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Thanks Roy! Glad that my explanation helped :)</div></td></tr></table></p>

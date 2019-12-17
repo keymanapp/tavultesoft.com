@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic endless Exceptions! - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=8.html'>Bugs and Features</a> &gt; <a href='topic.php@forumtopicid=41.html'>endless Exceptions!</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic endless Exceptions!</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=41&amp;forumpostid=126.html#ForumPost_126'>#</a></span><a style='text-decoration:none' name='ForumPost_126'></a> endless Exceptions! &nbsp; <span class='date'>2006-06-11 02:35:33.217</span></th></tr><tr id='forumpost_126'><td class='nickname' width='25%'>Ian Spackman<br /></td><td class='text' width='75%'><div class='text'>Well, I supect this one is for Tavultesoft Support, but they say to report problems to the Forums first, so here goes....
+<br />
+
+<br />
+I just bought and installed Keyman Developer Version 6.2.178.0 yesterday.  Unfortunately it keeps giving me errors any time I do pratically anything.  And even on startup.  For instance, starting  the Keyboard Wizard produces the following errors:
+<br />
+
+<br />
+Exception &#039;EOleException&#039; in module tike.exe at 0000C0CAB
+<br />
+Item cannot be foind in the collection corresponding to the requested name
+<br />
+or ordinal
+<br />
+
+<br />
+Source file: UNKNOWN, Line UNKNOWN
+<br />
+
+<br />
+Call stack:
+<br />
+:000D1CAB [tike.exe]
+<br />
+:000166C7 [tike.exe]
+<br />
+:000D21D1 [tike.exe]
+<br />
+:0010035C [tike.exe]
+<br />
+:00101FA7 [tike.exe]
+<br />
+:00101F28 [tike.exe]
+<br />
+:001C6FA3 [tike.exe]
+<br />
+:001C8E96 [tike.exe]
+<br />
+:001AE4F6 [tike.exe]
+<br />
+:00047C43 [tike.exe]
+<br />
+:000478C6 [tike.exe]
+<br />
+:001C5274 [tike.exe]
+<br />
+:000561C4 [tike.exe]
+<br />
+:0005659F [tike.exe]
+<br />
+:00058BEF [tike.exe]
+<br />
+:0009E7E1 [tike.exe]
+<br />
+:000589A7 [tike.exe]
+<br />
+:00045A66 [tike.exe]
+<br />
+:77D48734 [user32.dll]
+<br />
+:77D48816 [user32.dll]
+<br />
+:77D489CD [user32.dll]
+<br />
+:77D496C7 [user32.dll]
+<br />
+:000FB9BD [tike.exe]
+<br />
+:000FB9E7 [tike.exe]
+<br />
+:000FBAB7 [tike.exe]
+<br />
+:001D1116 [tike.exe]
+<br />
+:7C816D4F [kernel32.dll]
+<br />
+
+<br />
+Registers:
+<br />
+EAX = 003DF59C  CS = 001B  EIP = 7C81EB33  Flags = 00000202
+<br />
+EBX = 800A0CC1  SS = 0023  ESP = 003DF598    EBP = 003DF5EC
+<br />
+ECX = 00000000  DS = 0023  ESI = 003DF620    FS  = 003B
+<br />
+EDX = 000D1CAB  ES = 0023  EDI = 00000000    GS  = 0000
+<br />
+Code at CS:EIP
+<br />
+5E C9 C2 10 00 85 FF 0F 8E E6 D0 FE FF 8B 55 FC 
+<br />
+Stack:
+<br />
+000D1CAB 0EEDFADE 00000001 00000000 7C81EB33 
+<br />
+003DF654 01356ACC 00000000 00000000 00000000 
+<br />
+00000000 00000000 00000000 00000000 7C816D4F 
+<br />
+01356A05 0BB90248 0143230B 7C816D4F 00015D4F 
+<br />
+
+<br />
+Exception &#039;EAccessViolation in module tike.exe at 001AB190
+<br />
+Access violation at address 001BC190 in module &#039;tike.exe&#039;. Read of address 00000008
+<br />
+
+<br />
+Source file: UNKNOWN, Line UNKNOWN
+<br />
+
+<br />
+Call stack:
+<br />
+:001BC190 [tike.exe]
+<br />
+:001BBFC9 [tike.exe]
+<br />
+:001BC24E [tike.exe]
+<br />
+:001BB7DA [tike.exe]
+<br />
+:001BB2AB [tike.exe]
+<br />
+:001C06C0 [tike.exe]
+<br />
+:00048323 [tike.exe]
+<br />
+:00056027 [tike.exe]
+<br />
+:00048A73 [tike.exe]
+<br />
+:00055E5B [tike.exe]
+<br />
+:00058881 [tike.exe]
+<br />
+:000588EB [tike.exe]
+<br />
+:00048A73 [tike.exe]
+<br />
+:00055E5B [tike.exe]
+<br />
+:00054D15 [tike.exe]
+<br />
+:000478C6 [tike.exe]
+<br />
+:001C5264 [tike.exe]
+<br />
+:0006418A [tike.exe]
+<br />
+:00048A73 [tike.exe]
+<br />
+:001C4FFD [tike.exe]
+<br />
+:000589A7 [tike.exe]
+<br />
+:00045A66 [tike.exe]
+<br />
+:77D48734 [user32.dll]
+<br />
+:77D48816 [user32.dll]
+<br />
+:77D4C63F [user32.dll]
+<br />
+:77D4C665 [user32.dll]
+<br />
+:5D0A83B1 [comctl32.dll]
+<br />
+:5D0A8582 [comctl32.dll]
+<br />
+:5D0A8537 [comctl32.dll]
+<br />
+:5D0CFF87 [comctl32.dll]
+<br />
+:5D0A8582 [comctl32.dll]
+<br />
+:5D0A860E [comctl32.dll]
+<br />
+:77D48734 [user32.dll]
+<br />
+:77D48816 [user32.dll]
+<br />
+:77D489CD [user32.dll]
+<br />
+:77D48A10 [user32.dll]
+<br />
+:000FB9B5 [tike.exe]
+<br />
+:000FB9E7 [tike.exe]
+<br />
+:000FBAB7 [tike.exe]
+<br />
+:001D1116 [tike.exe]
+<br />
+:7C816D4F [kernel32.dll]
+<br />
+
+<br />
+Registers:
+<br />
+EAX = 00000000  CS = 001B  EIP = 001BC190  Flags = 00010246
+<br />
+EBX = 013B006C  SS = 0023  ESP = 003DF480    EBP = 003DF48C
+<br />
+ECX = 77D4882A  DS = 0023  ESI = 00000000    FS  = 003B
+<br />
+EDX = 00000000  ES = 0023  EDI = 003DF88C    GS  = 0000
+<br />
+Code at CS:EIP
+<br />
+8B 78 08 83 EF 01 71 05 E8 D3 6E E5 FF 85 FF 7C 
+<br />
+Stack:
+<br />
+003DF88C 00000000 013B006C 003DF49C 001BBFC9 
+<br />
+003DF48C 01356ACC 00000000 00000000 00000000 
+<br />
+00000000 00000000 00000000 00000000 7C816D4F 
+<br />
+01356A05 0BB932E8 01432C0B 7C816D4F 00015D4F 
+<br />
+
+<br />
+
+<br />
+I must say this is disheartening.  I only just convinced myself to spend the money for this product, and to find it doesn&#039;t work is distressing.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=41&amp;forumpostid=127.html#ForumPost_127'>#</a></span><a style='text-decoration:none' name='ForumPost_127'></a> RE: endless Exceptions! &nbsp; <span class='date'>2006-06-11 10:58:26.280</span></th></tr><tr id='forumpost_127'><td class='nickname' width='25%'>Mr Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>It sounds like the Unicode Character Database included in Keyman Developer has become corrupted.  Delete the file unicodedata.mdb in c:\program files\tavultesoft\keyman developer (or where you installed Keyman Developer to), and restart Keyman Developer.  The file will be recreated then.
+<br />
+</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=41&amp;forumpostid=129.html#ForumPost_129'>#</a></span><a style='text-decoration:none' name='ForumPost_129'></a> RE: endless Exceptions! &nbsp; <span class='date'>2006-06-11 22:59:54.450</span></th></tr><tr id='forumpost_129'><td class='nickname' width='25%'>Ian Spackman<br /></td><td class='text' width='75%'><div class='text'>Works like a charm - many thanks.
+<br />
+
+<br />
+Sorry if I was at all rude.  I can say already that I do not regret my purchase, just from using other peoples keyboard and what I could compile manually without the wizard!</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=41&amp;forumpostid=131.html#ForumPost_131'>#</a></span><a style='text-decoration:none' name='ForumPost_131'></a> RE: endless Exceptions! &nbsp; <span class='date'>2006-06-12 10:28:35.340</span></th></tr><tr id='forumpost_131'><td class='nickname' width='25%'>Mr Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>No worries - by the way, we are more than happy for licensed users to contact us directly without writing on the forums.
+<br />
+
+<br />
+The reason we suggest looking on the forums first is that you may find a resolution to the issue you are experiencing there within minutes, without having to wait for a response from support (we aim to answer all support queries within 1 business day).
+<br />
+
+<br />
+Having just read through the support information on the website however, I can see that this is not that clearly expressed.  I&#039;ll push through an update to that page.</div></td></tr></table></p>

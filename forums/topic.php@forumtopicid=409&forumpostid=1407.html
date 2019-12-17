@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic The Code text editor problems - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=8.html'>Bugs and Features</a> &gt; <a href='topic.php@forumtopicid=409.html'>The Code text editor problems</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic The Code text editor problems</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=409&amp;forumpostid=1399.html#ForumPost_1399'>#</a></span><a style='text-decoration:none' name='ForumPost_1399'></a> The Code text editor problems &nbsp; <span class='date'>2016-02-05 21:42:04.460</span></th></tr><tr id='forumpost_1399'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>Hi,
+<br />
+
+<br />
+   The text editor in the Code windows of the Layout tab of Keyman Developer 9 is driving me potty.
+<br />
+
+<br />
+   Firstly, the cursor does not behave as other text editors that I have used. It does not snap to the end of a line. By this, I mean when the next line is shorter than the current line, the cursor stays in its current line position. I am used to the cursor jumping to the end of the shorter line. Then if the cursor is moved to a longer line, the cursor moves back to its original line position.
+<br />
+And, when the cursor is moved to the end of a line with the cursor keys, it does not wrap to the start of the next line.
+<br />
+Now I understand this may be a design decision, but I am finding it very distracting.
+<br />
+
+<br />
+   Second, and far more importantly, the redraw event is not always fired when a change is made to the text. Unfortunately, I cannot reliably reproduce the effect. It tends to happen when text is pasted. But it can happen when typing text. Sometimes the highlighted text remains highlighted after the text has been pasted. Sometimes the characters are not displayed but the cursor position has been updated. The only way this can be fixed, is to force a redraw by switch to another tab then switching back.
+<br />
+
+<br />
+   And finally, and most frustrating of all, in the Find &amp; Replace function, &#039;<span style="font-style: italic">Replace All</span>&#039; does not always replace all the text to be changed. It does work correctly if each target is done individually but not always with &#039;<span style="font-style: italic">Replace All</span>&#039;. And again, I am unable to reproduce this effect reliably, and the text where this effect occurred no longer exists.
+<br />
+
+<br />
+Regards
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=409&amp;forumpostid=1403.html#ForumPost_1403'>#</a></span><a style='text-decoration:none' name='ForumPost_1403'></a> RE: The Code text editor problems &nbsp; <span class='date'>2016-02-06 07:58:47.797</span></th></tr><tr id='forumpost_1403'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Thanks for the feedback.
+<br />
+
+<br />
+1. Yes, this is a design decision; I&#039;ll take this on board as a possible future option for the editor. It&#039;s not something we&#039;ve had feedback on before.
+<br />
+
+<br />
+2. This is a bug. I was aware of a bug in earlier builds of Keyman Developer with redraw but thought I&#039;d tracked down and addressed all the redraw issues in the text editor - just to confirm, are you using build 9.0.518.0? I will take another look if so.
+<br />
+
+<br />
+3. OK, I have not seen this one previously. I will note it to be investigated.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=409&amp;forumpostid=1407.html#ForumPost_1407'>#</a></span><a style='text-decoration:none' name='ForumPost_1407'></a> RE: The Code text editor problems &nbsp; <span class='date'>2016-02-06 09:20:32.057</span></th></tr><tr id='forumpost_1407'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>Thank you Marc.
+<br />
+
+<br />
+   I can confirm that I am using Keyman Developer 9.0.518.0.
+<br />
+
+<br />
+   I am also using Windows 10 and a bog standard Lenovo G580.
+<br />
+
+<br />
+Regards
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=409&amp;forumpostid=1452.html#ForumPost_1452'>#</a></span><a style='text-decoration:none' name='ForumPost_1452'></a> RE: The Code text editor problems &nbsp; <span class='date'>2016-02-15 04:30:44.810</span></th></tr><tr id='forumpost_1452'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>Just a comment on one of the effects that I keep stumbling over.
+<br />
+
+<br />
+   If I use the cursor left key to roll to the start of a line and go too far, the cursor moves to the end of the previous line. But the right cursor key does not move me back to the start of the original line.
+<br />
+
+<br />
+   I know I can use [Home] &amp; [End] but I have to move my hand to get to them. It is not that I am lazy, just that I am in the habit of using the cursor keys more other cursor movement keys.
+<br />
+
+<br />
+God bless.
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=409&amp;forumpostid=1459.html#ForumPost_1459'>#</a></span><a style='text-decoration:none' name='ForumPost_1459'></a> RE: The Code text editor problems &nbsp; <span class='date'>2016-02-16 06:53:24.030</span></th></tr><tr id='forumpost_1459'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Understood :)</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=409&amp;forumpostid=1492.html#ForumPost_1492'>#</a></span><a style='text-decoration:none' name='ForumPost_1492'></a> RE: The Code text editor problems &nbsp; <span class='date'>2016-02-24 18:53:12.370</span></th></tr><tr id='forumpost_1492'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>I have just released update 9.0.519.0 of Keyman Developer + Keyman Desktop, available for download from <a href="http://www.tavultesoft.com/beta." target="_blank">http://www.tavultesoft.com/beta.</a> I believe this largely resolves the redraw issues in the text editor. There are still some less critical glitches in other parts of the user interface.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=409&amp;forumpostid=1496.html#ForumPost_1496'>#</a></span><a style='text-decoration:none' name='ForumPost_1496'></a> RE: The Code text editor problems &nbsp; <span class='date'>2016-02-24 20:44:01.083</span></th></tr><tr id='forumpost_1496'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>The link for Keyman 9.0.519.0, as it appears in your post, resolves to &#039;Error 404: Page Not Found&#039;. This is because the URL in the post is; &#039;<a href="http://www.tavultesoft.com/beta.?_ga=1.7221106.1320308633.1456306397" target="_blank" class="postlink">http://www.tavultesoft.com/beta.?_ga=1.7221106.1320308633.1456306397</a>&#039;.
+<br />
+
+<br />
+However, the first part of the URL does function correctly &#039;<a href="http://www.tavultesoft.com/beta" target="_blank" class="postlink">http://www.tavultesoft.com/beta</a>&#039;.
+<br />
+
+<br />
+God bless.
+<br />
+Julian Griifin</div></td></tr></table></p>

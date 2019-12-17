@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Keyman and ViM - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=13.html'>General</a> &gt; <a href='topic.php@forumtopicid=106.html'>Keyman and ViM</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Keyman and ViM</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=106&amp;forumpostid=343.html#ForumPost_343'>#</a></span><a style='text-decoration:none' name='ForumPost_343'></a> Keyman and ViM &nbsp; <span class='date'>2007-01-23 07:54:54.077</span></th></tr><tr id='forumpost_343'><td class='nickname' width='25%'>Nikola<br /></td><td class='text' width='75%'><div class='text'>Hello,
+<br />
+
+<br />
+I have a very short question: How can I use Keyman keyboards in (G)ViM (for Windows)?
+<br />
+
+<br />
+I am wondering whether this issue is related to ViM rather than to Keyman, but ViM somehow supresses keyboard input other than its own (and probably many other applications do it that way). Is there a system-level way to tell Windows to ask Keyman first what character to proceed to the application in use?
+<br />
+
+<br />
+Thanks a lot in advance.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=106&amp;forumpostid=344.html#ForumPost_344'>#</a></span><a style='text-decoration:none' name='ForumPost_344'></a> RE: Keyman and ViM &nbsp; <span class='date'>2007-01-23 14:07:30.357</span></th></tr><tr id='forumpost_344'><td class='nickname' width='25%'>Tavultesoft<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Hi Nikola,
+<br />
+
+<br />
+The problem is that ViM, like many Opensource applications, does not use standard Windows input methods. There&#039;s no way to force Windows to fix the issue, but it should be possible to modify ViM to work correctly with Windows.
+<br />
+
+<br />
+If you want to pursue the matter, we can provide a quote for creating a patch for the ViM source code to fix the problem.
+<br />
+
+<br />
+Kind regards,
+<br />
+
+<br />
+Paul Durdin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=106&amp;forumpostid=346.html#ForumPost_346'>#</a></span><a style='text-decoration:none' name='ForumPost_346'></a> RE: Keyman and ViM &nbsp; <span class='date'>2007-01-24 00:28:04.827</span></th></tr><tr id='forumpost_346'><td class='nickname' width='25%'>Nikola<br /></td><td class='text' width='75%'><div class='text'>That&#039;s more than generous offer, thank you very much. (I actually thought that solution was much simpler.) 
+<br />
+
+<br />
+I&#039;d like to try ViM patch because Keyman-ViM would be the most powerful and perfect editing environment.
+<br />
+
+<br />
+Nikola
+<br />
+</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=106&amp;forumpostid=348.html#ForumPost_348'>#</a></span><a style='text-decoration:none' name='ForumPost_348'></a> RE: Keyman and ViM &nbsp; <span class='date'>2007-01-24 09:32:32.693</span></th></tr><tr id='forumpost_348'><td class='nickname' width='25%'>Tavultesoft<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Hi Nikola,
+<br />
+
+<br />
+At some point in the next few days we&#039;ll look into it further and prepare a quote -- we&#039;re a little short of time at the moment as we release Keyman 7.0 on the 31st!
+<br />
+
+<br />
+I&#039;ll get back to you as soon as we&#039;ve examined it a bit more closely.
+<br />
+
+<br />
+
+<br />
+Kind regards,
+<br />
+
+<br />
+Paul Durdin</div></td></tr></table></p>

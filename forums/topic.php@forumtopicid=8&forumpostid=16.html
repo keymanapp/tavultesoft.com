@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Function keys - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=7.html'>Bugs and Features</a> &gt; <a href='topic.php@forumtopicid=8.html'>Function keys</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Function keys</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=8&amp;forumpostid=14.html#ForumPost_14'>#</a></span><a style='text-decoration:none' name='ForumPost_14'></a> Function keys &nbsp; <span class='date'>2005-08-17 20:26:40.000</span></th></tr><tr id='forumpost_14'><td class='nickname' width='25%'>Mike Maxwell<br /></td><td class='text' width='75%'><div class='text'>We have an evaluation version of keyman and the developer tools (v6.2).
+<br />
+
+<br />
+I&#039;m trying to reproduce the keystrokes that one of our users is used to using with another keystroke remapper.  This user has re-mapped the control + function keys, and I can&#039;t seem to reproduce that effect in Keyman.
+<br />
+
+<br />
+The Wizard apparently doesn&#039;t support mapping of function keys, so I mapped another key (K_1) with the wizard, then edited the source code by hand.
+<br />
+
+<br />
+Specifically, I edited the line
+<br />
+  + [CTRL K_1] &amp;gt; U+1EB9 U+0300
+<br />
+to
+<br />
+  + [CTRL K_F1] &amp;gt; U+1EB9 U+0300
+<br />
+where I got &#039;[CTRL K_F1]&#039; from Tools | Virtual Key Identifier.  
+<br />
+
+<br />
+Before editing, the &amp;lt;CTRL&amp;gt;&#039;1&#039; key would give me the Unicode chars in question.  After editing, there is no change--the CTRL-1 key still gives me the Unicode chars, and the CTRL-F1 key does not.
+<br />
+
+<br />
+Does Keyman not support re-mapping (control) Function keys?</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=8&amp;forumpostid=15.html#ForumPost_15'>#</a></span><a style='text-decoration:none' name='ForumPost_15'></a> Re: Function keys &nbsp; <span class='date'>2005-08-17 21:46:21.000</span></th></tr><tr id='forumpost_15'><td class='nickname' width='25%'>mcdurdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>[quote=&quot;Mike Maxwell&quot;]Before editing, the &amp;lt;CTRL&amp;gt;&#039;1&#039; key would give me the Unicode chars in question.  After editing, there is no change--the CTRL-1 key still gives me the Unicode chars, and the CTRL-F1 key does not.
+<br />
+
+<br />
+Does Keyman not support re-mapping (control) Function keys?[/quote]
+<br />
+
+<br />
+Hi Mike,
+<br />
+
+<br />
+Although I have not seen it commonly used, Keyman does support re-mapping function keys (I just tested this to ensure that it works!)
+<br />
+
+<br />
+The fact that the Ctrl-1 gives the Unicode characters even after editing suggests to me that the keyboard needs recompiling.  You can do this by pressing F7 within the edit window (or Keyboard menu-&amp;gt;Compile Keyboard).  You can then test this by pressing F5 (debug window) or F9 (simple test window).  You can install the newly compiled keyboard into Keyman by pressing Ctrl+F9.
+<br />
+
+<br />
+Kind regards,
+<br />
+
+<br />
+Marc Durdin
+<br />
+Tavultesoft Pty Ltd</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=8&amp;forumpostid=16.html#ForumPost_16'>#</a></span><a style='text-decoration:none' name='ForumPost_16'></a>   &nbsp; <span class='date'>2005-08-18 14:02:12.000</span></th></tr><tr id='forumpost_16'><td class='nickname' width='25%'>Anonymous<br /></td><td class='text' width='75%'><div class='text'>I was re-compiling, but somehow Toolbox did not seem to be recognizing the new keyboard.  I shut down Toolbox, re-re-compiled, and then started up TB again, and now it works.  Odd...guess I&#039;ll have to look at the steps for Keyman in the Toolbox Help.
+<br />
+
+<br />
+Another oddity: Each time I start a new app (like Notepad), Keyman seems to revert to &quot;no keyboard.&quot;  Maybe this has to do with the fact that not all apps accept Unicode.  (Notepad does accept Unicode in WinXP; I can&#039;t recall whether it does in Win2k.)  I&#039;m not sure whether this user will want to use his Keyman keyboard in apps other than Toolbox, so maybe this is irrelevant.
+<br />
+
+<br />
+Anyway, it looks like it will work fine.  I&#039;ll have our people pay you today :-), so we can register this.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=8&amp;forumpostid=17.html#ForumPost_17'>#</a></span><a style='text-decoration:none' name='ForumPost_17'></a> Re: &nbsp; <span class='date'>2005-08-18 22:00:42.000</span></th></tr><tr id='forumpost_17'><td class='nickname' width='25%'>mcdurdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>[quote=&quot;Anonymous&quot;]Another oddity: Each time I start a new app (like Notepad), Keyman seems to revert to &quot;no keyboard.&quot;  Maybe this has to do with the fact that not all apps accept Unicode.  (Notepad does accept Unicode in WinXP; I can&#039;t recall whether it does in Win2k.)[/quote]
+<br />
+
+<br />
+Keyman remembers the selected keyboard per application (which is also what Windows does).  You can select a default keyboard with Keyman by associating it with your default Windows language.  Information on how to do this is available in the Keyman help file, under topic <span style="font-weight: bold">Installing a Keyboard</span>, section <span style="font-weight: bold">Using Keyman keyboards in place of Windows keyboards</span>.
+<br />
+
+<br />
+[quote=&quot;Anonymous&quot;]Anyway, it looks like it will work fine.  I&#039;ll have our people pay you today :-), so we can register this.[/quote]
+<br />
+
+<br />
+Thank you!
+<br />
+
+<br />
+Kind Regards,
+<br />
+
+<br />
+Marc Durdin
+<br />
+Tavultesoft Pty Ltd</div></td></tr></table></p>

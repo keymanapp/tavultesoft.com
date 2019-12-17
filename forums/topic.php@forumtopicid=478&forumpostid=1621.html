@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Creating an Installer - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=11.html'>Install and Uninstall</a> &gt; <a href='topic.php@forumtopicid=478.html'>Creating an Installer</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Creating an Installer</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=478&amp;forumpostid=1617.html#ForumPost_1617'>#</a></span><a style='text-decoration:none' name='ForumPost_1617'></a> Creating an Installer &nbsp; <span class='date'>2016-12-16 20:11:41.053</span></th></tr><tr id='forumpost_1617'><td class='nickname' width='25%'>John Stephen Mangam<br /></td><td class='text' width='75%'><div class='text'>Hey,
+<br />
+
+<br />
+Good-day!
+<br />
+
+<br />
+I have a query with regard to creating an installer for the keyboard layout.
+<br />
+
+<br />
+After completing my source and compilation step, I went into Keyboard&gt;Package for Distribution. 
+<br />
+1. Saved file
+<br />
+2. Compiled Package successfully
+<br />
+3. For Compile Installer, I get the error: Package.kps: Fatal: The installer could not be built because the MSI file was missing.
+<br />
+
+<br />
+Please help!
+<br />
+
+<br />
+Thanks and regards,
+<br />
+John</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=478&amp;forumpostid=1619.html#ForumPost_1619'>#</a></span><a style='text-decoration:none' name='ForumPost_1619'></a> RE: Creating an Installer &nbsp; <span class='date'>2017-01-03 13:10:59.293</span></th></tr><tr id='forumpost_1619'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>In order to create an installer which bundles Keyman Desktop, you&#039;ll need to find the keymandesktop90.msi file. This is included in the Keyman Desktop 9 installer downloadable from <a href="http://keyman.com/" target="_blank">http://keyman.com/</a>
+<br />
+
+<br />
+Once you have downloaded it, you&#039;ll need to run the installer with command line parameter -x, for example:
+<br />
+  keymandesktop-9.0.508.0.exe -x c:\temp
+<br />
+Where c:\temp should be replaced with the path you want to extract the installer files to. Once you have run this command, you will find the .msi file in that folder, which you can then select in the Package Editor next to the Compile Installer button.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=478&amp;forumpostid=1621.html#ForumPost_1621'>#</a></span><a style='text-decoration:none' name='ForumPost_1621'></a> RE: Creating an Installer &nbsp; <span class='date'>2017-01-03 22:43:55.140</span></th></tr><tr id='forumpost_1621'><td class='nickname' width='25%'>John Stephen Mangam<br /></td><td class='text' width='75%'><div class='text'>Hi Marc,
+<br />
+
+<br />
+Thank you very much for the kind response.
+<br />
+
+<br />
+Warm regards,
+<br />
+John</div></td></tr></table></p>

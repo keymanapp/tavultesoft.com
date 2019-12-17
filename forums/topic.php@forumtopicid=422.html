@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic IPAMenu.kmn - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=8.html'>Bugs and Features</a> &gt; <a href='topic.php@forumtopicid=422.html'>IPAMenu.kmn</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic IPAMenu.kmn</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=422&amp;forumpostid=1446.html#ForumPost_1446'>#</a></span><a style='text-decoration:none' name='ForumPost_1446'></a> IPAMenu.kmn &nbsp; <span class='date'>2016-02-13 09:11:10.390</span></th></tr><tr id='forumpost_1446'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>Hi,
+<br />
+
+<br />
+   Looking through the documentation I thought I would explore the IPAmenu example. Things went well and I started to transfer my keyboard under development to a menu system for complex characters. But I found that if I used the [Backspace] key to remove a menu, it also deleted the character to the left of the menu. Looking at the code, I found the line <table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">+ &#91;K_BKSP&#93; &gt; nul c delete menu</td>
+	</tr>
+</table>
+
+<br />
+   Which I assume should absorb the [K_BKSP] key, which it does.
+<br />
+
+<br />
+   But these lines are commented-out in the “ipamenu”.kmn version on you website:
+<br />
+<a href="http://help.keyman.com/developer/9.0/guides/develop/advanced-keyboard-development-example" target="_blank" class="postlink">http://help.keyman.com/developer/9.0/guides/develop/advanced-keyboard-development-example</a>
+<br />
+
+<br />
+   Is the website wrong or is it not needed to convert the [K_BKSP] to Null?
+<br />
+
+<br />
+Regards
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=422&amp;forumpostid=1447.html#ForumPost_1447'>#</a></span><a style='text-decoration:none' name='ForumPost_1447'></a> RE: IPAMenu.kmn &nbsp; <span class='date'>2016-02-13 09:48:20.343</span></th></tr><tr id='forumpost_1447'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Yes, I&#039;m not sure why those lines are commented out in the example; we&#039;ll address that.
+<br />
+
+<br />
+I also do not know why, without more information, why the backspace key would be deleting a character to the left of the menu: can you tell me which app you are seeing this happen with, and a bit more detail about the keyboard?</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=422&amp;forumpostid=1449.html#ForumPost_1449'>#</a></span><a style='text-decoration:none' name='ForumPost_1449'></a> RE: IPAMenu.kmn &nbsp; <span class='date'>2016-02-14 02:14:24.930</span></th></tr><tr id='forumpost_1449'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>The effect is happening in Keyman Developer 9 ‘Test Keyboard’.
+<br />
+
+<br />
+   I simplified my discovery of the commented-out code. But I had already been exploring IPAMenu.kmn in Samples and had edited it. So to get back to the original I copied the code from the Keyman webpage. This is when I found the problem. But only when I started testing longer strings with text to the left of a menu.
+<br />
+
+<br />
+   So, if I have understood correctly, the [Backspace] was only deleting the character to the left because the key itself was being action. This is the reason for the “&gt; nul” line.
+<br />
+
+<br />
+   Sorry my first post was not clear; I was trying to keep it brief. Something I have a problem with, be brief that is.
+<br />
+
+<br />
+God bless.
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=422&amp;forumpostid=1456.html#ForumPost_1456'>#</a></span><a style='text-decoration:none' name='ForumPost_1456'></a> RE: IPAMenu.kmn &nbsp; <span class='date'>2016-02-16 06:42:09.013</span></th></tr><tr id='forumpost_1456'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>I&#039;m not able to reproduce this issue here; are you using the exact code from the tutorial (but with those commented out lines restored), and can you give me a sequence to type that shows the issue?</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=422&amp;forumpostid=1464.html#ForumPost_1464'>#</a></span><a style='text-decoration:none' name='ForumPost_1464'></a> RE: IPAMenu.kmn &nbsp; <span class='date'>2016-02-17 06:48:59.620</span></th></tr><tr id='forumpost_1464'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'><span style="text-decoration: underline">I&#039;m still having trouble being brief, sorry.</span>
+<br />
+
+<br />
+   The effect only happens if the:<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">   + &#91;K_BKSP&#93; &gt; nul c delete menu</td>
+	</tr>
+</table>
+   line is commented out. And this only happens when the code is copied from the website.
+<br />
+
+<br />
+   If the code is:<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">   + &#91;K_BKSP&#93; &gt; nul c delete menu</td>
+	</tr>
+</table>
+    there is no issue.
+<br />
+
+<br />
+   There is no issue to be corrected. Rereading my posts, I think I was not very clear. Sorry
+<br />
+
+<br />
+   I am forever having to relearn the wisdom that, more words do not necessarily mean greater clarity.
+<br />
+
+<br />
+   There is a great book on the subject of brevity, call ‘<span style="font-style: italic">Be Brief</span>’. Well I say book, in reality it is a single sheet of paper with two words on it. The words being ‘<span style="text-decoration: underline">Be Brief</span>’.
+<br />
+
+<br />
+God bless.
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=422&amp;forumpostid=1466.html#ForumPost_1466'>#</a></span><a style='text-decoration:none' name='ForumPost_1466'></a> RE: IPAMenu.kmn &nbsp; <span class='date'>2016-02-19 17:21:50.707</span></th></tr><tr id='forumpost_1466'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>No problems - glad you&#039;ve got it sorted :)</div></td></tr></table></p>

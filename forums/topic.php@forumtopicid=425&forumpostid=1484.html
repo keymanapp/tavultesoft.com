@@ -1,0 +1,474 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Applying a Rule twice - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=14.html'>General</a> &gt; <a href='topic.php@forumtopicid=425.html'>Applying a Rule twice</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Applying a Rule twice</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=425&amp;forumpostid=1451.html#ForumPost_1451'>#</a></span><a style='text-decoration:none' name='ForumPost_1451'></a> Applying a Rule twice &nbsp; <span class='date'>2016-02-14 08:39:23.653</span></th></tr><tr id='forumpost_1451'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>I’m asking for help with a complex problem in relation to &#039;Menus&#039; as defined in the IPAMenu.kmn example.
+<br />
+
+<br />
+   What I am seeking to do is have a Rule something like:
+<br />
+<span style="font-weight: bold">Any</span>(Latin Letter) &#039;=&#039; [<span style="font-style: italic">Specific Latin Letter</span>] &gt; <span style="font-weight: bold">Context</span>(1) <span style="font-weight: bold">Index</span>(StrickOuts,1) 
+<br />
+                                                          <span style="font-weight: bold">Index</span>(Sup_[<span style="font-style: italic">the Specific Latin Letter</span>],1)
+<br />
+This Rule is then repeated for each <span style="font-style: italic">Specific Latin Letter</span> ie <span style="font-style: italic">a-z, A-Z</span>.
+<br />
+Now this is simple enough; I have made it work in an early version of the keyboard.
+<br />
+
+<br />
+   For some [<span style="font-style: italic">Specific Latin Letters</span>]{<span style="text-decoration: underline">but not all</span>} I want to display a menu, eg |<span style="text-decoration: underline">1a 2A 3á 4Á</span>|. I have made this work from the very helpful IPAMenu.kmn example.
+<br />
+
+<br />
+   Now I need to join the two ideas together.
+<br />
+So, for example, if a user types, [<span style="font-weight: bold">e</span>][<span style="font-weight: bold">=</span>][<span style="font-weight: bold">a</span>] Keyman should respond with:
+<br />
+<span style="font-weight: bold">e=|1a 2A 3á 4Á|</span>. On selecting an option number, the menu is deleted and the appropriate symbol replaces the menu. eg If <span style="font-weight: bold">3</span> is selected, Keyman gives <span style="font-weight: bold">e=á</span>. Which I have also got to work nicely.
+<br />
+
+<br />
+   However; <span style="font-style: italic">and here’s the rub</span>, I can see no way to apply the original Rule to this output. I now need a way to fire the original Rule:
+<br />
+<span style="font-weight: bold">Any</span>(Latin Letter) &#039;=&#039; [<span style="font-style: italic">Specific Latin Letter</span>] &gt; <span style="font-weight: bold">Context</span>(1) <span style="font-weight: bold">Index</span>(StrickOuts,1)
+<br />
+                                    `                         <span style="font-weight: bold">Index</span>(Sup_<span style="font-weight: bold">á</span>,1)
+<br />
+on the output text <span style="font-weight: bold">e=á</span>.
+<br />
+
+<br />
+That is to say, something like:
+<br />
+     &#039;<span style="font-weight: bold">e</span>&#039; &#039;<span style="font-weight: bold">=</span>&#039; + &#039;<span style="font-weight: bold">á</span>&#039; &gt; <span style="font-weight: bold">Context</span>(1) <span style="font-weight: bold">Index</span>(StrickOuts,1) <span style="font-weight: bold">Index</span>(Sup_á,1)
+<br />
+
+<br />
+   My understanding is that Keyman only fires a Rule at a user’s input. So, I think I need, to not end after the menu option selection. Then a way to store the user entered Context eg &#039;<span style="font-weight: bold">e</span>&#039; and to store the output from the menu option selection eg &#039;<span style="font-weight: bold">á</span>&#039;.
+<br />
+
+<br />
+   Giving a syntax of something like:
+<br />
+<span style="font-style: italic">Original Entry </span>+ <span style="font-weight: bold">á</span> &gt; <span style="font-style: italic">Original Entry</span> <span style="font-weight: bold">Index</span>(StrickOuts,<span style="font-style: italic">Original Entry</span>) Index(Sup_<span style="font-weight: bold">á</span>,1)
+<br />
+
+<br />
+   Resulting in a Latin Letter followed by two Unicode symbols.
+<br />
+
+<br />
+   It is the use of a menu to select some of the trigger letters for Rules, that I cannot see how to resolve.
+<br />
+
+<br />
+   But I feel it should be possible.
+<br />
+
+<br />
+   Any thoughts would be greatly appreciated
+<br />
+
+<br />
+Regards
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=425&amp;forumpostid=1458.html#ForumPost_1458'>#</a></span><a style='text-decoration:none' name='ForumPost_1458'></a> RE: Applying a Rule twice &nbsp; <span class='date'>2016-02-16 06:52:57.837</span></th></tr><tr id='forumpost_1458'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Yes, this can be done, using multiple groups, with a context-only group. For example:
+<br />
+
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">outs&#40;a_menu&#41; + &#039;3&#039; &gt; &#039;á&#039; use&#40;pm&#41;
+<br />
+.
+<br />
+.
+<br />
+.
+<br />
+group&#40;pm&#41; 
+<br />
+
+<br />
+any&#40;latin_letter&#41; &#039;=á&#039; &gt; Context&#40;1&#41; Index&#40;StrickOuts,1&#41; Index&#40;Sup_á,1&#41; </td>
+	</tr>
+</table>
+
+<br />
+
+<br />
+Note that <span style="font-weight: bold">group(pm)</span> does not have a <span style="font-weight: bold">using keys</span> clause, so this shows it is working only on the context. The context is updated by the previous rule before entering the group, so this should do exactly what you are asking.
+<br />
+
+<br />
+With a bit of planning, you can do all your processing just once in that second group.
+<br />
+
+<br />
+You can learn more about multiple groups at <a href="http://help.keyman.com/developer/language/guide/groups" target="_blank">http://help.keyman.com/developer/language/guide/groups</a></div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=425&amp;forumpostid=1465.html#ForumPost_1465'>#</a></span><a style='text-decoration:none' name='ForumPost_1465'></a> RE: Applying a Rule twice &nbsp; <span class='date'>2016-02-19 00:48:44.363</span></th></tr><tr id='forumpost_1465'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>Thank you for your clear response.
+<br />
+
+<br />
+   But I having trouble getting the Context into the new Group.
+<br />
+
+<br />
+   The snippet below, I hope, shows my problem.
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">group&#40;a_Menu&#41; using keys c Resolve menu to a character.
+<br />
+   + any&#40;choices3&#41; &gt; index&#40;a_char, 2&#41; Use&#40;Collapes&#41;
+<br />
+
+<br />
+Group&#40;Collapse&#41;
+<br />
+   Store&#40;First&#41;&nbsp; &#039;a&#039;
+<br />
+   Store&#40;Second&#41; &#039;=&#039;
+<br />
+   Any&#40;First&#41; Any&#40;Second&#41; U+F002 &gt; Context&#40;1&#41; Index&#40;Strickout,1&#41; Index&#40;Sup_A-,1&#41;
+<br />
+   Any&#40;First&#41; Any&#40;Second&#41; U+F003 &gt; Context&#40;1&#41; Index&#40;Strickout,1&#41; Index&#40;Sup_ar,1&#41;
+<br />
+   Any&#40;First&#41; Any&#40;Second&#41; U+F004 &gt; Context&#40;1&#41; Index&#40;Strickout,1&#41; Index&#40;Sup_b,1&#41;</td>
+	</tr>
+</table>
+
+<br />
+
+<br />
+So in use:
+<br />
+   Entering &#039;<span style="font-weight: bold">a=a</span>&#039; outputs &#039;<span style="font-weight: bold">a=[a1 A2 á3 Á4]</span>&#039;
+<br />
+   Entering &#039;<span style="font-weight: bold">3</span>&#039;, {Goes to &#039;<span style="font-weight: bold">Group(a-menu)</span>&#039;, this resolves to} &#039;<span style="font-weight: bold">a=á</span>&#039;
+<br />
+   Then the &#039;<span style="font-weight: bold">Group(Collapse)</span>&#039; takes &#039;<span style="font-weight: bold">a=á</span>&#039; and outputs ‘<span style="font-weight: bold">a U+E061 U+F402</span>’ {without the spaces}
+<br />
+
+<br />
+   The &#039;<span style="font-weight: bold">a</span>&#039; is the model for the two unicodes: &#039;<span style="font-weight: bold">U+E061</span>&#039; &amp; &#039;<span style="font-weight: bold">U+F402</span>&#039;. A different &#039;<span style="font-weight: bold">a</span>&#039; and &#039;<span style="font-weight: bold">á</span>&#039; eg &#039;<span style="font-weight: bold">b</span>&#039; &amp; &#039;<span style="font-weight: bold">s</span>&#039;, gives different Unicodes.
+<br />
+   The &#039;<span style="font-weight: bold">=</span>&#039; is the identifier that &#039;<span style="font-weight: bold">U+E061</span>&#039; &amp; &#039;<span style="font-weight: bold">U+F402</span>&#039;, and &#039;<span style="font-weight: bold">a</span>&#039; and &#039;<span style="font-weight: bold">á</span> &#039;need to be resolved to ‘<span style="font-weight: bold">a U+E061 U+F402</span>’, so is dropped from the output.
+<br />
+
+<br />
+   Ok, this all works as expected. My problem is with the two Stores &#039;<span style="font-style: italic">First</span>&#039; &amp; ‘<span style="font-style: italic">Second</span>&#039;. It only works for me if &#039;<span style="font-style: italic">First</span>&#039; &amp; ‘<span style="font-style: italic">Second</span>&#039; are <span style="text-decoration: underline">constants</span>.
+<br />
+
+<br />
+   So to my question, How do I get the Context {which should be &#039;<span style="font-weight: bold">a=á</span>&#039;} into the <span style="font-weight: bold">Group(Collapse)</span>?
+<br />
+
+<br />
+   Something like:<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">group&#40;a_Menu&#41; using keys
+<br />
++ any&#40;choices3&#41; &gt; index&#40;a_char, 2&#41; Set&#40;First = Context&#40;1&#41;&#41; Set&#40;Second = Context&#40;2&#41;&#41; Use&#40;Collapse&#41;</td>
+	</tr>
+</table>
+
+<br />
+But this is not valid syntax.
+<br />
+
+<br />
+Regards
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=425&amp;forumpostid=1468.html#ForumPost_1468'>#</a></span><a style='text-decoration:none' name='ForumPost_1468'></a> RE: Applying a Rule twice &nbsp; <span class='date'>2016-02-19 17:29:20.337</span></th></tr><tr id='forumpost_1468'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>I&#039;m not entirely sure what you are getting at, sorry. You shouldn&#039;t need to pass context to the second group by hand as you are describing. Can you give me a little more detail on the stores that you are referencing (e.g. I don&#039;t know what a_char has in it) -- I assume the First and Second stores have more than just a single character in them?</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=425&amp;forumpostid=1469.html#ForumPost_1469'>#</a></span><a style='text-decoration:none' name='ForumPost_1469'></a> RE: Applying a Rule twice &nbsp; <span class='date'>2016-02-20 01:38:10.540</span></th></tr><tr id='forumpost_1469'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>I can understand your confusion; the keyboard definition is now quite complex, with some 600 lines, more than 150 Store statements, and more than 200 Rules. It also makes extensive use of the Private Use Area of Unicode.
+<br />
+
+<br />
+   Below are a number of snippets of code that I hope will better explain what I was waffling about in my post.
+<br />
+
+<br />
+   I have also placed the complete &#039;TPA Keyboard&#039; definition, and the font the keyboard is designed to work with, in a public folder on my OneDrive. There is also a couple of images of the input: &#039;a=a&#039;, and the output: a^a.
+<br />
+
+<br />
+   The public link to TPA on my OneDrive is: <a href="http://1drv.ms/1PsCtnU" target="_blank" class="postlink">http://1drv.ms/1PsCtnU</a>
+<br />
+You are welcome to download the font (<span style="font-style: italic">and use as you will</span>) and the keyboard definition.
+<br />
+
+<br />
+The functionality I am having trouble with is, in brief:
+<br />
+  • Three glyphs are typed or selected from a menu, are then converted to three other glyphs.
+<br />
+
+<br />
+      o The first glyph is any Latin letter,
+<br />
+      o The second glyph is the equal&#039;s symbol &#039;=&#039;, and
+<br />
+      o The third glyph is either a Latin letter or a glyph selected from a menu.
+<br />
+
+<br />
+      o The ‘Collapse’ group&#039;s purpose is to collapse these three glyphs to a different set of three glyphs;
+<br />
+         • The first of these new glyphs is the same as the first glyph of the input string,
+<br />
+         • The second glyph is a zero width glyph that is selected from a set of glyphs {Store(Strickout)} to match the First glyph,
+<br />
+         • The third glyph is also a zero width glyph that is selected from a list of superscript glyphs {Store(Sup_A-)} to match the First glyph.
+<br />
+
+<br />
+NB the only Rule/Group currently coded for this functionality are for the input
+<br />
+string:      ‘a=a’ giving: <a href="http://1drv.ms/1Uc3H2n" target="_blank" class="postlink">http://1drv.ms/1Uc3H2n</a>
+<br />
+followed by: ‘2’   giving: <a href="http://1drv.ms/1Uc2rMF" target="_blank" class="postlink">http://1drv.ms/1Uc2rMF</a>.
+<br />
+
+<br />
+   Below is the Group for handling the &#039;A&#039; menu.
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">Group&#40;a_Menu&#41; using keys
+<br />
+   if&#40;GlueFlag = &#039;No&#039; &#41; + Any&#40;Choices3&#41; &gt; Index&#40;a_Char, 2&#41; Use&#40;Collapse&#41;
+<br />
+   if&#40;GlueFlag = &#039;Yes&#039;&#41; + Any&#40;Choices3&#41; &gt; Index&#40;a_Char, 2&#41; $TPAglue
+<br />
+   + &#91;K_BKSP&#93;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&gt; nul
+<br />
+   Nomatch&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &gt; dk&#40;a_err&#41; use&#40;MenuErrHandler&#41;</td>
+	</tr>
+</table>
+
+<br />
+   Below is the Collapse group. Only the first three lines of which are valid. This other lines will be added when the functionality is sorted out.
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">Group&#40;Collapse&#41;
+<br />
+   Store&#40;First&#41;&nbsp; &#039;a&#039;
+<br />
+   Any&#40;First&#41; &#039;=&#039; U+F002 &gt; Context&#40;1&#41; Index&#40;Strickout,1&#41; Index&#40;Sup_A-,1&#41;
+<br />
+c More lines like the one above are added here eg
+<br />
+c Any&#40;First&#41; &#039;=&#039; U+F001 &gt; Context&#40;1&#41; Index&#40;Strickout,1&#41; Index&#40;Sup_a,1&#41;
+<br />
+c Any&#40;First&#41; &#039;=&#039; U+F003 &gt; Context&#40;1&#41; Index&#40;Strickout,1&#41; Index&#40;Sup_er,1&#41;
+<br />
+c Any&#40;First&#41; &#039;=&#039; U+F004 &gt; Context&#40;1&#41; Index&#40;Strickout,1&#41; Index&#40;Sup_b,1&#41;
+<br />
+c .&nbsp; &nbsp;&#58;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#58;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#58;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#58;
+<br />
+c Any&#40;First&#41; &#039;=&#039; U+F046 &gt; Context&#40;1&#41; Index&#40;Strickout,1&#41; Index&#40;Sup_z,1&#41;</td>
+	</tr>
+</table>
+NB the Store(First) really is only one character because Index() needs to match with an Any(). 
+<br />
+(First) is the context that I cannot find in the Collapse group.
+<br />
+
+<br />
+   Bellow is a list of Stores used in the code above.
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">
+<br />
+c Builds the &#039;A&#039; menu as it is to be displayed. 
+<br />
+Store&#40;a_Menu&#41; $LeftMenu U+202F U+F001 $Opn1 U+00A0 U+F002 $Opn2 U+00A0 U+F003 $Opn3 U+202F $RightMenu
+<br />
+
+<br />
+c Output glyphs for &#039;a&#039; type graphemes.
+<br />
+Store&#40;a_Char&#41; U+F001 U+F002 U+F003
+<br />
+
+<br />
+c The number of options on a menu.
+<br />
+Store&#40;Choices3&#41; &#039;123&#039;
+<br />
+
+<br />
+c Subscript numbers used on the menu.
+<br />
+Store&#40;Opn1&#41; U+2081
+<br />
+Store&#40;Opn2&#41; U+2082
+<br />
+Store&#40;Opn3&#41; U+2083
+<br />
+
+<br />
+c The glyph placed between each TPA grapheme.
+<br />
+Store&#40;TPAglue&#41; U+E010
+<br />
+
+<br />
+c The glyphs for &#039;A&#039; superscripts over Latin letters a-z &amp; A-Z
+<br />
+Store&#40;Sup_A-&#41; U+F402 U+F402 U+F302 U+F402 U+F402 U+F102 U+F502 U+F502 U+F202 U+F102 U+F302 U+F202 U+F802 U+F502 U+F402 U+F402 U+F402 U+F202 U+F302 U+F302 U+F402 U+F302 U+F502 U+F302 U+F302 U+F302 U+F602 U+F602 U+F502 U+F702 U+F402 U+F402 U+F602 U+F702 U+F202 U+F202 U+F602 U+F402 U+F802 U+F702 U+F702 U+F502 U+F702 U+F602 U+F402 U+F402 U+F702 U+F602 U+F802 U+F502 U+F502 U+F502
+<br />
+
+<br />
+c The glyphs for Stricking out Latin letters a-z &amp; A-Z
+<br />
+Store&#40;Strickout&#41; U+E061 U+E062 U+E063 U+E064 U+E065 U+E066 U+E067 U+E068 U+E069 U+E06A U+E06B U+E06C U+E06D U+E06E U+E06F U+E070 U+E071 U+E072 U+E073 U+E074 U+E075 U+E076 U+E077 U+E078 U+E079 U+E07A U+E041 U+E042 U+E043 U+E044 U+E045 U+E046 U+E047 U+E048 U+E049 U+E04A U+E04B U+E04C U+E04D U+E04E U+E04F U+E050 U+E051 U+E052 U+E053 U+E054 U+E055 U+E056 U+E057 U+E058 U+E059 U+E05A</td>
+	</tr>
+</table>
+
+<br />
+   All this works well up to the Collapse group It is the final resolution defined in the Collapse group that I am having trouble with. Indeed lines 220 to 280 of the complete keyboard definition cause a collapse to occur, but with the pressing [K_ENTER] key. This code would be deleted if the functionality outlined above can be achieved.
+<br />
+
+<br />
+Regards
+<br />
+Julian</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=425&amp;forumpostid=1481.html#ForumPost_1481'>#</a></span><a style='text-decoration:none' name='ForumPost_1481'></a> RE: Applying a Rule twice &nbsp; <span class='date'>2016-02-22 20:21:07.797</span></th></tr><tr id='forumpost_1481'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>I&#039;ve downloaded your keyboard and had a look - it&#039;s pretty impressive. I&#039;m still not entirely sure what you are trying to achieve with the Collapse group that you haven&#039;t already achieved, though?
+<br />
+
+<br />
+Is it more than this change below?
+<br />
+
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">Group&#40;Collapse&#41;
+<br />
+Any&#40;LatinLetter&#41; &#039;=&#039; U+F002 &gt; Context&#40;1&#41; Index&#40;Strickout,1&#41; Index&#40;Sup_A-,1&#41;</td>
+	</tr>
+</table>
+
+<br />
+</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=425&amp;forumpostid=1484.html#ForumPost_1484'>#</a></span><a style='text-decoration:none' name='ForumPost_1484'></a> RE: Applying a Rule twice &nbsp; <span class='date'>2016-02-23 06:54:00.567</span></th></tr><tr id='forumpost_1484'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>I am forever amazed at how I manage to miss the blatantly obvious.
+<br />
+
+<br />
+   As soon as I saw suggestion, I knew it was exactly what I needed.
+<br />
+
+<br />
+   I have been examining my thinking on this matter. I was thinking of a Group as if it were the same as a Function in other languages.
+<br />
+
+<br />
+   By the time I was calling <span style="font-weight: bold">Group</span>(<span style="font-style: italic">Collapse</span>) I knew exactly what the <span style="font-weight: bold">Context</span> was, so I felt I needed to pass it to <span style="font-weight: bold">Group</span>(<span style="font-style: italic">Collapse</span>) as parameters. But the Keyman Language does not work that way, it works on the <span style="font-weight: bold">Context</span> of what has been &#039;<span style="text-decoration: underline">Typed</span>&#039; / &#039;<span style="text-decoration: underline">Is on screen</span>&#039;, so does not need parameters forwarded to it.
+<br />
+
+<br />
+   So once again, thank you for your help and patience. Hopefully this will give me a better grasp of the Keyman Language. A language that has very few commands, but these commands are very powerful and subtle.
+<br />
+
+<br />
+Thank you.
+<br />
+God bless.
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=425&amp;forumpostid=1485.html#ForumPost_1485'>#</a></span><a style='text-decoration:none' name='ForumPost_1485'></a> RE: Applying a Rule twice &nbsp; <span class='date'>2016-02-24 08:08:35.363</span></th></tr><tr id='forumpost_1485'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Great! Glad I was able to help :)</div></td></tr></table></p>

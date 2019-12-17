@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic AltGr - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=8.html'>Bugs and Features</a> &gt; <a href='topic.php@forumtopicid=413.html'>AltGr</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic AltGr</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=413&amp;forumpostid=1414.html#ForumPost_1414'>#</a></span><a style='text-decoration:none' name='ForumPost_1414'></a> AltGr &nbsp; <span class='date'>2016-02-08 05:13:04.760</span></th></tr><tr id='forumpost_1414'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>As noted in another post the &#039;<span style="font-weight: bold">Alt</span>&#039; key does not function in the test mode, but does work when the keyboard definition is installed.
+<br />
+
+<br />
+   However, the &#039;<span style="font-weight: bold">AltGr</span>&#039; key does not function in either in Test or Install. Is this related to the &#039;<span style="font-weight: bold">Alt</span>&#039; problem? If not, how do I turn it on?
+<br />
+
+<br />
+   I tried distinguishing between the Left/Right of the &#039;<span style="font-weight: bold">Alt</span>&#039; &amp; &#039;<span style="font-weight: bold">Ctrl</span>&#039; keys, but to no effect.
+<br />
+
+<br />
+Regards
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=413&amp;forumpostid=1420.html#ForumPost_1420'>#</a></span><a style='text-decoration:none' name='ForumPost_1420'></a> RE: AltGr &nbsp; <span class='date'>2016-02-09 06:17:23.267</span></th></tr><tr id='forumpost_1420'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>HI.
+<br />
+
+<br />
+   I now see my misunderstanding re: “distinguishing between the Left/Right of the &#039;Alt&#039; &amp; &#039;Ctrl&#039; keys”.
+<br />
+
+<br />
+   I had thought it was a flag that changed how the Keyman Engine functioned. I now see that it is the name of the virtual keys that are effected by this flag.
+<br />
+
+<br />
+   So I started to explore different combination of left &amp; right, Ctrl &amp; Alt keys. I found that there are four possible distinct combinations (at least of my system):
+<br />
+
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none'  class="bb_quote">Left CTRL + Left ALT
+<br />
+Left CTRL + Right ALT
+<br />
+Right CTRL + Left ALT
+<br />
+Right CTRL + Right ALT
+<br />
+</td>
+	</tr>
+</table>
+<br />
+   As far as I can see, each of the above combinations produces distinct Contexts. But I feel it would be confusing if each of the combinations was mapped to different outputs. Which would mean creating each AltGr Rule four times to cover the four possible combinations.
+<br />
+
+<br />
+   So to my question, is there a way to use the Any() command so that all four combinations produce the same output?
+<br />
+
+<br />
+Regards
+<br />
+Julian  Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=413&amp;forumpostid=1422.html#ForumPost_1422'>#</a></span><a style='text-decoration:none' name='ForumPost_1422'></a> RE: AltGr &nbsp; <span class='date'>2016-02-09 06:26:46.680</span></th></tr><tr id='forumpost_1422'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>I&#039;m glad you were able resolve the issue of AltGr with your keyboard.
+<br />
+
+<br />
+If you want to cover all four of those options, then it&#039;s best to use the generic [CTRL ALT K_xxx] approach rather than using left or right ctrl/alt keys.
+<br />
+
+<br />
+It gets a little murky, however, as Windows treats the AltGr key as generating a Left Ctrl + Right Alt internally. This is then mapped differently than Left Ctrl + Left Alt, or Right Ctrl + Right Alt (there is usually no special attention paid to Right Ctrl + Left Alt). The Left Ctrl + Left Alt combination is typically reserved for command shortcuts; the AltGr (or Left Ctrl + Right Alt) is used for characters.
+<br />
+
+<br />
+In Keyman, the approach we recommend is to use just + [RALT K_xxx] for rules, as this then does not block the use of Ctrl+Alt for commands, and then allow the user to select the option in Keyman Configuration titled &quot;Simulate AltGr with Ctrl+Alt&quot; if they do want to use Ctrl+Alt instead of AltGr.</div></td></tr></table></p>

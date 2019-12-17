@@ -1,0 +1,518 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Inhibiting lots of keys. - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=8.html'>Bugs and Features</a> &gt; <a href='topic.php@forumtopicid=439.html'>Inhibiting lots of keys.</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Inhibiting lots of keys.</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=439&amp;forumpostid=1506.html#ForumPost_1506'>#</a></span><a style='text-decoration:none' name='ForumPost_1506'></a> Inhibiting lots of keys. &nbsp; <span class='date'>2016-02-28 11:31:25.997</span></th></tr><tr id='forumpost_1506'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'><table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">Store&#40;&amp;MnemonicLayout&#41;&nbsp; &nbsp;&#039;1&#039; c Make keyboard independent of user&#039;s keyboard layout.
+<br />
+
+<br />
+Begin Unicode &gt; Use&#40;GiM&#41;
+<br />
+
+<br />
+Group&#40;GiM&#41; Using Keys
+<br />
+
+<br />
+c Initiate TPA Grapheme Input mode. If, and only if, at the beginning of a line.
+<br />
+&nbsp; &nbsp;nul + $GrahemeKey &gt; $TPAcursor Set&#40;TPAgraphemeInputFlag=&#039;Yes&#039;&#41;
+<br />
+
+<br />
+c Close the TPA Grapheme Input mode.
+<br />
+c Clean up the text; delete the TPA Glue &amp; TPA Cursor and reset the grapheme input flag.
+<br />
+&nbsp; &nbsp;$TPAcursor + &#91;K_UP&#93;&nbsp; &nbsp; &gt; &#91;K_BKSP&#93; &#91;K_UP&#93;&nbsp; &nbsp; Set&#40;TPAgraphemeInputFlag=&#039;No&#039;&#41;
+<br />
+&nbsp; &nbsp;$TPAcursor + &#91;K_ESC&#93;&nbsp; &nbsp;&gt; &#91;K_BKSP&#93; &#91;K_ESC&#93;&nbsp; &nbsp;Set&#40;TPAgraphemeInputFlag=&#039;No&#039;&#41;
+<br />
+&nbsp; &nbsp;$TPAcursor + &#91;K_TAB&#93;&nbsp; &nbsp;&gt; &#91;K_BKSP&#93; &#91;K_TAB&#93;&nbsp; &nbsp;Set&#40;TPAgraphemeInputFlag=&#039;No&#039;&#41;
+<br />
+&nbsp; &nbsp;$TPAcursor + &#91;K_DOWN&#93;&nbsp; &gt; &#91;K_BKSP&#93; &#91;K_DOWN&#93;&nbsp; Set&#40;TPAgraphemeInputFlag=&#039;No&#039;&#41;
+<br />
+&nbsp; &nbsp;$TPAcursor + &#91;K_RIGHT&#93; &gt; &#91;K_BKSP&#93; &#91;K_RIGHT&#93; Set&#40;TPAgraphemeInputFlag=&#039;No&#039;&#41;
+<br />
+
+<br />
+c Backspace for editing entered graphemes. Delete TPA Cursor, TPA Glue, Grapheme and replace TPA Cursor.
+<br />
+&nbsp; &nbsp;$TPAcursor + &#91;K_BKSP&#93;&nbsp; &gt; &#91;K_BKSP&#93; &#91;K_BKSP&#93; $TPAcursor
+<br />
+
+<br />
+&nbsp; &nbsp;Store&#40;LatinLetter&#41;&nbsp; &nbsp;&quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;
+<br />
+&nbsp; &nbsp;Store&#40;LatinLetterLC&#41; &quot;abcdefghijklmnopqrstuvwxyz&quot;
+<br />
+&nbsp; &nbsp;Store&#40;LatinLetterUC&#41; &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;&nbsp; &nbsp;Store&#40;Numbers&#41;&nbsp; &nbsp; &nbsp; &nbsp;&#039;0123456789&#039;
+<br />
+&nbsp; &nbsp;Store&#40;Symbols&#41;&nbsp; &nbsp; &nbsp; &nbsp;&quot;&#039;&quot; &#039; !&quot;£$%^&amp;*&#40;&#41;-_=+&#91;&#123;&#93;&#125;;&#58;@#~,/?`¬\|&#039;
+<br />
+&nbsp; &nbsp;Store&#40;AltGrs&#41;&nbsp; &nbsp; &nbsp; &nbsp; &#039;áéíóúÁÉÍÓÚ€¦&#039;
+<br />
+&nbsp; &nbsp;Store&#40;CursorKeys&#41;&nbsp; &nbsp; &#91;K_UP&#93; &#91;K_DOWN&#93; &#91;K_LEFT&#93; &#91;K_RIGHT&#93; &#91;K_HOME&#93; &#91;K_END&#93; &#91;K_PGUP&#93; &#91;K_PGDN&#93; &#91;K_KP5&#93;
+<br />
+&nbsp; &nbsp;Store&#40;NumberPad&#41;&nbsp; &nbsp; &nbsp;&#91;K_NP0&#93; &#91;K_NP1&#93; &#91;K_NP2&#93; &#91;K_NP3&#93; &#91;K_NP4&#93; &#91;K_NP5&#93; &#91;K_NP6&#93; &#91;K_NP7&#93; &#91;K_NP8&#93; &#91;K_NP9&#93; &#91;K_NPDOT&#93; &#91;K_NPSTAR&#93; &#91;K_NPSLASH&#93; &#91;K_NPPLUS&#93; &#91;K_NPMINUS&#93;
+<br />
+&nbsp; &nbsp;Store&#40;FunctionKeys&#41;&nbsp; &#91;K_F1&#93; &#91;K_F2&#93; &#91;K_F3&#93; &#91;K_F4&#93;&nbsp; &#91;K_F5&#93;&nbsp; &#91;K_F6&#93; &#91;K_F7&#93; &#91;K_F8&#93; &#91;K_F9&#93; &#91;K_F10&#93; &#91;K_F11&#93; &#91;K_F12&#93;
+<br />
+&nbsp; &nbsp;Store&#40;Specials&#41;&nbsp; &nbsp; &nbsp; &#91;K_BKSP&#93; &#91;K_DEL&#93; &#91;K_ENTER&#93; &#91;K_ESC&#93; &#91;K_INS&#93; &#91;K_oE2&#93; &#91;K_SPACE&#93; &#91;K_TAB&#93; &#91;K_SEL&#93; &#91;K_PRINT&#93; &#91;K_EXEC&#93; &#91;K_HELP&#93; &#91;K_?05&#93; &#91;K_NPENTER&#93;
+<br />
+&nbsp; &nbsp;Store&#40;Punctuations&#41;&nbsp; &#91;K_BKQUOTE&#93; &#91;K_COLON&#93; &#91;K_COMMA&#93; &#91;K_HYPHEN&#93; &#91;K_LBRKT&#93; &#91;K_PERIOD&#93; &#91;K_QUOTE&#93; &#91;K_RBRKT&#93; &#91;K_BKSLASH&#93; &#91;K_SLASH&#93; &#91;K_EQUAL&#93;
+<br />
+&nbsp; &nbsp;Store&#40;WholeKeyboard&#41; Outs&#40;Numbers&#41; Outs&#40;Symbols&#41; Outs&#40;AltGrs&#41; Outs&#40;CursorKeys&#41; Outs&#40;NumberPad&#41; Outs&#40;FunctionKeys&#41; Outs&#40;Specials&#41; Outs&#40;Punctuations&#41;
+<br />
+
+<br />
+c Inhibit some keys from functioning.
+<br />
+&nbsp; &nbsp;$TPAcursor + Any&#40;WholeKeyboard&#41; &gt; $TPAcursor
+<br />
+&nbsp; &nbsp;$TPAcursor + Any&#40;LatinLetterUC&#41; &gt; $TPAcursor
+<br />
+
+<br />
+c If Grapheme Input Mode is in force pass processing to the GraphemeInput group.
+<br />
+&nbsp; &nbsp;If&#40;TPAgraphemeInputFlag = &#039;Yes&#039;&#41; + Any&#40;LatinLetter&#41; &gt; Use&#40;GraphemeInput&#41;
+<br />
+
+<br />
+c TPA Grapeme Input Mode not requested nor running.
+<br />
+&nbsp; &nbsp;Nomatch &gt; Use&#40;MenuHandler&#41;</td>
+	</tr>
+</table>
+The above code will allow a very limited set of keys to function in this group. It all seems to work ok, except &#039;|&#039; (<span style="font-style: italic">Key 102</span>) is not court.
+<br />
+
+<br />
+   However, my real question is this, surly there must me a simpler/better way to limit a vast range of keys. How about?<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">$TPAcursor + NotAny&#40;LatinLetterLC&#41; &gt; $TPAcursor</td>
+	</tr>
+</table>
+
+<br />
+   But <span style="font-weight: bold">Notany </span>cannot be in the Key part of the Rule. I have tried calling a Context Only group, but I could not get it to work.
+<br />
+
+<br />
+By this point in the code<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">c Inhibit some keys from functioning.
+<br />
+&nbsp; &nbsp;$TPAcursor + Any&#40;WholeKeyboard&#41; &gt; $TPAcursor
+<br />
+&nbsp; &nbsp;$TPAcursor + Any&#40;LatinLetterUC&#41; &gt; $TPAcursor</td>
+	</tr>
+</table>
+I wish to only allow lowercase letters to be valid. But to do this creates very ugly code.
+<br />
+
+<br />
+Regards
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=439&amp;forumpostid=1511.html#ForumPost_1511'>#</a></span><a style='text-decoration:none' name='ForumPost_1511'></a> RE: Inhibiting lots of keys. &nbsp; <span class='date'>2016-02-29 07:23:02.733</span></th></tr><tr id='forumpost_1511'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Am I right in thinking that the nomatch(all) functionality that we discussed in another forum post is what you are looking for?
+<br />
+
+<br />
+Could you not do this as an alternative:
+<br />
+
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">group&#40;GiM&#41; using keys
+<br />
+
+<br />
+...
+<br />
+
+<br />
++ any&#40;LatinLetterUC&#41; &gt; use&#40;latin&#41;
+<br />
+
+<br />
+group&#40;latin&#41; using keys
+<br />
+
+<br />
+...</td>
+	</tr>
+</table>
+
+<br />
+
+<br />
+I should note also the virtual key output as you are using in that example is not supported (though it may work in some situations, it won&#039;t work in all) - you would need to match the TPA Glue in the context and delete that as well, then use the special empty final &quot;using keys&quot; group to push out the original keystroke (http://help.keyman.com/developer/language/guide/groups):
+<br />
+
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">$TPAglue $TPAcursor + &#91;K_UP&#93; &gt; Set&#40;TPAgraphemeInputFlag=&#039;No&#039;&#41; use&#40;finalkey&#41;
+<br />
+
+<br />
+group&#40;finalkey&#41; using keys
+<br />
+&nbsp; c empty &#039;using keys&#039; group as final group 
+<br />
+&nbsp; c ensures original keystroke is emitted</td>
+	</tr>
+</table>
+</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=439&amp;forumpostid=1513.html#ForumPost_1513'>#</a></span><a style='text-decoration:none' name='ForumPost_1513'></a> RE: Inhibiting lots of keys. &nbsp; <span class='date'>2016-03-01 09:54:33.193</span></th></tr><tr id='forumpost_1513'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>Yes, possibly &#039;<span style="font-weight: bold">Nomatch(All)</span>&#039; is the sort of thing I&#039;m thinking of. I am still pondering on that.
+<br />
+
+<br />
+Let me flow diagram the GiM group.
+<br />
+   1) See if Grapheme Input Mode is required, if it is; set a flag and display a cursor.
+<br />
+   2) Check if GiM is to end, if it is; clean up and reset flag.
+<br />
+   3) Check if Edit &#039;<span style="font-weight: bold">Backspace</span>&#039; has been pressed, if it is; remove Grapheme &amp; Glue, and replace Cursor.
+<br />
+   4) If GiM flag set; Ignore all Left Cursor.
+<br />
+   5) If GiM flag set &amp; Lowercase Latin letter pressed, call GiM Input Group.
+<br />
+   6) If none of the above has Fired, GiM is not in use so check for menu use.
+<br />
+
+<br />
+   All this you know from the code. My thoughts on &#039;<span style="font-weight: bold">Nomatch(all)</span>&#039; and my code are:
+<br />
+      a) Would it be possible to:
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">If&#40;Flag=&#039;On&#039;&#41; Nomatch&#40;All&#41;</td>
+	</tr>
+</table>
+
+<br />
+      b) What would the precedence be on <span style="font-weight: bold">Nomatch</span>, or <span style="font-weight: bold">Match</span> for that matter, be?
+<br />
+      c) If one were to precede a &#039;<span style="font-weight: bold">Nomatch(All)</span>&#039; with a number of Rules using some keys, this would be a very good way of locking down keyboard behaviour.
+<br />
+      d) How would it be used Context Only groups?
+<br />
+      e) What would the reserved keys; untrappable keys be?
+<br />
+
+<br />
+    The code below is closer to working but it shows some oddities. {<span style="font-style: italic">No validation code is in this block</span>}
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">c *******************************************************************
+<br />
+Begin Unicode &gt; Use&#40;GiM&#41;
+<br />
+c *******************************************************************
+<br />
+
+<br />
+Group&#40;GiM&#41; Using Keys
+<br />
+
+<br />
+c Initiate TPA Grapheme Input mode &#40;GiM&#41;. If, and only if, at the beginning of a line.
+<br />
+&nbsp; &nbsp;nul + $GrahemeKey &gt; $TPAcursor Set&#40;TPAgraphemeInputFlag=&#039;On&#039;&#41;
+<br />
+
+<br />
+c Close the TPA Grapheme Input mode.
+<br />
+c Clean up the text; Delete TPA Glue, Set the grapheme input flag to &#039;No, Perform Key press.
+<br />
+&nbsp; &nbsp;$TPAglue $TPAcursor + &#039;?&#039;&nbsp; &nbsp; &nbsp; &nbsp;&gt; Set&#40;TPAgraphemeInputFlag=&#039;Off&#039;&#41; Use&#40;GiMcloseEdit&#41;
+<br />
+&nbsp; &nbsp;$TPAglue $TPAcursor + &#91;K_UP&#93;&nbsp; &nbsp; &gt; Set&#40;TPAgraphemeInputFlag=&#039;Off&#039;&#41; Use&#40;GiMcloseEdit&#41;
+<br />
+&nbsp; &nbsp;$TPAglue $TPAcursor + &#91;K_ESC&#93;&nbsp; &nbsp;&gt; Set&#40;TPAgraphemeInputFlag=&#039;Off&#039;&#41; Use&#40;GiMcloseEdit&#41;
+<br />
+&nbsp; &nbsp;$TPAglue $TPAcursor + &#91;K_TAB&#93;&nbsp; &nbsp;&gt; Set&#40;TPAgraphemeInputFlag=&#039;Off&#039;&#41; Use&#40;GiMcloseEdit&#41;
+<br />
+&nbsp; &nbsp;$TPAglue $TPAcursor + &#91;K_DOWN&#93;&nbsp; &gt; Set&#40;TPAgraphemeInputFlag=&#039;Off&#039;&#41; Use&#40;GiMcloseEdit&#41;
+<br />
+&nbsp; &nbsp;$TPAglue $TPAcursor + &#91;K_RIGHT&#93; &gt; Set&#40;TPAgraphemeInputFlag=&#039;Off&#039;&#41; Use&#40;GiMcloseEdit&#41;
+<br />
+
+<br />
+c Backspace is the only editing possible in GiM.
+<br />
+c Delete&#58; TPA Glue &amp; Grapheme, Then replace TPA Cursor.
+<br />
+&nbsp; &nbsp;$TPAglue $TPAcursor + &#91;K_BKSP&#93;&nbsp; &gt; Use&#40;GiMcloseEdit&#41; $TPAcursor
+<br />
+
+<br />
+c Through away the Left Cursor key.
+<br />
+&nbsp; &nbsp;If&#40;TPAgraphemeInputFlag = &#039;On&#039;&#41; + &#91;K_LEFT&#93; &gt; nul
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+<br />
+c If Grapheme Input Mode is in force pass processing to the GraphemeInput group.
+<br />
+&nbsp; &nbsp;If&#40;TPAgraphemeInputFlag = &#039;On&#039;&#41; + Any&#40;LatinLetterLC&#41; &gt; Use&#40;GraphemeInput&#41;
+<br />
+
+<br />
+c TPA Grapeme Input Mode not requested nor running.
+<br />
+&nbsp; &nbsp;Nomatch &gt; Use&#40;MenuHandler&#41;
+<br />
+
+<br />
+Group&#40;GiMcloseEdit&#41; Using Keys&nbsp; 
+<br />
+c empty &#039;using keys&#039; group as final group
+<br />
+c ensures original keystroke is emitted
+<br />
+</td>
+	</tr>
+</table>
+
+<br />
+   In the Close GiM block above, none of the keys function correctly, except the &#039;<span style="font-weight: bold">?</span>&#039;, and that&#039;s only there for testing. The empty <span style="font-weight: bold">Group</span>(<span style="font-style: italic">GiMcloseEdit</span>) only seems to function on keys that produce a glyph.
+<br />
+
+<br />
+   The Backspace Rules functions correctly, but gives a warning re: <span style="font-weight: bold">Use</span>() and following commands. Though <span style="font-weight: bold">Use</span>(<span style="font-style: italic">G1</span>) <span style="font-weight: bold">Use</span>(<span style="font-style: italic">G2</span>) on the same line functions one after the other, but give no warning.
+<br />
+
+<br />
+   The line below functions correctly. But I can get lost in the Debug and Test modes on the Debugger as to which control keys function and when.
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">If&#40;TPAgraphemeInputFlag = &#039;On&#039;&#41; + &#91;K_LEFT&#93; &gt; nul</td>
+	</tr>
+</table>
+Sometimes it seems to be in force when I am unsure what others keys should be doing. Could you point me to the article covering Test/Debug modes and there differences. Thank you.
+<br />
+
+<br />
+   But I&#039;m getting a headache now, so I&#039;m going to bed.
+<br />
+
+<br />
+Goodnight
+<br />
+Regards
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=439&amp;forumpostid=1515.html#ForumPost_1515'>#</a></span><a style='text-decoration:none' name='ForumPost_1515'></a> RE: Inhibiting lots of keys. &nbsp; <span class='date'>2016-03-02 07:33:09.337</span></th></tr><tr id='forumpost_1515'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Yes, I can see the issue you are describing. I&#039;m not sure what is causing this but will investigate.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=439&amp;forumpostid=1518.html#ForumPost_1518'>#</a></span><a style='text-decoration:none' name='ForumPost_1518'></a> RE: Inhibiting lots of keys. &nbsp; <span class='date'>2016-03-02 22:02:17.687</span></th></tr><tr id='forumpost_1518'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Okay, I&#039;ve done some research. Here are some of my notes. Not sure if this will make any sense, but we are running into one of the tricky parts of Windows integration.
+<br />
+
+<br />
+This is because these are TSF preserved keys. This means that TSF intercepts them for Keyman. Keyman cannot then tell TSF to pass them to the app. If we try and emit a new one with SendInput, TSF captures this as well and we get a loop. 
+<br />
+
+<br />
+Two possible solutions: 
+<br />
+
+<br />
+* Use PostMessage. This is subject to order issues with other input sent via SendInput being interleaved with PostMessage input. This is not easy (or performant) to solve but theoretically possible. For example, we could have SendInput sending a set of keystrokes including a terminal flag keystroke. When the GetMessageProc sees this terminal flag keystroke, it emits the wanted final keystroke. This could possibly work for keyboards where only the typed keystroke is wanted at the end of any context changes, but still runs the risk of interleaving with user input of other kinds. 
+<br />
+
+<br />
+* Setup the preserved keys based on context. This would mean at the end of each keystroke, run through the ruleset again to determine which keys will be captured by the input manager, and preserve only those keys. This preserved key setup would also need to be run at any time that the context is reset, e.g. with cursor movement, mouse click, focus changes.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=439&amp;forumpostid=1519.html#ForumPost_1519'>#</a></span><a style='text-decoration:none' name='ForumPost_1519'></a> RE: Inhibiting lots of keys. &nbsp; <span class='date'>2016-03-03 07:48:23.280</span></th></tr><tr id='forumpost_1519'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>Well that covered that!?!
+<br />
+I feel that was clearer to you than to me.
+<br />
+
+<br />
+   I persume this pertains to the &#039;Close the TPA Grapheme Input mode&#039; section. You say the output of [K_UP] is not reliable in all conditions. The TPA keyboard is intenden for English only, and on PC, Mac, and Adroid. If it will work on PC &amp; Mac only, I can reduce the functionallity on Android.
+<br />
+
+<br />
+   I can test PC and Adnroid. Am I safe to assume that what works on a PC will most likely work on Mac?
+<br />
+
+<br />
+   Until you have a go at &#039;All&#039; I&#039;m pressing forward with my large strings of keys. But they are getting quite big eg:
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">Store&#40;LatinLetterAll&#41; \
+<br />
+&nbsp;&#91;K_A&#93;&nbsp; &#91;K_A&#93; &#91;K_B&#93; &#91;K_C&#93; &#91;K_D&#93; &#91;K_E&#93; &#91;K_F&#93; &#91;K_G&#93; &#91;K_H&#93; &#91;K_I&#93; &#91;K_J&#93; &#91;K_K&#93; &#91;K_L&#93; &#91;K_M&#93; &#91;K_N&#93; &#91;K_O&#93; &#91;K_P&#93; &#91;K_Q&#93; &#91;K_R&#93; &#91;K_S&#93; &#91;K_T&#93; &#91;K_U&#93; &#91;K_V&#93; &#91;K_W&#93; &#91;K_X&#93; &#91;K_Y&#93; &#91;K_Z&#93; \
+<br />
+&nbsp;&#91;ALT K_A&#93; &#91;ALT K_B&#93; &#91;ALT K_C&#93; &#91;ALT K_D&#93; &#91;ALT K_E&#93; &#91;ALT K_F&#93; &#91;ALT K_G&#93; &#91;ALT K_H&#93; &#91;ALT K_I&#93; &#91;ALT K_J&#93; &#91;ALT K_K&#93; &#91;ALT K_L&#93; &#91;ALT K_M&#93; &#91;ALT K_N&#93; &#91;ALT K_O&#93; &#91;ALT K_P&#93; &#91;ALT K_Q&#93; &#91;ALT K_R&#93; &#91;ALT K_S&#93; &#91;ALT K_T&#93; &#91;ALT K_U&#93; &#91;ALT K_V&#93; &#91;ALT K_W&#93; &#91;ALT K_X&#93; &#91;ALT K_Y&#93; &#91;ALT K_Z&#93; \
+<br />
+&nbsp;&#91;CTRL K_A&#93; &#91;CTRL K_B&#93; &#91;CTRL K_C&#93; &#91;CTRL K_D&#93; &#91;CTRL K_E&#93; &#91;CTRL K_F&#93; &#91;CTRL K_G&#93; &#91;CTRL K_H&#93; &#91;CTRL K_I&#93; &#91;CTRL K_J&#93; &#91;CTRL K_K&#93; &#91;CTRL K_L&#93; &#91;CTRL K_M&#93; &#91;CTRL K_N&#93; &#91;CTRL K_O&#93; &#91;CTRL K_P&#93; &#91;CTRL K_Q&#93; &#91;CTRL K_R&#93; &#91;CTRL K_S&#93; &#91;CTRL K_T&#93; &#91;CTRL K_U&#93; &#91;CTRL K_V&#93; &#91;CTRL K_W&#93; &#91;CTRL K_X&#93; &#91;CTRL K_Y&#93; &#91;CTRL K_Z&#93; \
+<br />
+&nbsp;&#91;SHIFT K_A&#93; &#91;SHIFT K_B&#93; &#91;SHIFT K_C&#93; &#91;SHIFT K_D&#93; &#91;SHIFT K_E&#93; &#91;SHIFT K_F&#93; &#91;SHIFT K_G&#93; &#91;SHIFT K_H&#93; &#91;SHIFT K_I&#93; &#91;SHIFT K_J&#93; &#91;SHIFT K_K&#93; &#91;SHIFT K_L&#93; &#91;SHIFT K_M&#93; &#91;SHIFT K_N&#93; &#91;SHIFT K_O&#93; &#91;SHIFT K_P&#93; &#91;SHIFT K_Q&#93; &#91;SHIFT K_R&#93; &#91;SHIFT K_S&#93; &#91;SHIFT K_T&#93; &#91;SHIFT K_U&#93; &#91;SHIFT K_V&#93; &#91;SHIFT K_W&#93; &#91;SHIFT K_X&#93; &#91;SHIFT K_Y&#93; &#91;SHIFT K_Z&#93; \
+<br />
+&nbsp;&#91;CTRL ALT K_A&#93; &#91;CTRL ALT K_B&#93; &#91;CTRL ALT K_C&#93; &#91;CTRL ALT K_D&#93; &#91;CTRL ALT K_E&#93; &#91;CTRL ALT K_F&#93; &#91;CTRL ALT K_G&#93; &#91;CTRL ALT K_H&#93; &#91;CTRL ALT K_I&#93; &#91;CTRL ALT K_J&#93; &#91;CTRL ALT K_K&#93; &#91;CTRL ALT K_L&#93; &#91;CTRL ALT K_M&#93; &#91;CTRL ALT K_N&#93; &#91;CTRL ALT K_O&#93; &#91;CTRL ALT K_P&#93; &#91;CTRL ALT K_Q&#93; &#91;CTRL ALT K_R&#93; &#91;CTRL ALT K_S&#93; &#91;CTRL ALT K_T&#93; &#91;CTRL ALT K_U&#93; &#91;CTRL ALT K_V&#93; &#91;CTRL ALT K_W&#93; &#91;CTRL ALT K_X&#93; &#91;CTRL ALT K_Y&#93; &#91;CTRL ALT K_Z&#93; \
+<br />
+&nbsp;&#91;SHIFT ALT K_A&#93; &#91;SHIFT ALT K_B&#93; &#91;SHIFT ALT K_C&#93; &#91;SHIFT ALT K_D&#93; &#91;SHIFT ALT K_E&#93; &#91;SHIFT ALT K_F&#93; &#91;SHIFT ALT K_G&#93; &#91;SHIFT ALT K_H&#93; &#91;SHIFT ALT K_I&#93; &#91;SHIFT ALT K_J&#93; &#91;SHIFT ALT K_K&#93; &#91;SHIFT ALT K_L&#93; &#91;SHIFT ALT K_M&#93; &#91;SHIFT ALT K_N&#93; &#91;SHIFT ALT K_O&#93; &#91;SHIFT ALT K_P&#93; &#91;SHIFT ALT K_Q&#93; &#91;SHIFT ALT K_R&#93; &#91;SHIFT ALT K_S&#93; &#91;SHIFT ALT K_T&#93; &#91;SHIFT ALT K_U&#93; &#91;SHIFT ALT K_V&#93; &#91;SHIFT ALT K_W&#93; &#91;SHIFT ALT K_X&#93; &#91;SHIFT ALT K_Y&#93; &#91;SHIFT ALT K_Z&#93; \
+<br />
+&nbsp;&#91;SHIFT CTRL K_A&#93; &#91;SHIFT CTRL K_B&#93; &#91;SHIFT CTRL K_C&#93; &#91;SHIFT CTRL K_D&#93; &#91;SHIFT CTRL K_E&#93; &#91;SHIFT CTRL K_F&#93; &#91;SHIFT CTRL K_G&#93; &#91;SHIFT CTRL K_H&#93; &#91;SHIFT CTRL K_I&#93; &#91;SHIFT CTRL K_J&#93; &#91;SHIFT CTRL K_K&#93; &#91;SHIFT CTRL K_L&#93; &#91;SHIFT CTRL K_M&#93; &#91;SHIFT CTRL K_N&#93; &#91;SHIFT CTRL K_O&#93; &#91;SHIFT CTRL K_P&#93; &#91;SHIFT CTRL K_Q&#93; &#91;SHIFT CTRL K_R&#93; &#91;SHIFT CTRL K_S&#93; &#91;SHIFT CTRL K_T&#93; &#91;SHIFT CTRL K_U&#93; &#91;SHIFT CTRL K_V&#93; &#91;SHIFT CTRL K_W&#93; &#91;SHIFT CTRL K_X&#93; &#91;SHIFT CTRL K_Y&#93; &#91;SHIFT CTRL K_Z&#93; \
+<br />
+&nbsp;&#91;SHIFT CTRL ALT K_A&#93; &#91;SHIFT CTRL ALT K_B&#93; &#91;SHIFT CTRL ALT K_C&#93; &#91;SHIFT CTRL ALT K_D&#93; &#91;SHIFT CTRL ALT K_E&#93; &#91;SHIFT CTRL ALT K_F&#93; &#91;SHIFT CTRL ALT K_G&#93; &#91;SHIFT CTRL ALT K_H&#93; &#91;SHIFT CTRL ALT K_I&#93; &#91;SHIFT CTRL ALT K_J&#93; &#91;SHIFT CTRL ALT K_K&#93; &#91;SHIFT CTRL ALT K_L&#93; &#91;SHIFT CTRL ALT K_M&#93; &#91;SHIFT CTRL ALT K_N&#93; &#91;SHIFT CTRL ALT K_O&#93; &#91;SHIFT CTRL ALT K_P&#93; &#91;SHIFT CTRL ALT K_Q&#93; &#91;SHIFT CTRL ALT K_R&#93; &#91;SHIFT CTRL ALT K_S&#93; &#91;SHIFT CTRL ALT K_T&#93; &#91;SHIFT CTRL ALT K_U&#93; &#91;SHIFT CTRL ALT K_V&#93; &#91;SHIFT CTRL ALT K_W&#93; &#91;SHIFT CTRL ALT K_X&#93; &#91;SHIFT CTRL ALT K_Y&#93; &#91;SHIFT CTRL ALT K_Z&#93;</td>
+	</tr>
+</table>
+
+<br />
+Regards
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=439&amp;forumpostid=1521.html#ForumPost_1521'>#</a></span><a style='text-decoration:none' name='ForumPost_1521'></a> RE: Inhibiting lots of keys. &nbsp; <span class='date'>2016-03-03 21:47:54.267</span></th></tr><tr id='forumpost_1521'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Yes, those were rather deep technical notes. Making changes to Keyman at that level is not much fun, because there is a huge amount of complexity in Windows that is not documented and results in very unexpected behaviours. So I always take these types of changes very slowly. I am usually hesitant to take over control of non-character keys as these can have different meanings in many apps: for example in Excel, it can mean &#039;move to next cell&#039; instead of move right a character.
+<br />
+
+<br />
+So at this point, I am thinking about these issues but not currently making plans to change Keyman&#039;s behaviour with these keys, without a lot more design work up front.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=439&amp;forumpostid=1525.html#ForumPost_1525'>#</a></span><a style='text-decoration:none' name='ForumPost_1525'></a> RE: Inhibiting lots of keys. &nbsp; <span class='date'>2016-03-05 22:04:26.440</span></th></tr><tr id='forumpost_1525'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>I understand completely.
+<br />
+
+<br />
+   The first hardware I ever built was a ROM writer for a computer character set (<span style="font-style: italic">ASCII</span>); a 5 by 7 dot matrix set.
+<br />
+
+<br />
+   In use, to display a character;
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">      Read from system Ram
+<br />
+      Write to ROM
+<br />
+      Read from ROM
+<br />
+      Write to display RAM.
+<br />
+</td>
+	</tr>
+</table>
+
+<br />
+   This is not exactly simple, but it can be easily traced across each step. Whilst it is true that today&#039;s systems can be traced, they are stunningly more complex, and there can be many areas of uncertainty. It can be more like being an explorer trying to map a new territory, than an engineer designing and building a machine to do a specific task.
+<br />
+
+<br />
+   Exploring can be great fun, but also incredibility frustrating. And one must assign a good stretch of time to do it, and have the right frame of mind.
+<br />
+
+<br />
+   But, for now, I know the issue. I can now set my design with it in mind. Knowing what can&#039;t be done is often as important as knowing what can be done.
+<br />
+
+<br />
+God bless.
+<br />
+Julian Griffin</div></td></tr></table></p>

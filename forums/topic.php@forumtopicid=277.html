@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Egyptian hieroglyphics & Unicode - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=8.html'>Bugs and Features</a> &gt; <a href='topic.php@forumtopicid=277.html'>Egyptian hieroglyphics & Unicode</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Egyptian hieroglyphics & Unicode</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=277&amp;forumpostid=930.html#ForumPost_930'>#</a></span><a style='text-decoration:none' name='ForumPost_930'></a> Egyptian hieroglyphics & Unicode &nbsp; <span class='date'>2010-09-07 15:07:36.657</span></th></tr><tr id='forumpost_930'><td class='nickname' width='25%'>Jakob<br /></td><td class='text' width='75%'><div class='text'>The Wikipedia article says that the Unicode range for Egyptian hieroglyphs is U+13000 - U+1342F, but when I look inside the Aegyptus font (via my font editor &quot;FontCreator&quot;), it shows the hieroglyphs as having the ranges U+F3xxx and U+F4xxx. In either case, altho my self-created keyboards generally work, I can&#039;t make any functioning keyboard for these code-ranges: my experiments compile, but don&#039;t work. Also, selecting the Aegyptus font for the character-map display within Keyman Developer doesn&#039;t actually show me that font. Suggestions?</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=277&amp;forumpostid=931.html#ForumPost_931'>#</a></span><a style='text-decoration:none' name='ForumPost_931'></a> RE: Egyptian hieroglyphics & Unicode &nbsp; <span class='date'>2010-09-13 11:31:07.120</span></th></tr><tr id='forumpost_931'><td class='nickname' width='25%'>Tavultesoft<br /></td><td class='text' width='75%'><div class='text'>I&#039;d be happy to answer your questions. Wikipedia is correct - Egyptian hieroglyphs are in the range U+13000..U+1342E. That block was officially added to Unicode only in October of last year (Unicode 5.2). 
+<br />
+
+<br />
+The current Aegyptus font does provide full support for that block. However, it also includes support for extended characters not yet accepted officially into Unicode. In case you are not running the most recent version of Aegyptus, I suggest downloading it again here: 
+<br />
+  <a href="http://users.teilar.gr/~g1951d/" target="_blank">http://users.teilar.gr/~g1951d/</a>
+<br />
+
+<br />
+Finally, as the Egyptian block is new to Unicode 5.2, for full support of the block in Keyman Desktop I recommend downloading our Keyman Desktop 8 beta:
+<br />
+  <a href="http://www.tavultesoft.com/beta" target="_blank">http://www.tavultesoft.com/beta</a>
+<br />
+
+<br />
+Though the beta does have rough edges and known issues, it includes full support for the Unicode 5.2 additions, including Egyptian. 
+<br />
+
+<br />
+Let us know if you need more help. </div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=277&amp;forumpostid=933.html#ForumPost_933'>#</a></span><a style='text-decoration:none' name='ForumPost_933'></a> RE: Egyptian hieroglyphics & Unicode &nbsp; <span class='date'>2010-09-16 13:08:15.823</span></th></tr><tr id='forumpost_933'><td class='nickname' width='25%'>Tavultesoft<br /></td><td class='text' width='75%'><div class='text'>I should say, if you&#039;d like, we&#039;d be happy to review your keyboard source file for you to see why things may not be working. </div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=277&amp;forumpostid=934.html#ForumPost_934'>#</a></span><a style='text-decoration:none' name='ForumPost_934'></a> RE: Egyptian hieroglyphics & Unicode &nbsp; <span class='date'>2010-09-27 19:55:13.190</span></th></tr><tr id='forumpost_934'><td class='nickname' width='25%'>Jakob<br /></td><td class='text' width='75%'><div class='text'>I have determined that OpenOffice 3.1 can see the entire font in the &quot;Insert character&quot; mode, not just the lower 256 codes as in Word 2003. So the question is what Word 2007 is capable of....Anybody care to check?
+<br />
+Making a Keyman keyboard is of less priority, since there is, as far as I know, no &quot;logical&quot;, currently used system.</div></td></tr></table></p>

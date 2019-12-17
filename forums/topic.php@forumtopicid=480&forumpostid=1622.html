@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Support for Extended shift flags - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=14.html'>General</a> &gt; <a href='topic.php@forumtopicid=480.html'>Support for Extended shift flags</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Support for Extended shift flags</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=480&amp;forumpostid=1622.html#ForumPost_1622'>#</a></span><a style='text-decoration:none' name='ForumPost_1622'></a> Support for Extended shift flags &nbsp; <span class='date'>2017-01-09 23:41:45.233</span></th></tr><tr id='forumpost_1622'><td class='nickname' width='25%'>John Stephen Mangam<br /></td><td class='text' width='75%'><div class='text'>Hi,
+<br />
+
+<br />
+I get the error: Extended shift flags LALT, RALT, LCTRL, RCTRL are not supported in KeymanWeb.
+<br />
+
+<br />
+Could you please suggest me the way to go about fixing it?
+<br />
+
+<br />
+Thanking you.
+<br />
+
+<br />
+Best regards,
+<br />
+John</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=480&amp;forumpostid=1623.html#ForumPost_1623'>#</a></span><a style='text-decoration:none' name='ForumPost_1623'></a> RE: Support for Extended shift flags &nbsp; <span class='date'>2017-01-10 00:42:36.363</span></th></tr><tr id='forumpost_1623'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Until recently, most browsers did not distinguish between left and right ctrl/alt, so there was no way to detect them from Javascript. I haven&#039;t researched the current support level for this feature in browsers. You could submit an issue at <a href="https://github.com/tavultesoft/keymanweb/issues" target="_blank">https://github.com/tavultesoft/keymanweb/issues</a> to request that we add support for these flags in KeymanWeb on those browsers that support l/r ctrl/alt.
+<br />
+</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=480&amp;forumpostid=1624.html#ForumPost_1624'>#</a></span><a style='text-decoration:none' name='ForumPost_1624'></a> RE: Support for Extended shift flags &nbsp; <span class='date'>2017-01-10 00:46:59.637</span></th></tr><tr id='forumpost_1624'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>In terms of working around the issue in your keyboard, you will need to create rules that disambiguate desktop and web builds:, for example:
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">$keymanonly&#58; + &#91;LCTRL K_W&#93; &gt; &#039;LCtrl W&#039;
+<br />
+$keymanweb&#58; + &#91;CTRL K_W&#93; &gt; &#039;Control W&#039;
+<br />
+</td>
+	</tr>
+</table>
+</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=480&amp;forumpostid=1625.html#ForumPost_1625'>#</a></span><a style='text-decoration:none' name='ForumPost_1625'></a> RE: Support for Extended shift flags &nbsp; <span class='date'>2017-01-12 22:18:02.433</span></th></tr><tr id='forumpost_1625'><td class='nickname' width='25%'>John Stephen Mangam<br /></td><td class='text' width='75%'><div class='text'>Thank you very much Marc!
+<br />
+
+<br />
+Best regards,
+<br />
+John</div></td></tr></table></p>

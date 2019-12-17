@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic accent causes letter to change font - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=124.html'>Galaxie BibleScript Phonetic Keyboards</a> &gt; <a href='topic.php@forumtopicid=244.html'>accent causes letter to change font</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic accent causes letter to change font</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><p><img src='../images/kmxicon.gif' alt='Keyboard Details' style='vertical-align: middle; border: none' /> <a href='http://tavultesoft.com/keyman/downloads/keyboards/details.php?KeyboardID=413'>Galaxie BibleScript Phonetic Keyboards Keyboard Downloads and Details</a></p><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=244&amp;forumpostid=803.html#ForumPost_803'>#</a></span><a style='text-decoration:none' name='ForumPost_803'></a> accent causes letter to change font &nbsp; <span class='date'>2009-09-13 16:35:28.653</span></th></tr><tr id='forumpost_803'><td class='nickname' width='25%'>Marcia Moore<br /></td><td class='text' width='75%'><div class='text'>OK, so I can now type accents, but whenever I put an accent over a letter, the font of the letter changes from whatever font I was typing in (e.g., Cambria, or Arial, or Book Antiqua, or Times New Roman) to the &quot;Tahoma&quot; font.  I do not want to use the Tahoma font.
+<br />
+
+<br />
+How can I accent letters and keep to the same font? </div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=244&amp;forumpostid=804.html#ForumPost_804'>#</a></span><a style='text-decoration:none' name='ForumPost_804'></a> RE: accent causes letter to change font &nbsp; <span class='date'>2009-09-14 14:46:56.980</span></th></tr><tr id='forumpost_804'><td class='nickname' width='25%'>Tavultesoft<br /></td><td class='text' width='75%'><div class='text'>I have a simple solution to your issue. 
+<br />
+
+<br />
+Fonts like Cambria and Ariel do not offer the best support for polytonic Greek, which is why your system searches for other fonts with better support. For the Greek accents to display correctly in your document, you need to use a font with good support for polytonic Greek. Fonts like Galatia SIL (http://scripts.sil.org/SILGrkUni) and Gentium SIL are two good choices (http://scripts.sil.org/Gentium_download). 
+<br />
+
+<br />
+You can find other good fonts for Greek from the Font Helper tool of Keyman&#039;s On Screen Keyboard. Simply click on the Keyman Menu, select the On Screen Keyboard, and choose Font Helper from the buttons along the top. You will see a list of the fonts on your system which offer the best support for Greek. 
+<br />
+
+<br />
+</div></td></tr></table></p>

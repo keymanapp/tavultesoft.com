@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Installing additional Fonts - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=17.html'>Amharic EZ</a> &gt; <a href='topic.php@forumtopicid=317.html'>Installing additional Fonts</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Installing additional Fonts</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><p><img src='../images/kmxicon.gif' alt='Keyboard Details' style='vertical-align: middle; border: none' /> <a href='http://tavultesoft.com/keyman/downloads/keyboards/details.php?KeyboardID=300'>Amharic EZ Keyboard Downloads and Details</a></p><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=317&amp;forumpostid=1048.html#ForumPost_1048'>#</a></span><a style='text-decoration:none' name='ForumPost_1048'></a> Installing additional Fonts &nbsp; <span class='date'>2011-08-26 08:18:25.973</span></th></tr><tr id='forumpost_1048'><td class='nickname' width='25%'>Lulit Bezuayehu<br /></td><td class='text' width='75%'><div class='text'>Hi - I have the Keyman Desktop 8 installed and working properly. Prior to this one, I used the free version (I believe it was ver 5) for several years. What I am wondering is, how do I get a new Amharic font to work with your software. The one I am trying to use uses the same exact keyboard layout as the rest of the fonts that come with as the GFF Amharic Language Keyboard + Font Pack. Some of the fonts work, while others are just boxes. I am wondering how to resolve this issue. The font I am trying to use was created using Font Lab and not Keyman Developer. Do all the fonts have to be created using Keyman Developer in order to be compatible?
+<br />
+
+<br />
+Please advise. Thanks in advance for your help.
+<br />
+
+<br />
+Lulit</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=317&amp;forumpostid=1049.html#ForumPost_1049'>#</a></span><a style='text-decoration:none' name='ForumPost_1049'></a> RE: Installing additional Fonts &nbsp; <span class='date'>2011-08-26 10:23:45.763</span></th></tr><tr id='forumpost_1049'><td class='nickname' width='25%'>Andrew C.<br />Keyboard Designer</td><td class='text' width='75%'><div class='text'>GFF Amharic Language Keyboard will work with Unicode Ethiopic fonts. I use it with GF Zemen Uniocde, SIL Abyssinica and any of the fonts distributed by the Senamirmir Project.
+<br />
+
+<br />
+The fact that you get square boxes while you type seems to indicated that the font you are using is not a Unicode font. The .notdef (not defined glyph) is often seen as a square box and indicates that the character you typed is missing from the font being used.
+<br />
+
+<br />
+Unicode (and non-Unicode) fonts can be developed with Font Lab, Fontographer and Fontforge.
+<br />
+
+<br />
+Andrew
+<br />
+SLV</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=317&amp;forumpostid=1050.html#ForumPost_1050'>#</a></span><a style='text-decoration:none' name='ForumPost_1050'></a> RE: Installing additional Fonts &nbsp; <span class='date'>2011-08-26 11:14:53.730</span></th></tr><tr id='forumpost_1050'><td class='nickname' width='25%'>Andrew C.<br />Keyboard Designer</td><td class='text' width='75%'><div class='text'>Hi again Lulit,
+<br />
+
+<br />
+if you want to test your font, a simple way is to copy some Amharic text like <a href="http://www.unicode.org/udhr/d/udhr_amh.txt" target="_blank">http://www.unicode.org/udhr/d/udhr_amh.txt</a> and try to display text using your font to see if it displays correctly.
+<br />
+
+<br />
+You will also need to be away of font linking and font fallback, Windows may try to use Nyala font if your font doesn&#039;t quite work.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=317&amp;forumpostid=1051.html#ForumPost_1051'>#</a></span><a style='text-decoration:none' name='ForumPost_1051'></a> RE: Installing additional Fonts &nbsp; <span class='date'>2011-08-27 07:40:44.947</span></th></tr><tr id='forumpost_1051'><td class='nickname' width='25%'>Lulit Bezuayehu<br /></td><td class='text' width='75%'><div class='text'>Hi Andrew,
+<br />
+
+<br />
+Sorry this may be a very basic question, but are you able to specify in a tool such as FontLab for the font to be unicode? I know that the person that developed it used an existing font (GF Zemen) as a base for his new font. 
+<br />
+
+<br />
+I did try to change the text you sent me and it does change everything into square boxes. So, it must not be unicode.
+<br />
+
+<br />
+The reason I would like to use this font is the fact that it is very simple hand written-like font that helps me to create documents when I teach children to write in Amharic.
+<br />
+
+<br />
+Appreciate the help.
+<br />
+Lulit</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=317&amp;forumpostid=1056.html#ForumPost_1056'>#</a></span><a style='text-decoration:none' name='ForumPost_1056'></a> RE: Installing additional Fonts &nbsp; <span class='date'>2011-08-30 12:21:56.993</span></th></tr><tr id='forumpost_1056'><td class='nickname' width='25%'>Andrew C.<br />Keyboard Designer</td><td class='text' width='75%'><div class='text'>Hi Lulit,
+<br />
+
+<br />
+any of the main font development tools (Font Lab, Fontographer, Font Forge) can be used to create Unicode fonts. Font Lab should be able to do what you need.
+<br />
+
+<br />
+there could be a few different problems with the font, but my guess is that the problem is with the cmap table, which glyphs are linked to which Unicode characters.
+<br />
+
+<br />
+Or depending on the tool it may be possible to fix this using a perl or python script.
+<br />
+
+<br />
+</div></td></tr></table></p>

@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Alt key not firering an event in single step mode. - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=8.html'>Bugs and Features</a> &gt; <a href='topic.php@forumtopicid=405.html'>Alt key not firering an event in single step mode.</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Alt key not firering an event in single step mode.</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=405&amp;forumpostid=1390.html#ForumPost_1390'>#</a></span><a style='text-decoration:none' name='ForumPost_1390'></a> Alt key not firering an event in single step mode. &nbsp; <span class='date'>2016-02-03 21:41:29.000</span></th></tr><tr id='forumpost_1390'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>Hello I am new to Keyman Desktop &amp; Keyman Developer.
+<br />
+
+<br />
+   I created a new keyboard and use the Layout/Design window to test out the 8 states of the modifier keys. in the Layout/Code window I got the following code:
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">store&#40;&amp;VERSION&#41; &#039;9.0&#039;
+<br />
+store&#40;&amp;NAME&#41; &#039;Trial 4&#039;
+<br />
+store&#40;&amp;LANGUAGE&#41; &#039;x0809&#039;
+<br />
+store&#40;&amp;WINDOWSLANGUAGES&#41; &#039;x0809&#039;
+<br />
+store&#40;&amp;BITMAP&#41; &#039;Trial 4.ico&#039;
+<br />
+begin Unicode &gt; use&#40;main&#41;
+<br />
+
+<br />
+group&#40;main&#41; using keys
+<br />
++ &#91;K_Q&#93; &gt; &#039;&#91;None&#93; &#039;
+<br />
++ &#91;SHIFT K_Q&#93; &gt; &#039;&#91;Shift&#93; &#039;
+<br />
++ &#91;CTRL K_Q&#93; &gt; &#039;&#91;Ctrl&#93; &#039;
+<br />
++ &#91;SHIFT CTRL K_Q&#93; &gt; &#039;&#91;Shift Ctrl&#93; &#039;
+<br />
+
+<br />
++ &#91;ALT K_Q&#93; &gt; &#039;&#91;Alt&#93; &#039;
+<br />
++ &#91;SHIFT ALT K_Q&#93; &gt; &#039;&#91;Shift Alt&#93; &#039;
+<br />
++ &#91;CTRL ALT K_Q&#93; &gt; &#039;&#91;Ctrl Alt&#93; &#039;
+<br />
++ &#91;SHIFT CTRL ALT K_Q&#93; &gt; &#039;&#91;Shift Ctrl Alt&#93; &#039;
+<br />
+</td>
+	</tr>
+</table>
+
+<br />
+[I have reordered the code to make it easier to read.]
+<br />
+
+<br />
+   The first 4 lines under &quot;group(main) using keys&quot;, work as expected. The next four lines produce nothing. In Single Step mode, the first 4 lines fire when any combination of q, Shift, &amp;/or Ctrl are pressed. But if the [Alt] key is press as well, no event is fired, ergo no output is made to the testing text.
+<br />
+
+<br />
+   I am using Keyman Developer 9 Beta and Windows 10 on a bog standard laptop from Lenovo.
+<br />
+
+<br />
+Please can you advise, am I doing something wrong or is it a bug in Keyman Developer 9?
+<br />
+
+<br />
+Thank you.
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=405&amp;forumpostid=1391.html#ForumPost_1391'>#</a></span><a style='text-decoration:none' name='ForumPost_1391'></a> RE: Alt key not firering an event in single step mode. &nbsp; <span class='date'>2016-02-03 21:51:16.130</span></th></tr><tr id='forumpost_1391'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Yes, you are doing everything correctly. This is a known bug in the debugger in Keyman Developer; we do have it on a list to address. When you install and use the keyboard, it should work correctly. AFAIK, the issue only arises with the Alt key - other modifiers and functionality should work.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=405&amp;forumpostid=1394.html#ForumPost_1394'>#</a></span><a style='text-decoration:none' name='ForumPost_1394'></a> RE: Alt key not firering an event in single step mode. &nbsp; <span class='date'>2016-02-04 00:10:39.450</span></th></tr><tr id='forumpost_1394'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>Thank you Marc for your quick response.
+<br />
+
+<br />
+   I have installed the keyboard definition I listed in my post. And all the modifiers worked as expected. So thank you for this work-around.
+<br />
+
+<br />
+Julian Griffin</div></td></tr></table></p>

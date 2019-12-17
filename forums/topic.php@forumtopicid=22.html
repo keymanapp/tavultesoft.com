@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Sorting (Greek) - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=13.html'>General</a> &gt; <a href='topic.php@forumtopicid=22.html'>Sorting (Greek)</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Sorting (Greek)</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=22&amp;forumpostid=64.html#ForumPost_64'>#</a></span><a style='text-decoration:none' name='ForumPost_64'></a> Sorting (Greek) &nbsp; <span class='date'>2006-01-09 06:59:49.000</span></th></tr><tr id='forumpost_64'><td class='nickname' width='25%'>Sigve<br /></td><td class='text' width='75%'><div class='text'>Hi,
+<br />
+
+<br />
+I&#039;m wondering if anybody knows why my Greek writing <span style="font-weight: bold">with accents</span> f.eks. in Excel or a table i Word doesn&#039;t sort correctly alphabetically.
+<br />
+
+<br />
+Whithout the accents sorting is not a problem.
+<br />
+
+<br />
+I&#039;m using Tavultesoft Keyman 6.2 with Greek (polytonic precomposed) Unicode Keyboard and the Galatia SIL font.
+<br />
+
+<br />
+
+<br />
+Regards,
+<br />
+Sigve</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=22&amp;forumpostid=65.html#ForumPost_65'>#</a></span><a style='text-decoration:none' name='ForumPost_65'></a> Re: Sorting (Greek) &nbsp; <span class='date'>2006-01-10 03:12:29.000</span></th></tr><tr id='forumpost_65'><td class='nickname' width='25%'>mcdurdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>[quote=&quot;Sigve&quot;]I&#039;m wondering if anybody knows why my Greek writing <span style="font-weight: bold">with accents</span> f.eks. in Excel or a table i Word doesn&#039;t sort correctly alphabetically.
+<br />
+
+<br />
+Whithout the accents sorting is not a problem.
+<br />
+[/quote]
+<br />
+
+<br />
+Hi Sigve,
+<br />
+
+<br />
+Unfortunately, Excel and Word do not, as far as I know, support sorting polytonic Greek.  I had a quick look around but could not find an easy solution for Greek sorting - there is a complex program that appears to do it at the following site:
+<br />
+<a href="http://www.quasillum.com/study/collate.php" target="_blank">http://www.quasillum.com/study/collate.php</a>
+<br />
+
+<br />
+I hope this helps.  Please feel free to email me at <a href="mailto:sales@tavultesoft.com">sales@tavultesoft.com</a> if you would like some more information on us providing a Greek sorting solution for Excel, Access, and Word.
+<br />
+
+<br />
+Marc Durdin
+<br />
+Tavultesoft Pty Ltd</div></td></tr></table></p>

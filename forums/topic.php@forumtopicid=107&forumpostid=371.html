@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Installation problems - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=10.html'>Install and Uninstall</a> &gt; <a href='topic.php@forumtopicid=107.html'>Installation problems</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Installation problems</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=107&amp;forumpostid=345.html#ForumPost_345'>#</a></span><a style='text-decoration:none' name='ForumPost_345'></a> Installation problems &nbsp; <span class='date'>2007-01-23 22:02:31.390</span></th></tr><tr id='forumpost_345'><td class='nickname' width='25%'>Nick F<br /></td><td class='text' width='75%'><div class='text'>I&#039;m having problems installing Ezrauni22.kmx keyboard.  SIL think it&#039;s a Keyman issue.  I think it&#039;s probably my stupidity.
+<br />
+
+<br />
+From Keyman configuration, I click Install Keyboard in the Keyboards window.  I select EZRAUNI22.kmx (which I downloaded from SIL).  I get presented with an Install Keyboard window, on which I click Install.  The Ezra Sil Unicode keyboard is ticked on the Install Keyboards window.
+<br />
+
+<br />
+But when I try to associate the input language with the keyboard, the Ezra keyboard doesn’t show on Keyboard layout/IME in the Add Input Language window... even though it is apparently associated with it, because it appears as a keyboard under Hebrew in the Settings window of Text Services and Input Languages.
+<br />
+
+<br />
+What am I doing wrong?
+<br />
+
+<br />
+Many thanks.
+<br />
+</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=107&amp;forumpostid=347.html#ForumPost_347'>#</a></span><a style='text-decoration:none' name='ForumPost_347'></a> RE: Installation problems &nbsp; <span class='date'>2007-01-24 09:09:44.853</span></th></tr><tr id='forumpost_347'><td class='nickname' width='25%'>Tavultesoft<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Hi Nick,
+<br />
+
+<br />
+To associate the Ezra keyboard with the Windows Hebrew input language:
+<br />
+
+<br />
+1) Make sure you have the Windows Hebrew input language installed (from Control Panel-&gt;Regional Settings).
+<br />
+2) Open Keyman Configuration.
+<br />
+3) Select the Languages tab.
+<br />
+4) For the Hebrew item in the Langage column, select Ezra in the Keyman Keyboard column.
+<br />
+
+<br />
+You should then be able to use the Ezra keyboard when you select Hebrew from the Windows Language Bar.
+<br />
+
+<br />
+
+<br />
+Kind regards,
+<br />
+
+<br />
+Paul Durdin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=107&amp;forumpostid=358.html#ForumPost_358'>#</a></span><a style='text-decoration:none' name='ForumPost_358'></a> Installation problems &nbsp; <span class='date'>2007-01-28 04:22:04.090</span></th></tr><tr id='forumpost_358'><td class='nickname' width='25%'>Nick F<br /></td><td class='text' width='75%'><div class='text'>Hi Paul!
+<br />
+
+<br />
+Thanks for that.  Hebrew is installed via Control Panel/Regional Settings.
+<br />
+
+<br />
+But Keyman Configuration doesn&#039;t have a Languages tab - just Keyboard, Options, Special Keys, Add Ins and Support.  I can see that Ezra is installed in the Keyboard tab.
+<br />
+
+<br />
+If I go to the Languages tab in Regional Settings, there is no dropdown entry for Ezra in Keyboard Layout/IME - nothing between Estonian and Faeroese.
+<br />
+
+<br />
+Nick</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=107&amp;forumpostid=359.html#ForumPost_359'>#</a></span><a style='text-decoration:none' name='ForumPost_359'></a> RE: Installation problems &nbsp; <span class='date'>2007-01-29 10:10:56.840</span></th></tr><tr id='forumpost_359'><td class='nickname' width='25%'>Tavultesoft<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Hi Nick,
+<br />
+
+<br />
+With Keyman Home Edition you can&#039;t associate a keyboard with a Windows Input Language. You can still use the Ezra keyboard by enabling it from Keyman (left-click on the Keyman icon and select it from the menu, or set up a hotkey for the keyboard in Keyman Configuration), but you won&#039;t be able to enable it with the Windows Language Bar.
+<br />
+
+<br />
+This limitation does not exist in Keyman Standard Edition; I didn&#039;t realise you were using the Home Edition!
+<br />
+
+<br />
+
+<br />
+Kind regards,
+<br />
+
+<br />
+Paul Durdin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=107&amp;forumpostid=371.html#ForumPost_371'>#</a></span><a style='text-decoration:none' name='ForumPost_371'></a> RE: Installation problems &nbsp; <span class='date'>2007-02-02 08:00:09.143</span></th></tr><tr id='forumpost_371'><td class='nickname' width='25%'>Nick F<br /></td><td class='text' width='75%'><div class='text'>Hi Paul!
+<br />
+
+<br />
+Many thanks.  I&#039;m not sure what I did, but it&#039;s now working properly.  It really is a great programme!
+<br />
+
+<br />
+Nick</div></td></tr></table></p>

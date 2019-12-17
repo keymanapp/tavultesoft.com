@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Keyboard source file that works in KMFL (0.9.6) + SCIM - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=71.html'>EuroLatin keyboard</a> &gt; <a href='topic.php@forumtopicid=173.html'>Keyboard source file that works in KMFL (0.9.6) + SCIM</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Keyboard source file that works in KMFL (0.9.6) + SCIM</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><p><img src='../images/kmxicon.gif' alt='Keyboard Details' style='vertical-align: middle; border: none' /> <a href='http://tavultesoft.com/keyman/downloads/keyboards/details.php?KeyboardID=348'>EuroLatin keyboard Keyboard Downloads and Details</a></p><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=173&amp;forumpostid=584.html#ForumPost_584'>#</a></span><a style='text-decoration:none' name='ForumPost_584'></a> Keyboard source file that works in KMFL (0.9.6) + SCIM &nbsp; <span class='date'>2007-11-10 22:33:59.023</span></th></tr><tr id='forumpost_584'><td class='nickname' width='25%'>Felix Rabe<br /></td><td class='text' width='75%'><div class='text'>I quickly made a version (called &quot;Latiniscus 4&quot; - a totally arbitrary name) that works on KMFL 0.9.6 + SCIM.  There were three issues I primarily targetted (you can probably undo the other changes I made without ill effects):
+<br />
+
+<br />
+* This line causes problems: &#039;c \&#039; so I just inserted an empty line after it.
+<br />
+* SCIM somehow doesn&#039;t accept VERSION 7.0, so I changed that to VERSION 6.0.
+<br />
+* For some reason, KMFL doesn&#039;t like UTF-8, so I changed all characters outside iso-8859-1 to U+XXXX.
+<br />
+
+<br />
+Find the file here: <a href="http://felixrabe.net/latiniscus4.kmn" target="_blank" class="postlink">http://felixrabe.net/latiniscus4.kmn</a>
+<br />
+
+<br />
+I explicitly give the differences to the original source file european.kmn into the public domain, so you can incorporate my changes in any way you see fit.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=173&amp;forumpostid=587.html#ForumPost_587'>#</a></span><a style='text-decoration:none' name='ForumPost_587'></a> RE: Keyboard source file that works in KMFL (0.9.6) + SCIM &nbsp; <span class='date'>2007-11-20 21:01:33.970</span></th></tr><tr id='forumpost_587'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Thank you - just out of curiosity, what other changes did you make to the European Latin keyboard?</div></td></tr></table></p>

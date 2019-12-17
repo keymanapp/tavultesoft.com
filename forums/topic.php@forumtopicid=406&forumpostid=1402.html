@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic The tutorial for beginners - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=8.html'>Bugs and Features</a> &gt; <a href='topic.php@forumtopicid=406.html'>The tutorial for beginners</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic The tutorial for beginners</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=406&amp;forumpostid=1392.html#ForumPost_1392'>#</a></span><a style='text-decoration:none' name='ForumPost_1392'></a> The tutorial for beginners &nbsp; <span class='date'>2016-02-03 23:08:05.090</span></th></tr><tr id='forumpost_1392'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>Hello I am new to Keyman Desktop &amp; Keyman Developer.
+<br />
+
+<br />
+   I have been working my way through the tutorial. By step 6 we have the following code which works well and I think I understand it.
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">c Simplified French Keyboard for Keyman 9.0
+<br />
+c 
+<br />
+c This keyboard program uses a simplified set of keys
+<br />
+c for typing French, especially for those who don&#039;t know the
+<br />
+c standard French keyboard.
+<br />
+c 
+<br />
+c NOTE&#58; This keyboard was created from the Keyman keyboard
+<br />
+c programming tutorial.
+<br />
+
+<br />
+store&#40;&amp;Version&#41; &quot;9.0&quot;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;c This keyboard is for use with Keyman 9.0
+<br />
+store&#40;&amp;Name&#41;&nbsp; &nbsp; &quot;Quick French&quot;
+<br />
+store&#40;&amp;BITMAP&#41; &#039;qfrench.ico&#039;
+<br />
+store&#40;&amp;MnemonicLayout&#41; &quot;1&quot;&nbsp; &nbsp; &nbsp; &nbsp; c This keyboard uses a mnemonic layout.
+<br />
+
+<br />
+begin Unicode &gt; use&#40;Main&#41;
+<br />
+group&#40;Main&#41; using keys
+<br />
+
+<br />
+store&#40; plainvowels &#41;&nbsp; &#039;a&#039;&nbsp; &nbsp; &#039;e&#039;&nbsp; &nbsp; &#039;i&#039;&nbsp; &nbsp; &#039;o&#039;&nbsp; &nbsp; &#039;u&#039;&nbsp; &nbsp; &nbsp; &#039;A&#039;&nbsp; &nbsp; &#039;E&#039;&nbsp; &nbsp; &#039;I&#039;&nbsp; &nbsp; &#039;O&#039;&nbsp; &nbsp; &#039;U&#039;
+<br />
+store&#40; acutevowels &#41;&nbsp; U+00E1 U+00E9 U+00ED U+00F3 U+00FA&nbsp; &nbsp;U+00C1 U+00C9 U+00CD U+00D3 U+00DA
+<br />
+store&#40; gravevowels &#41;&nbsp; U+00E0 U+00E8 U+00EC U+00F2 U+00F9&nbsp; &nbsp;U+00C0 U+00C8 U+00CC U+00D2 U+00D9
+<br />
+store&#40; circumvowels &#41; U+00E2 U+00EA U+00EE U+00F4 U+00FB&nbsp; &nbsp;U+00C2 U+00CA U+00CE U+00D4 U+00DB
+<br />
+store&#40; dresisvowels &#41; U+00E4 U+00EB U+00EF U+00F6 U+00FC&nbsp; &nbsp;U+00C4 U+00CB U+00CF U+00D6 U+00DC
+<br />
+
+<br />
+&quot;&#039;&quot; + any&#40; plainvowels &#41; &gt; index&#40; acutevowels, 2 &#41;
+<br />
+&quot;`&quot; + any&#40; plainvowels &#41; &gt; index&#40; gravevowels, 2 &#41;
+<br />
+&quot;^&quot; + any&#40; plainvowels &#41; &gt; index&#40; circumvowels, 2 &#41;
+<br />
+&#039;&quot;&#039; + any&#40; plainvowels &#41; &gt; index&#40; dresisvowels, 2 &#41;
+<br />
+
+<br />
+&quot;&#039;&quot; + &quot;y&quot; &gt; U+00FD&nbsp; &nbsp; c Acute-accented Y
+<br />
+&quot;&#039;&quot; + &quot;Y&quot; &gt; U+00DD
+<br />
+
+<br />
+&quot;&#039;&quot; + &quot;c&quot; &gt; U+00E7&nbsp; &nbsp; c C-cedilla
+<br />
+&quot;&#039;&quot; + &quot;C&quot; &gt; U+00C7
+<br />
+
+<br />
+&quot;&quot; + &quot;&gt;&quot; &gt; U+00BB</td>
+	</tr>
+</table>
+
+<br />
+   In step 7 an undesirable behaviour is noted; if one wishes to get a single quote &quot;&#039;&quot;, one has to press the single quote &quot;&#039;&quot; key twice. Step 8 introduces &#039;Deadkey&#039; to change it to a single press gives a quote and two presses to get an accented character. And step 9 lists complete come.
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">c Simplified French Keyboard for Keyman 9.0
+<br />
+c
+<br />
+c This keyboard program uses a simplified set of keys
+<br />
+c for typing French, especially for those who don&#039;t know the
+<br />
+c standard French keyboard.
+<br />
+c
+<br />
+c NOTE&#58; This keyboard was created from the Keyman keyboard
+<br />
+c programming tutorial.
+<br />
+
+<br />
+store&#40;&amp;Version&#41; &quot;9.0&quot;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;c This keyboard is for use with Keyman 9.0
+<br />
+store&#40;&amp;Name&#41;&nbsp; &nbsp; &quot;Quick French&quot;
+<br />
+store&#40;&amp;Bitmap&#41;&nbsp; &quot;qfrench.ico&quot;
+<br />
+store&#40;&amp;MnemonicLayout&#41; &quot;1&quot;&nbsp; &nbsp; &nbsp; &nbsp; c This keyboard uses a mnemonic layout.
+<br />
+
+<br />
+begin Unicode &gt; use&#40;Main&#41;
+<br />
+
+<br />
+group&#40; Main &#41; using keys
+<br />
+
+<br />
+c Store the upper and lowercase vowels with different accents
+<br />
+store&#40; plainvowels &#41;&nbsp; &#039;a&#039;&nbsp; &nbsp; &#039;e&#039;&nbsp; &nbsp; &#039;i&#039;&nbsp; &nbsp; &#039;o&#039;&nbsp; &nbsp; &#039;u&#039;&nbsp; &nbsp; &nbsp; &#039;A&#039;&nbsp; &nbsp; &#039;E&#039;&nbsp; &nbsp; &#039;I&#039;&nbsp; &nbsp; &#039;O&#039;&nbsp; &nbsp; &#039;U&#039;
+<br />
+store&#40; acutevowels &#41;&nbsp; U+00E1 U+00E9 U+00ED U+00F3 U+00FA&nbsp; &nbsp;U+00C1 U+00C9 U+00CD U+00D3 U+00DA
+<br />
+store&#40; gravevowels &#41;&nbsp; U+00E0 U+00E8 U+00EC U+00F2 U+00F9&nbsp; &nbsp;U+00C0 U+00C8 U+00CC U+00D2 U+00D9
+<br />
+store&#40; circumvowels &#41; U+00E2 U+00EA U+00EE U+00F4 U+00FB&nbsp; &nbsp;U+00C2 U+00CA U+00CE U+00D4 U+00DB
+<br />
+store&#40; dresisvowels &#41; U+00E4 U+00EB U+00EF U+00F6 U+00FC&nbsp; &nbsp;U+00C4 U+00CB U+00CF U+00D6 U+00DC
+<br />
+
+<br />
+c Output deadkeys only for the accent keys pressed
+<br />
++ &quot;&#039;&quot; &gt; dk&#40;quote&#41;&nbsp; &nbsp; &nbsp;c Quote for acute accent
+<br />
++ &quot;`&quot; &gt; dk&#40;bkquote&#41;&nbsp; &nbsp;c Backquote for grave accent
+<br />
++ &quot;^&quot; &gt; dk&#40;caret&#41;&nbsp; &nbsp; &nbsp;c Caret for circumflex
+<br />
++ &#039;&quot;&#039; &gt; dk&#40;dbquote&#41;&nbsp; &nbsp;c Double-quote for dieresis
+<br />
+
+<br />
+c Rules for accented vowels
+<br />
+dk&#40;quote&#41;&nbsp; &nbsp;+ any&#40; plainvowels &#41; &gt; index&#40; acutevowels, 2 &#41;
+<br />
+dk&#40;bkquote&#41; + any&#40; plainvowels &#41; &gt; index&#40; gravevowels, 2 &#41;
+<br />
+dk&#40;caret&#41;&nbsp; &nbsp;+ any&#40; plainvowels &#41; &gt; index&#40; circumvowels, 2 &#41;
+<br />
+dk&#40;dbquote&#41; + any&#40; plainvowels &#41; &gt; index&#40; dresisvowels, 2 &#41;
+<br />
+
+<br />
+c Rules for other characters
+<br />
+dk&#40;quote&#41; + &quot;y&quot; &gt; U+00FD&nbsp; c Acute-accented Y
+<br />
+dk&#40;quote&#41; + &quot;Y&quot; &gt; U+00DD
+<br />
+
+<br />
+dk&#40;quote&#41; + &quot;c&quot; &gt; U+00E7&nbsp; c C-cedilla
+<br />
+dk&#40;quote&#41; + &quot;C&quot; &gt; U+00C7
+<br />
+
+<br />
+&quot;&quot; + &quot;&gt;&quot; &gt; U+00BB
+<br />
+
+<br />
+c Rules for the accent character itself &#40;type it twice&#41;
+<br />
+dk&#40;quote&#41;&nbsp; &nbsp;+ &quot;&#039;&quot; &gt; &quot;&#039;&quot;&nbsp; &nbsp;c Quote
+<br />
+dk&#40;bkquote&#41; + &quot;`&quot; &gt; &quot;`&quot;&nbsp; &nbsp;c Backquote
+<br />
+dk&#40;caret&#41;&nbsp; &nbsp;+ &quot;^&quot; &gt; &quot;^&quot;&nbsp; &nbsp;c Caret
+<br />
+dk&#40;dbquote&#41; + &#039;&quot;&#039; &gt; &#039;&quot;&#039;&nbsp; &nbsp;c Double-quote
+<br />
+
+<br />
+c End of keyboard
+<br />
+</td>
+	</tr>
+</table>
+
+<br />
+   My difficulty is that both scripts do exactly the same thing.
+<br />
+In both scripts, a single press on the single quote key &quot;&#039;&quot; followed by a vowel produces an á, é, í, ó, ú.
+<br />
+And in both scripts, a double press of the single quote key &quot;&#039;&quot; produces a single quote character &quot;&#039;&quot;.
+<br />
+
+<br />
+Please advise, have I misunderstood, or does Keyman Developer need different code?
+<br />
+
+<br />
+Thank you.
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=406&amp;forumpostid=1396.html#ForumPost_1396'>#</a></span><a style='text-decoration:none' name='ForumPost_1396'></a> RE: The tutorial for beginners &nbsp; <span class='date'>2016-02-05 07:25:18.850</span></th></tr><tr id='forumpost_1396'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>No, you have it right. The final step is just listing the complete code for the tutorial as a reference.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=406&amp;forumpostid=1402.html#ForumPost_1402'>#</a></span><a style='text-decoration:none' name='ForumPost_1402'></a> RE: The tutorial for beginners &nbsp; <span class='date'>2016-02-06 00:59:55.070</span></th></tr><tr id='forumpost_1402'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>Thank you, I understand the reason for the two listings. It is just that in Step 7 an error is identified:
+<br />
+
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none'  class="bb_quote"><span style="font-weight: bold">Step 7</span>
+<br />
+For example, look at what happens if you type the following quote:
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">&#039;Alors Alice demanda, &quot;O est ma chatte?&quot;&#039;
+<br />
+</td>
+	</tr>
+</table>
+As you can see, it comes out incorrectly as:
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">Álors Alice demanda, Ö est ma chatte?&quot;&#039;</td>
+	</tr>
+</table>
+
+<br />
+The problem occurs when we have a word in quotes that begins with a vowel: the keyboard will convert it to an accented vowel. We will need to come up with a solution to this problem.</td>
+	</tr>
+</table>
+<br />
+<span style="font-weight: bold">Step 8</span> purports to fix this error.
+<br />
+
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none'  class="bb_quote"><span style="font-weight: bold">Step 8</span>
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">We need to distinguish between the output of this rule, when the user wants a quote, and that of a single quote press, when the user wants to place an accent on a vowel.</td>
+	</tr>
+</table>
+ To implement this behaviour, we use deadkeys.
+<br />
+If you test the keyboard now, you will find that the error no longer occurs. This is because accented vowels are only produced after the deadkey, and no deadkey is output if the user types a quote key twice.
+<br />
+</td>
+	</tr>
+</table>
+<br />
+However, both scripts output the same thing. The error identified in <span style="font-weight: bold">Step 7 </span>is not fixed in <span style="font-weight: bold">Step 8</span>. So the listing in <span style="font-weight: bold">Step 9 </span>still has the same error as identified in <span style="font-weight: bold">Step 7</span>. ie <span style="font-weight: bold">&#039;A</span> gives <span style="font-weight: bold">Á</span> But <span style="font-weight: bold">Step 8 </span>says that the listing in <span style="font-weight: bold">Step 9 </span>should behave as: <span style="font-weight: bold">&#039;A</span> gives <span style="font-weight: bold">&#039;A</span> and <span style="font-weight: bold">&#039;&#039;A</span> gives <span style="font-weight: bold">Á</span>. <span style="text-decoration: underline">But both scripts behave the same way</span>, the wrong way, identified in <span style="font-weight: bold">Step 7</span>, is not fixed by the use of the Deadkey statements in <span style="font-weight: bold">Steps 8</span> &amp; <span style="font-weight: bold">9</span>.
+<br />
+
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none'  class="bb_quote">Or have I misunderstood the text?
+<br />
+I feel I must say that the sentence highlighted above, I found the text a little confusing with all the sub-clauses separated with commas &#039;,&#039;.</td>
+	</tr>
+</table>
+<br />
+I am asking this question because before I can use the &#039;<span style="font-style: italic">Deadkey</span>&#039; statement in my own code, I need to see a working syntax that I can explore.
+<br />
+
+<br />
+Thank you for your help and guidance.
+<br />
+Regards
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=406&amp;forumpostid=1406.html#ForumPost_1406'>#</a></span><a style='text-decoration:none' name='ForumPost_1406'></a> RE: The tutorial for beginners &nbsp; <span class='date'>2016-02-06 08:11:21.757</span></th></tr><tr id='forumpost_1406'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>The intent of those rules is that if the user presses the quote key twice, they will get a quote character. If they press the quote key once, then type a vowel, they will get the accented vowel character, that is:
+<br />
+
+<br />
+&#039;&#039;A gives &#039;A
+<br />
+
+<br />
+&#039;A gives Á
+<br />
+
+<br />
+Is that what you are seeing?</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=406&amp;forumpostid=1408.html#ForumPost_1408'>#</a></span><a style='text-decoration:none' name='ForumPost_1408'></a> RE: The tutorial for beginners &nbsp; <span class='date'>2016-02-06 09:45:06.143</span></th></tr><tr id='forumpost_1408'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>Thank you Marc, it seems I had the wrong end of the stick. You are right; your examples are what I get. I am unclear as to how I got it so wrong; I&#039;m going to put it down to inexperience with Keyman. Anyway, thank you for your help and patience. I can now explore Deadkeys, which are still a bit of a mystery to me. But the older I get the less I know or am sure of. Thank you.
+<br />
+
+<br />
+Regards
+<br />
+Julian Griffin</div></td></tr></table></p>

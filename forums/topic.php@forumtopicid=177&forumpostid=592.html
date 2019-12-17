@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Last update (7.0.242.0) broke functionality in IE - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=7.html'>Bugs and Features</a> &gt; <a href='topic.php@forumtopicid=177.html'>Last update (7.0.242.0) broke functionality in IE</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Last update (7.0.242.0) broke functionality in IE</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=177&amp;forumpostid=592.html#ForumPost_592'>#</a></span><a style='text-decoration:none' name='ForumPost_592'></a> Last update (7.0.242.0) broke functionality in IE &nbsp; <span class='date'>2007-11-22 05:56:04.643</span></th></tr><tr id='forumpost_592'><td class='nickname' width='25%'>Andrei Burago<br /></td><td class='text' width='75%'><div class='text'>After the latest update got installed I can no longer type inside Internet Explorer 7 (e.g. in address bar, hotmail, forms). The letters do not combine in the way they should. Other apps work just fine. I am using the Russian Phonetic keyboard (Unicode).
+<br />
+
+<br />
+I have to say that before this update (in 7.0.240) people also reported to me problems with using Keyman in Firefox and Thunderbird. The problems were different however: when doing contextual substitutions, Keyman was deleting one more character than it should. I am not sure if the latest update fixed the other browsers (I do not have them installed), but it for sure broke IE for me.
+<br />
+
+<br />
+Thanks -- Andrei
+<br />
+
+<br />
+
+<br />
+</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=177&amp;forumpostid=593.html#ForumPost_593'>#</a></span><a style='text-decoration:none' name='ForumPost_593'></a> RE: Last update (7.0.242.0) broke functionality in IE &nbsp; <span class='date'>2007-11-22 08:47:40.393</span></th></tr><tr id='forumpost_593'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Andrei,
+<br />
+
+<br />
+Thank you for your feedback.
+<br />
+
+<br />
+I&#039;m having trouble reproducing this issue here.  Can you give me a sequence of keys which works in say, Notepad, and fails in IE7 you are using the keyboard called &quot;PhonyRus&quot;?  Also - which version of Windows are you using?  If you can send in a diagnostic report, that would be helpful (Keyman Configuration, Support, Diagnostics).
+<br />
+
+<br />
+Regarding the Firefox/Thunderbird issue, I use Firefox on a daily basis here and have not experienced the problem as described.  However, I would like to investigate it further if there is a problem that others are experiencing.  If your contacts could provide me with some more information on the problem, such as key sequences that cause a problem.
+<br />
+
+<br />
+Kind Regards,
+<br />
+
+<br />
+Marc Durdin
+<br />
+Tavultesoft Pty Ltd</div></td></tr></table></p>

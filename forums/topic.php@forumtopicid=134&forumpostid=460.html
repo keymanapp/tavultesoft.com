@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic I/O error 105 - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=10.html'>Install and Uninstall</a> &gt; <a href='topic.php@forumtopicid=134.html'>I/O error 105</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic I/O error 105</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=134&amp;forumpostid=460.html#ForumPost_460'>#</a></span><a style='text-decoration:none' name='ForumPost_460'></a> I/O error 105 &nbsp; <span class='date'>2007-05-10 17:40:00.333</span></th></tr><tr id='forumpost_460'><td class='nickname' width='25%'>Torsten Schaßan<br /></td><td class='text' width='75%'><div class='text'>When I tried to install keymandesktoppro-7.0.233.0.msi (trial version) I received an error message &quot;I/O error 105&quot; with the following error message:
+<br />
+&quot;Unable to instantiate Keyman COM: Schwerwiegender Fehler, ClassID: {7D8879C6-D830-4796-8021-7B6FF69558E4}&quot;
+<br />
+
+<br />
+When I try to start Keyman I again receive &quot;I/O error 105&quot; with this following:
+<br />
+&quot;Fatal Error: Exception &#039;EOleSysError&#039; in module kmshell.exe at 000184A7&quot;
+<br />
+
+<br />
+What to do? I am running WinXPPro, logged in as admin.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=134&amp;forumpostid=461.html#ForumPost_461'>#</a></span><a style='text-decoration:none' name='ForumPost_461'></a> RE: I/O error 105 &nbsp; <span class='date'>2007-05-15 09:52:21.327</span></th></tr><tr id='forumpost_461'><td class='nickname' width='25%'>Tavultesoft<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Hi Torsten,
+<br />
+
+<br />
+Try uninstalling Keyman, rebooting the computer, downloading the installer again and re-installing from scratch. If you still get the same error, please look for a file called &#039;ExcMagic.Log&#039; in either of the following folders:
+<br />
+
+<br />
+C:\Program Files\Tavultesoft\Keyman Desktop Professional 7.0
+<br />
+C:\Program Files\Common Files\Tavultesoft\Keyman Engine 7.0
+<br />
+
+<br />
+If that log file exists, please email it to us at <a href="mailto:support@tavultesoft.com">support@tavultesoft.com</a> so we can determine the cause of the error!
+<br />
+
+<br />
+Kind regards,
+<br />
+
+<br />
+Paul Durdin</div></td></tr></table></p>

@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Sequence of keystrokes to single character output - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=14.html'>General</a> &gt; <a href='topic.php@forumtopicid=446.html'>Sequence of keystrokes to single character output</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Sequence of keystrokes to single character output</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=446&amp;forumpostid=1528.html#ForumPost_1528'>#</a></span><a style='text-decoration:none' name='ForumPost_1528'></a> Sequence of keystrokes to single character output &nbsp; <span class='date'>2016-03-08 04:22:47.523</span></th></tr><tr id='forumpost_1528'><td class='nickname' width='25%'>Stefan Daehler<br /></td><td class='text' width='75%'><div class='text'>I understand, that dead keys in Keyman Developer have to be inserted in the code directly. Taking an example from an older thread at this forum, I tried to write the required instructions. I failed. Thus, I were grateful if an experienced user could give me some sample code I could adapt.
+<br />
+
+<br />
+I&#039;d require to implement sequences of the following type:
+<br />
+
+<br />
+Input: ka - ha -&gt; Output: kha
+<br />
+Unicode: U+1C00 + U+1C1D = U+1C02
+<br />
+
+<br />
+Input: ka - la -&gt; Output: kla
+<br />
+Unicode: U+1C00 + U+1C1C = U+1C01
+<br />
+
+<br />
+Input: ka- ra -&gt; Output: kra
+<br />
+Unicode: U+1C00 + U+1C25 = U+1C001C25
+<br />
+
+<br />
+Input: ka - ya -&gt; Output: kya
+<br />
+Unicode: U+1C00 + U+1C24 = U+1C001C24
+<br />
+
+<br />
+Input: ka - ra - ya -&gt; Output: krya
+<br />
+Unicode: U+1C00 + U+1C25 + U+1C24 = U+1C001C251C24
+<br />
+
+<br />
+Best thanks in advance.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=446&amp;forumpostid=1529.html#ForumPost_1529'>#</a></span><a style='text-decoration:none' name='ForumPost_1529'></a> RE: Sequence of keystrokes to single character output &nbsp; <span class='date'>2016-03-09 08:59:52.030</span></th></tr><tr id='forumpost_1529'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Probably best to start with the tutorial: <a href="http://help.keyman.com/developer/9.0/guides/develop/tutorial/" target="_blank">http://help.keyman.com/developer/9.0/guides/develop/tutorial/</a>
+<br />
+
+<br />
+Step 5 in the tutorial talks about rule context which covers what you are looking for to solve this.</div></td></tr></table></p>

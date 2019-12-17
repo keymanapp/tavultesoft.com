@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Publishing and Layout - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=14.html'>General</a> &gt; <a href='topic.php@forumtopicid=471.html'>Publishing and Layout</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Publishing and Layout</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=471&amp;forumpostid=1594.html#ForumPost_1594'>#</a></span><a style='text-decoration:none' name='ForumPost_1594'></a> Publishing and Layout &nbsp; <span class='date'>2016-10-16 18:34:52.010</span></th></tr><tr id='forumpost_1594'><td class='nickname' width='25%'>Ray Dai<br /></td><td class='text' width='75%'><div class='text'>Hi,
+<br />
+
+<br />
+Two questions:
+<br />
+1) I seem to remember there is a publishing function in Keyman Developer before which I am not seeing anymore. I also have submitted two keyboards via this website in April but they were not published. I understand you have been going through a lot of transition so it might got overlooked. 
+<br />
+
+<br />
+So is Github (per <a href="http://help.keyman.com/developer/keyboards/" target="_blank">http://help.keyman.com/developer/keyboards/</a>) the correct way to submit keyboards so they can be merged into the official list and installed directly by users?
+<br />
+
+<br />
+2) In the developer Doc it was recommended that a single keyboard to be made for all platforms. For my keyboards, the desktop layout uses punctuation keys heavily which are on a separate screen for phones so would you still recommend one keyboard with the keys moved or two keyboards, one optimized for desktop, one for mobile?
+<br />
+
+<br />
+Thank you!
+<br />
+Ray</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=471&amp;forumpostid=1597.html#ForumPost_1597'>#</a></span><a style='text-decoration:none' name='ForumPost_1597'></a> RE: Publishing and Layout &nbsp; <span class='date'>2016-10-27 01:29:55.510</span></th></tr><tr id='forumpost_1597'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Thanks for the questions.
+<br />
+
+<br />
+1) Yes, the link you provide, and Github, is now the preferred way to submit keyboards for publication. I&#039;ve just published the keyboard you submitted recently, at <a href="http://keymankeyboards.com/705" target="_blank">http://keymankeyboards.com/705</a> but it&#039;ll be good to get the updated version online via the Github process as well.
+<br />
+
+<br />
+2) You are correct: it is not a great solution to overload punctuation keys on touch layouts, because touch layouts have better ways of solving the problem. With Keyman, it is possible to use the platform features of the Keyman Keyboard language (http://help.keyman.com/developer/language/reference/platform) to modify the behaviour of the keyboard to solve this. This is my recommended approach. I can send you a sample version of the EuroLatin2 keyboard which does precisely this (I have not yet had a chance to publish Eurolatin2 on our git repository).
+<br />
+
+<br />
+The advantage of a single keyboard is that for end users, they only need to refer to one place for the keyboard, and for maintenance in the future, it becomes less of a chore.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=471&amp;forumpostid=1601.html#ForumPost_1601'>#</a></span><a style='text-decoration:none' name='ForumPost_1601'></a> RE: Publishing and Layout &nbsp; <span class='date'>2016-10-27 17:52:18.973</span></th></tr><tr id='forumpost_1601'><td class='nickname' width='25%'>Ray Dai<br /></td><td class='text' width='75%'><div class='text'>Thanks for the reply.
+<br />
+
+<br />
+I see, using the platform function we can essentially bundle the two layouts in one, or programmatically chose which key to send. That sounds nice, I would love to get the keyboard you mentioned. Thanks!</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=471&amp;forumpostid=1602.html#ForumPost_1602'>#</a></span><a style='text-decoration:none' name='ForumPost_1602'></a> RE: Publishing and Layout &nbsp; <span class='date'>2016-10-31 22:32:42.967</span></th></tr><tr id='forumpost_1602'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Ray,
+<br />
+
+<br />
+I&#039;ve emailed you the keyboard source -- it will take a bit of work to get it into the keyboard repository, so the email version will have to do for now.
+<br />
+</div></td></tr></table></p>

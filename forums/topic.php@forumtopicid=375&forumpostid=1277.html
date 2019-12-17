@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic change css of chinese keymanweb - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=12.html'>Deployment</a> &gt; <a href='topic.php@forumtopicid=375.html'>change css of chinese keymanweb</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic change css of chinese keymanweb</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=375&amp;forumpostid=1277.html#ForumPost_1277'>#</a></span><a style='text-decoration:none' name='ForumPost_1277'></a> change css of chinese keymanweb &nbsp; <span class='date'>2015-01-04 12:11:36.647</span></th></tr><tr id='forumpost_1277'><td class='nickname' width='25%'>Matt<br /></td><td class='text' width='75%'><div class='text'>I previously posted a question about changing the css for the keymanweb at <a href="http://www.tavultesoft.com/forums/topic.php?ForumTopicID=370" target="_blank" class="postlink">http://www.tavultesoft.com/forums/topic.php?ForumTopicID=370</a> .
+<br />
+
+<br />
+This works well except for the Chinese keyboard.
+<br />
+
+<br />
+In my css I have added:
+<br />
+
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">.desktop .kmw-title-bar, .desktop .kmw-footer, .desktop .kmw-arrow-border, .desktop .kmw-arrow-content &#123;
+<br />
+&nbsp; &nbsp; background-color&#58; #9b9b9b;
+<br />
+&#125;</td>
+	</tr>
+</table>
+
+<br />
+
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">.desktop .kmw-osk-inner-frame.kmw-keyboard-chinese &#123;
+<br />
+&nbsp; &nbsp; border&#58; 2px solid #9b9b9b;
+<br />
+&#125;</td>
+	</tr>
+</table>
+
+<br />
+
+<br />
+However, the Chinese keyboard does not change. I have tried all css classes at <a href="http://help.keyman.com/developer/engine/web/2.0/reference_kmw20_osk_classes.php" target="_blank" class="postlink">http://help.keyman.com/developer/engine/web/2.0/reference_kmw20_osk_classes.php</a>, but Chinese keyboard does not change colour.
+<br />
+
+<br />
+Can you suggest a solution?
+<br />
+
+<br />
+Thanks.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=375&amp;forumpostid=1278.html#ForumPost_1278'>#</a></span><a style='text-decoration:none' name='ForumPost_1278'></a> RE: change css of chinese keymanweb &nbsp; <span class='date'>2015-01-06 09:06:50.490</span></th></tr><tr id='forumpost_1278'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>The Chinese keyboard is in our queue to update for KeymanWeb 2.0 - at present it still uses a mixture of custom styling and version 1.0 styling, as its user interface is quite different to most of the other keyboards in our catalogue.
+<br />
+
+<br />
+For now, the following may help. Use the element inspector in your browser to inspect the relevant parts of the Chinese keyboard user interface.  The two key parts are the title bar, and the context area.
+<br />
+
+<br />
+The title bar has the class name &quot;kmw-keyboard-chinese&quot; and the context area has the ID #Help_Keyboard_chinese. With these, you can construct rules such as:
+<br />
+
+<br />
+.kmw-keyboard-chinese &gt; div {
+<br />
+  background: blue !important;
+<br />
+}
+<br />
+
+<br />
+#Help_Keyboard_chinese &gt; div {
+<br />
+  color: blue !important;
+<br />
+}
+<br />
+
+<br />
+You will need the !important override as the styles are defined on the elements at present. The element inspector in your browser will help you to identify other elements of the user interface.</div></td></tr></table></p>

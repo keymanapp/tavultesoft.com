@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Missing dead key functionality - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=213.html'>Finnish Basic</a> &gt; <a href='topic.php@forumtopicid=487.html'>Missing dead key functionality</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Missing dead key functionality</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><p><img src='../images/kmxicon.gif' alt='Keyboard Details' style='vertical-align: middle; border: none' /> <a href='http://tavultesoft.com/keyman/downloads/keyboards/details.php?KeyboardID=503'>Finnish Basic Keyboard Downloads and Details</a></p><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=487&amp;forumpostid=1636.html#ForumPost_1636'>#</a></span><a style='text-decoration:none' name='ForumPost_1636'></a> Missing dead key functionality &nbsp; <span class='date'>2017-02-24 01:15:59.890</span></th></tr><tr id='forumpost_1636'><td class='nickname' width='25%'>Jukka K. Korpela<br /></td><td class='text' width='75%'><div class='text'>Finnish Basic does not contain dead key functionality that is needed for typing a large number of characters that can be typed on a normal Finnish keyboard with normal software as shipped e.g. with Windows. This applies to the dead key for the accents ´ and ` (needed to produce e.g. é and è) and the other dead key for ¨~^. This means that Finnish Basic cannot even produce the tilde ~.
+<br />
+
+<br />
+The current Finnish national standard for keyboards, SFS 5966, has a much larger dead key functionality as well as added characters produced using AltGr.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=487&amp;forumpostid=1642.html#ForumPost_1642'>#</a></span><a style='text-decoration:none' name='ForumPost_1642'></a> RE: Missing dead key functionality &nbsp; <span class='date'>2017-03-01 21:03:36.623</span></th></tr><tr id='forumpost_1642'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>As far as I can tell, ~ is available on AltGr+~ (right square bracket on US layout). Can you tell me where you are seeing this -- is it in Keyman Desktop, KeymanWeb, elsewhere?
+<br />
+
+<br />
+I am aware that the Finnish national standard keyboard was updated since we released the Finnish Basic keyboard in 2008. It should be a simple enough matter to create a new version of the Finnish keyboard that follows the SFS 5966 standard using Keyman Developer.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=487&amp;forumpostid=1647.html#ForumPost_1647'>#</a></span><a style='text-decoration:none' name='ForumPost_1647'></a> RE: Missing dead key functionality &nbsp; <span class='date'>2017-03-03 02:05:05.373</span></th></tr><tr id='forumpost_1647'><td class='nickname' width='25%'>Jukka K. Korpela<br /></td><td class='text' width='75%'><div class='text'>Sorry for my confusion: it’s just the images of keys in Keyman Desktop that are the problem here. They are blank for the two dead keys that have ´` (acute accent, grave accent) and ¨~^ (dieresis, tilde, circumflex) as the engravings in physical keyboards. I jumped into conclusion that they don’t work.
+<br />
+
+<br />
+Regarding SFS 5966, there’s the complication that it has a large number of dead key + normal key combinations, and as far as I can see, you cannot define them in the graphic UI in Keyman Developer. But it seems simple enough to do that in the “Code” view.
+<br />
+
+<br />
+Actually I have the layout as a .klc file. I wonder if there is a conversion utility. And I wonder whether you would like to use the .klc file to set up a layout that you distribute.
+<br />
+</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=487&amp;forumpostid=1651.html#ForumPost_1651'>#</a></span><a style='text-decoration:none' name='ForumPost_1651'></a> RE: Missing dead key functionality &nbsp; <span class='date'>2017-03-07 13:45:12.007</span></th></tr><tr id='forumpost_1651'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>I suspect the reason the keys are showing blank is that they show the combining marks, which would have shifted left off the key as they have no base character.
+<br />
+
+<br />
+You can change the key cap on the On Screen Keyboard tab to a non-combining version of the character, which should resolve that.
+<br />
+
+<br />
+At present we don&#039;t have a conversion tool from .klc to .kmn, although it shouldn&#039;t be that hard to write one. As it stands, we are happy to keep a copy of the .klc file in our internal repository for future conversion, if you are happy with it being distributed under the MIT license.</div></td></tr></table></p>

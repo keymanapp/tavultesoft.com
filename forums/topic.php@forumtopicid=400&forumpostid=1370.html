@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Multi key sequence having different combination - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=14.html'>General</a> &gt; <a href='topic.php@forumtopicid=400.html'>Multi key sequence having different combination</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Multi key sequence having different combination</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=400&amp;forumpostid=1370.html#ForumPost_1370'>#</a></span><a style='text-decoration:none' name='ForumPost_1370'></a> Multi key sequence having different combination &nbsp; <span class='date'>2015-11-25 01:22:18.733</span></th></tr><tr id='forumpost_1370'><td class='nickname' width='25%'>Sougata Das<br /></td><td class='text' width='75%'><div class='text'>How can the following be achieved:
+<br />
+
+<br />
+c             &gt; U+004C
+<br />
+c + h         &gt; U+004C
+<br />
+c + h + h     &gt; U+0052
+<br />
+
+<br />
+q             &gt; U+004C
+<br />
+q + h         &gt; U+004D
+<br />
+
+<br />
+k             &gt; U+004C
+<br />
+k + h         &gt; U+004D
+<br />
+
+<br />
+If I use context (U+004C) the first combination rule gets fired   and later two combinations does not work. 
+<br />
+
+<br />
+Is there a way to work with previous keystrokes rather than context. For example a dynamic variable array that stores few last keystrokes etc and conditional processing of the same.
+<br />
+
+<br />
+Please help. I am a newbie and learning Keyman Developer while trying to achieve something. The keyboard I am designing is phonetic and creates different letters and conjuncts using different key combinations. I am also worried in inserting the akaar/eekar/matras before or after letters/conjuncts. 
+<br />
+
+<br />
+Please Help.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=400&amp;forumpostid=1371.html#ForumPost_1371'>#</a></span><a style='text-decoration:none' name='ForumPost_1371'></a> RE: Multi key sequence having different combination &nbsp; <span class='date'>2015-11-25 06:39:09.050</span></th></tr><tr id='forumpost_1371'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>I&#039;m not entirely clear on how your input is working. Do you mean:
+<br />
+
+<br />
+(a) if you type &#039;c&#039;, you get 4C; if you type &#039;cc&#039; you get 4C 4C; and if you type &#039;cch&#039; you get 4C 4C 52, or
+<br />
+
+<br />
+(b) if you type &#039;c&#039;, you get 4C; if you type &#039;cc&#039; you also get 4C; but if you type &#039;cch&#039; you get 52? 
+<br />
+
+<br />
+Both of these can be solved with the context model but I&#039;d like to give the right answer :)</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=400&amp;forumpostid=1372.html#ForumPost_1372'>#</a></span><a style='text-decoration:none' name='ForumPost_1372'></a> RE: Multi key sequence having different combination &nbsp; <span class='date'>2015-11-25 15:32:15.507</span></th></tr><tr id='forumpost_1372'><td class='nickname' width='25%'>Sougata Das<br /></td><td class='text' width='75%'><div class='text'>Good Morning Marc,
+<br />
+
+<br />
+My bad Typo. c+h &gt; U+0051
+<br />
+so the following would be correct: Left hand side are key combinations, right hand side desired output
+<br />
+The code tag is used for dexterity 
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">
+<br />
+c&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &gt; U+004C&nbsp; c L &#40;ক&#41; c
+<br />
+c + h&nbsp; &nbsp; &nbsp;&gt; U+0051&nbsp; c Q&#40;চ&#41; c+h 
+<br />
+c + h + h &gt; U+0052&nbsp; c R &#40;ছ&#41; c+h+h 
+<br />
+
+<br />
+q&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&gt; U+004C&nbsp; c L &#40;ক&#41; c 
+<br />
+q + h&nbsp; &nbsp; &nbsp;&gt; U+004D&nbsp; c M&#40;খ&#41; k+h&nbsp; &nbsp;
+<br />
+
+<br />
+k&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&gt; U+004C&nbsp; c L &#40;ক&#41; c&nbsp; 
+<br />
+k + h&nbsp; &nbsp; &nbsp;&gt; U+004D&nbsp; c M&#40;খ&#41; k+h
+<br />
+</td>
+	</tr>
+</table>
+
+<br />
+
+<br />
+This is what I was doing:
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">
+<br />
+
+<br />
++ &#039;c&#039;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&gt; U+004C c L &#40;ক&#41; c
+<br />
+U+004C + &#039;h&#039;&nbsp; &nbsp;&gt; U+0051 c Q &#40;চ&#41; c+h
+<br />
+U+0051 + &#039;h&#039;&nbsp; &nbsp;&gt; U+0052 c R &#40;ছ&#41; c+h+h
+<br />
+
+<br />
+&nbsp;+ &#039;k&#039;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&gt; U+004C c L &#40;ক&#41; k
+<br />
+U+004C + &#039;h&#039;&nbsp; &nbsp;&gt; U+004D c M &#40;খ&#41; k+h
+<br />
+
+<br />
+</td>
+	</tr>
+</table>
+
+<br />
+The comment section has the remapped character, followed by bengali character it renders, followed by the keystrokes that it produced.
+<br />
+Naturally the last line is never getting fired. I need to understand &quot;context&quot; better. I have learnt from your help the context is whatever at the cursor, how it is related to previous keystroke. 
+<br />
+
+<br />
+Best Regards
+<br />
+Sougata
+<br />
+</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=400&amp;forumpostid=1373.html#ForumPost_1373'>#</a></span><a style='text-decoration:none' name='ForumPost_1373'></a> RE: Multi key sequence having different combination &nbsp; <span class='date'>2015-11-25 16:16:55.103</span></th></tr><tr id='forumpost_1373'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>What you have is nearly there. In order to distinguish between the &#039;c&#039; and &#039;k&#039; keys, you&#039;ll need to use a deadkey (http://help.keyman.com/developer/language/reference/deadkey) placeholder (dk is an alias for deadkey):
+<br />
+
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">+ &#039;c&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&gt; deadkey&#40;c&#41; U+004C c L &#40;ক&#41; c 
+<br />
+deadkey&#40;c&#41; U+004C + &#039;h&#039;&nbsp; &nbsp;&gt; U+0051&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c Q &#40;চ&#41; c+h 
+<br />
+U+0051 + &#039;h&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &gt; U+0052&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c R &#40;ছ&#41; c+h+h 
+<br />
+
+<br />
++ &#039;k&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&gt; deadkey&#40;k&#41; U+004C c L &#40;ক&#41; k 
+<br />
+deadkey&#40;k&#41; U+004C + &#039;h&#039;&nbsp; &nbsp;&gt; U+004D&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c M &#40;খ&#41; k+h </td>
+	</tr>
+</table>
+
+<br />
+
+<br />
+Putting the deadkey first allows you to ignore if it you aren&#039;t interested in it.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=400&amp;forumpostid=1374.html#ForumPost_1374'>#</a></span><a style='text-decoration:none' name='ForumPost_1374'></a> RE: Multi key sequence having different combination &nbsp; <span class='date'>2015-11-25 16:20:22.457</span></th></tr><tr id='forumpost_1374'><td class='nickname' width='25%'>Sougata Das<br /></td><td class='text' width='75%'><div class='text'>Didn&#039;t know deadkey could be used like that. Awesome. Thanks.</div></td></tr></table></p>

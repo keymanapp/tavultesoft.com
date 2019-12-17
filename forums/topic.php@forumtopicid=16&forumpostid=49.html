@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Keyman and Delete - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=7.html'>Bugs and Features</a> &gt; <a href='topic.php@forumtopicid=16.html'>Keyman and Delete</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Keyman and Delete</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=16&amp;forumpostid=48.html#ForumPost_48'>#</a></span><a style='text-decoration:none' name='ForumPost_48'></a> Keyman and Delete &nbsp; <span class='date'>2005-12-05 14:52:16.000</span></th></tr><tr id='forumpost_48'><td class='nickname' width='25%'>VOX<br /></td><td class='text' width='75%'><div class='text'>Hi,
+<br />
+
+<br />
+ I&#039;m using Keyman for a Indic Script where the sequence of typing and the sequence of characters actually store on computers had much differented. So, I need to implement even for Backspace (Delete) using Keyman Developer Language. For example of my code,
+<br />
+
+<br />
+
+<br />
+any(characters) any(characteradditions) u+200b + [K_BKSP] &amp;gt; index(characteradditions,2) u+200b
+<br />
++ [K_BKSP] &amp;gt; beep
+<br />
+
+<br />
+like that. so, when you delete, any character from the characters group will deleted and characteradditions and u+200b (ZWNJ) will remain. 
+<br />
+
+<br />
+My code works perfectly in debug mode and even running on Keyman. but the problem occurs when ... I type some characters and then switched to another application (using ALT+TAB) or by mouse and back to application I typed before, I cannot delete any characters... 
+<br />
+
+<br />
+I wonder what had happened... I&#039;m using KeyMan 6.2.171 with WinXP SP1...
+<br />
+
+<br />
+VOX</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=16&amp;forumpostid=49.html#ForumPost_49'>#</a></span><a style='text-decoration:none' name='ForumPost_49'></a> Re: Keyman and Delete &nbsp; <span class='date'>2005-12-06 06:24:15.000</span></th></tr><tr id='forumpost_49'><td class='nickname' width='25%'>mcdurdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>[quote=&quot;VOX&quot;]Hi,
+<br />
+
+<br />
+My code works perfectly in debug mode and even running on Keyman. but the problem occurs when ... I type some characters and then switched to another application (using ALT+TAB) or by mouse and back to application I typed before, I cannot delete any characters... 
+<br />
+
+<br />
+I wonder what had happened... I&#039;m using KeyMan 6.2.171 with WinXP SP1...
+<br />
+
+<br />
+VOX[/quote]
+<br />
+
+<br />
+Hi Vox,
+<br />
+
+<br />
+You have discovered one of the limitations of working with legacy applications.  Unfortunately, there is no resolution to this issue for legacy applications as Keyman has to keep track of what the application has in its context buffer.  When the user clicks the mouse, or switches applications, the position of the cursor can change, so Keyman has to clear its context buffer.
+<br />
+
+<br />
+For newer applications that support Text Services Framework (such as Microsoft Word 2002 or later), Keyman Standard Edition is able to track the context and your code should work correctly.  This behaviour is only available when the Text Services Framework addin is installed in Keyman Standard Edition.
+<br />
+
+<br />
+Finally, I would advise updating to the latest version of Keyman, as it corrects a number of bugs.
+<br />
+
+<br />
+Kind Regards,
+<br />
+
+<br />
+Marc Durdin
+<br />
+Tavultesoft Pty Ltd</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=16&amp;forumpostid=50.html#ForumPost_50'>#</a></span><a style='text-decoration:none' name='ForumPost_50'></a>   &nbsp; <span class='date'>2005-12-07 12:22:14.000</span></th></tr><tr id='forumpost_50'><td class='nickname' width='25%'>VOX<br /></td><td class='text' width='75%'><div class='text'>Hello,
+<br />
+
+<br />
+ I&#039;d updated to Keyman Standard Edition and what i found out is the same result. So, I confirmed that MSTSF Addin is installed with it. and Test like this
+<br />
+
+<br />
+1. Opened MS Word 2003
+<br />
+2. Open previously typed (with the same keyboard) document. 
+<br />
+3. Activate the Keyboard.
+<br />
+4. And I cannot delete the words.
+<br />
+
+<br />
+One thing is that I&#039;m not using registered version of Keyman standart. Just evaluation. So, is there any limition of TSF in evaluation ?
+<br />
+
+<br />
+So, to sum up. Keyman donot actually know the strings of active text input area but he store what had previously typed in them in it&#039;s own buffer. Right? unless TSF.
+<br />
+
+<br />
+So, we must use TSF surely for complex scripts and complex publications. so, how do we know which application support TSF? 
+<br />
+
+<br />
+I&#039;m truely wish KeyMan to be perfect not only for my own use, but also, because it&#039;s the one. The only one software to do complicated keyboards in simple way. No comparable product. 
+<br />
+
+<br />
+Thanks You,
+<br />
+VOX</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=16&amp;forumpostid=51.html#ForumPost_51'>#</a></span><a style='text-decoration:none' name='ForumPost_51'></a> Re: &nbsp; <span class='date'>2005-12-13 06:26:04.000</span></th></tr><tr id='forumpost_51'><td class='nickname' width='25%'>mcdurdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Hi Vox,
+<br />
+
+<br />
+Sorry for the delay in replying.
+<br />
+
+<br />
+[quote=&quot;VOX&quot;]
+<br />
+One thing is that I&#039;m not using registered version of Keyman standart. Just evaluation. So, is there any limition of TSF in evaluation ?
+<br />
+[/quote]
+<br />
+
+<br />
+The TSF addin will work in the evaluation.
+<br />
+
+<br />
+Note that you must select the TSF keyboard through the language bar interface (this is unfortunately a limitation of Windows TSF support) - and not through the normal Keyman icon.
+<br />
+
+<br />
+If you click the keyboard icon in the language bar, you should see Tavultesoft Keyman in the menu.  Select this, and a new button will appear on the language bar, called Tavultesoft Keyman.  From here, you can select your Keyman keyboard.
+<br />
+
+<br />
+[quote=&quot;VOX&quot;]
+<br />
+I&#039;m truely wish KeyMan to be perfect not only for my own use, but also, because it&#039;s the one. The only one software to do complicated keyboards in simple way. No comparable product. 
+<br />
+[/quote]
+<br />
+
+<br />
+Thanks for the vote of confidence!
+<br />
+
+<br />
+Marc Durdin
+<br />
+Tavultesoft Pty Ltd</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=16&amp;forumpostid=52.html#ForumPost_52'>#</a></span><a style='text-decoration:none' name='ForumPost_52'></a> re &nbsp; <span class='date'>2005-12-13 11:10:52.000</span></th></tr><tr id='forumpost_52'><td class='nickname' width='25%'>VOX<br /></td><td class='text' width='75%'><div class='text'>Hi,
+<br />
+
+<br />
+ TSF works now. Seems it&#039;s response is slow when doing complex contexs... is it usual?
+<br />
+
+<br />
+ BTW, is there no any other way to get the text from active control? Not by means of TSF on supported software? I think it might not perfect(100% bug free) if we need everything to be stored on buffer and process them. And Only office applications support TSF as far as I know... This is upsetting.. I know something about Mac OS text framework and they work in almost any application. ... Can I develop Keyman like software (which can read Keyman sources ) for Mac OS ? Because I know no software in Mac OS X can give key input facilities as Keyman can give... I want to fill the blank...
+<br />
+
+<br />
+thanks,
+<br />
+VOX</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=16&amp;forumpostid=55.html#ForumPost_55'>#</a></span><a style='text-decoration:none' name='ForumPost_55'></a> Re: re &nbsp; <span class='date'>2005-12-18 03:59:08.000</span></th></tr><tr id='forumpost_55'><td class='nickname' width='25%'>mcdurdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>[quote=&quot;VOX&quot;]TSF works now. Seems it&#039;s response is slow when doing complex contexs... is it usual?[/quote]
+<br />
+
+<br />
+That&#039;s a bit strange - I have found that TSF tended to be faster than the other input methods.  It may depend on the application.
+<br />
+
+<br />
+[quote=&quot;VOX&quot;]BTW, is there no any other way to get the text from active control? Not by means of TSF on supported software? I think it might not perfect(100% bug free) if we need everything to be stored on buffer and process them. And Only office applications support TSF as far as I know... [/quote]
+<br />
+
+<br />
+There are very few apps that support TSF at this stage - some are starting to appear now.  It is a complex API unfortunately, so that tends to slow implementation down a bit.
+<br />
+
+<br />
+[quote=&quot;VOX&quot;]This is upsetting.. I know something about Mac OS text framework and they work in almost any application. ... Can I develop Keyman like software (which can read Keyman sources ) for Mac OS ? Because I know no software in Mac OS X can give key input facilities as Keyman can give... I want to fill the blank...[/quote]
+<br />
+
+<br />
+As long as you write 100% of the code in a clone program for Mac OS X yourself (and don&#039;t take any from Keyman), there is no reason why you couldn&#039;t - however, it would be a fair bit of work!
+<br />
+
+<br />
+Have a look at <a href="http://kmfl.sourceforge.net/" target="_blank" class="postlink">http://kmfl.sourceforge.net/</a>
+<br />
+
+<br />
+Regards,
+<br />
+
+<br />
+Marc Durdin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=16&amp;forumpostid=56.html#ForumPost_56'>#</a></span><a style='text-decoration:none' name='ForumPost_56'></a> thanks &nbsp; <span class='date'>2005-12-18 16:05:22.000</span></th></tr><tr id='forumpost_56'><td class='nickname' width='25%'>VOX<br /></td><td class='text' width='75%'><div class='text'>hello again,
+<br />
+ 
+<br />
+  I don&#039;t know what&#039;s wrong with my PC. TSF is slow. Let it be however and I&#039;ll test it again on fresh Windows XP pc. I want to know why is it slow.
+<br />
+
+<br />
+ TSF is complex for sure. it&#039;s bad. Apple&#039;s TSF is simple. And of course I will not stole any source code from Keyman (because I don&#039;t have it :P) writing for Mac OS X. I know about KMFL. You and SIL develop it right? So, I just want to fill the gap with KMFA (KeyMan for Apple) ;) and promise it to be OpenSource too. 
+<br />
+
+<br />
+ And By the way, I found a way for Keyman to support Contax in Legacy applications. (i.e. to get the string from active edit control without key buffer or direct memory mapping or TSF). Don&#039;t want to say it in public forum. Where can i contact you? :) My email is 
+<br />
+htoomyintnaung <a href="mailto:_at@at_gmail_dot.dot_com">_at@at_gmail_dot.dot_com</a>
+<br />
+
+<br />
+
+<br />
+yours,
+<br />
+VOX</div></td></tr></table></p>

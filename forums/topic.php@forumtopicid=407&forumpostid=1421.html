@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic US and UK keyboard mappings - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=8.html'>Bugs and Features</a> &gt; <a href='topic.php@forumtopicid=407.html'>US and UK keyboard mappings</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic US and UK keyboard mappings</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=407&amp;forumpostid=1393.html#ForumPost_1393'>#</a></span><a style='text-decoration:none' name='ForumPost_1393'></a> US and UK keyboard mappings &nbsp; <span class='date'>2016-02-03 23:56:05.937</span></th></tr><tr id='forumpost_1393'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>Hello, I am new to Keyman, but I have used MSKLC (Microsoft&#039;s Keyboard Layout Creator tool. In Windows each keyboard layout for each country/language has a different mapping of letters to phisical scancodes of the keyboard. The US layout swaps the double quote key &#039;&quot;&#039; and &#039;at&#039; symbol key &#039;@&#039; of the UK layout.
+<br />
+
+<br />
+   Whenever I test a Keyman keyboard, uses the US scancode mapping.
+<br />
+
+<br />
+   My Keyman header text is:
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">store&#40;&amp;VERSION&#41; &#039;9.0&#039;
+<br />
+store&#40;&amp;NAME&#41; &#039;Trial 4&#039;
+<br />
+store&#40;&amp;LANGUAGE&#41; &#039;x0809&#039;
+<br />
+store&#40;&amp;WINDOWSLANGUAGES&#41; &#039;x0809&#039;
+<br />
+store&#40;&amp;BITMAP&#41; &#039;Trial 4.ico&#039;
+<br />
+begin Unicode &gt; use&#40;main&#41;</td>
+	</tr>
+</table>
+
+<br />
+Please advise as to how I can stop Keyman from using the US mapping and make it use the UK mapping.
+<br />
+
+<br />
+Thank you.
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=407&amp;forumpostid=1397.html#ForumPost_1397'>#</a></span><a style='text-decoration:none' name='ForumPost_1397'></a> RE: US and UK keyboard mappings &nbsp; <span class='date'>2016-02-05 07:31:18.007</span></th></tr><tr id='forumpost_1397'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>You can use mnemonic layouts to have the rules of your keyboard follow a different base mapping. This is not always appropriate for a given keyboard - have a read of this blog post:
+<br />
+
+<br />
+<a href="http://blog.tavultesoft.com/2011/08/developing-mnemonic-layouts-for-keyman-desktop.html" target="_blank">http://blog.tavultesoft.com/2011/08/developing-mnemonic-layouts-for-keyman-desktop.html</a>
+<br />
+
+<br />
+The following help article has technical details:
+<br />
+
+<br />
+<a href="http://help.keyman.com/developer/language/reference/mnemoniclayout" target="_blank">http://help.keyman.com/developer/language/reference/mnemoniclayout</a></div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=407&amp;forumpostid=1409.html#ForumPost_1409'>#</a></span><a style='text-decoration:none' name='ForumPost_1409'></a> RE: US and UK keyboard mappings &nbsp; <span class='date'>2016-02-06 10:14:57.970</span></th></tr><tr id='forumpost_1409'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>Thank you for the URLs. I&#039;ve look through them and I think I will stay with the positional model.
+<br />
+
+<br />
+But I solved the problem with<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">+ &#91;SHIFT K_QUOTE&#93; &gt; &#039;@&#039;
+<br />
++ &#91;SHIFT K_2&#93; &gt; &#039;&quot;&#039;</td>
+	</tr>
+</table>
+It works, but it feels like a bit of a bodge.
+<br />
+
+<br />
+Regards
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=407&amp;forumpostid=1413.html#ForumPost_1413'>#</a></span><a style='text-decoration:none' name='ForumPost_1413'></a> RE: US and UK keyboard mappings &nbsp; <span class='date'>2016-02-08 04:42:30.457</span></th></tr><tr id='forumpost_1413'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>I&#039;ve looked a little closer at the differences between the US and UK keyboard layout. The keyboard I am developing is for use on UK keyboards. The users will expect the symbols not to have moved when they switch to the TPA keyboard. So I have added to the code:<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">c Letters &amp; symbols to make the US layout conform to the UK layout.
+<br />
++ &#91;SHIFT K_3&#93; &gt;&nbsp; &nbsp; &nbsp; &nbsp;&#039;£&#039;
+<br />
++ &#91;SHIFT K_2&#93; &gt;&nbsp; &nbsp; &nbsp; &nbsp;&#039;&quot;&#039;
+<br />
++ &#91;K_BKSLASH&#93; &gt;&nbsp; &nbsp; &nbsp; &nbsp;&#039;#&#039;
+<br />
++ &#91;CTRL ALT K_4&#93; &gt;&nbsp; &nbsp; &#039;€&#039;
+<br />
++ &#91;SHIFT K_QUOTE&#93; &gt;&nbsp; &nbsp;&#039;@&#039;
+<br />
++ &#91;SHIFT K_BKSLASH&#93; &gt; &#039;~&#039;
+<br />
+
+<br />
++ &#91;SHIFT K_BKQUOTE&#93; &gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#039;¬&#039;
+<br />
++ &#91;SHIFT ALT K_BKQUOTE&#93; &gt;&nbsp; &nbsp; &nbsp; &#039;¬&#039;
+<br />
++ &#91;CTRL ALT K_BKQUOTE&#93; &gt;&nbsp; &nbsp; &nbsp; &nbsp;&#039;¦&#039;
+<br />
++ &#91;CTRL ALT K_BKSLASH&#93; &gt;&nbsp; &nbsp; &nbsp; &nbsp;&#039;\&#039;
+<br />
++ &#91;SHIFT K_oE2&#93; &gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#039;|&#039;
+<br />
++ &#91;SHIFT CTRL ALT K_BKSLASH&#93; &gt; &#039;|&#039;
+<br />
+
+<br />
++ &#91;SHIFT CTRL ALT K_A&#93; &gt; &#039;Á&#039;
+<br />
++ &#91;SHIFT CTRL ALT K_E&#93; &gt; &#039;É&#039;
+<br />
++ &#91;SHIFT CTRL ALT K_I&#93; &gt; &#039;Í&#039;
+<br />
++ &#91;SHIFT CTRL ALT K_O&#93; &gt; &#039;Ó&#039;
+<br />
++ &#91;SHIFT CTRL ALT K_U&#93; &gt; &#039;Ú&#039;
+<br />
+
+<br />
++ &#91;CTRL ALT K_A&#93; &gt; &#039;á&#039;
+<br />
++ &#91;CTRL ALT K_E&#93; &gt; &#039;é&#039;
+<br />
++ &#91;CTRL ALT K_I&#93; &gt; &#039;í&#039;
+<br />
++ &#91;CTRL ALT K_O&#93; &gt; &#039;ó&#039;
+<br />
++ &#91;CTRL ALT K_U&#93; &gt; &#039;ú&#039;</td>
+	</tr>
+</table>
+
+<br />
+   So I would make a plea that it be possible for a keyboard to be based on the keyboard layout defined in the header of a keyboard definition, eg:<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">store&#40;&amp;LANGUAGE&#41; &#039;x0809&#039;
+<br />
+store&#40;&amp;WINDOWSLANGUAGES&#41; &#039;x0809&#039;
+<br />
+store&#40;&amp;ethnologuecode&#41;&nbsp; &nbsp;&#039;Eng&#039;</td>
+	</tr>
+</table>
+
+<br />
+   Not just on the US keyboard layout.
+<br />
+
+<br />
+Regards
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=407&amp;forumpostid=1421.html#ForumPost_1421'>#</a></span><a style='text-decoration:none' name='ForumPost_1421'></a> RE: US and UK keyboard mappings &nbsp; <span class='date'>2016-02-09 06:20:57.120</span></th></tr><tr id='forumpost_1421'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Thanks for the feedback; I understand the issue. I will consider the issue for future versions of Keyman Developer.</div></td></tr></table></p>

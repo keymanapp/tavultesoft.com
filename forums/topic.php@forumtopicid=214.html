@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Character map in Developer - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=8.html'>Bugs and Features</a> &gt; <a href='topic.php@forumtopicid=214.html'>Character map in Developer</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Character map in Developer</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=214&amp;forumpostid=702.html#ForumPost_702'>#</a></span><a style='text-decoration:none' name='ForumPost_702'></a> Character map in Developer &nbsp; <span class='date'>2008-11-02 10:45:58.947</span></th></tr><tr id='forumpost_702'><td class='nickname' width='25%'>Craig<br /></td><td class='text' width='75%'><div class='text'>Hi Marc,
+<br />
+The Font Helper is a really nice feature in Keyman Desktop. Is it available in Developer to check font coverage before compiling and installing?
+<br />
+
+<br />
+Secondly, a suggested feature: looking back at a keyboard I made some time ago, it would be nice to be able to find where the letters are in the Unicode map (eg in Latin-A / Extended B, etc). Buttons/commands to &quot;Show this character in Character map&quot; and &quot;Show all used characters in Character map&quot; would be great. The latter would show a view just like the Filter does in Character map. Thanks.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=214&amp;forumpostid=705.html#ForumPost_705'>#</a></span><a style='text-decoration:none' name='ForumPost_705'></a> RE: Character map in Developer &nbsp; <span class='date'>2008-11-11 22:43:12.540</span></th></tr><tr id='forumpost_705'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>The Font Helper is not currently available in Keyman Developer but we do plan to integrate it into the Character Map in Keyman Developer in a future update.
+<br />
+
+<br />
+You can find a character in character map simply by clicking on the character or U+xxxx code in the keyboard source.  When you do this, the Character Map will automatically jump to that character, unless:
+<br />
+
+<br />
+<ul>You have filtered the character map to exclude that character, or
+<br />
+You have switched off the option &quot;Find character under cursor automatically&quot;</ul>
+<br />
+
+<br />
+A function to show all characters in a keyboard would be helpful and we will consider it for a future update of Keyman Developer, perhaps related to the Font Helper.</div></td></tr></table></p>

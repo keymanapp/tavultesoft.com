@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Touch and hold keys - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=14.html'>General</a> &gt; <a href='topic.php@forumtopicid=427.html'>Touch and hold keys</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Touch and hold keys</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=427&amp;forumpostid=1454.html#ForumPost_1454'>#</a></span><a style='text-decoration:none' name='ForumPost_1454'></a> Touch and hold keys &nbsp; <span class='date'>2016-02-15 23:28:28.250</span></th></tr><tr id='forumpost_1454'><td class='nickname' width='25%'>Steven White<br /></td><td class='text' width='75%'><div class='text'>I&#039;m experimenting with Touch and hold keys in a touch layout.
+<br />
+
+<br />
+I&#039;ve created two keys &quot;under&quot; the &quot;a&quot; key, given them two T_ virtual key names, put rules in the KMN file that these virtual keys generate the characters I want.  The keyboard compiles without error, but my touch and hold keys never appear. I press and hold &quot;a&quot; and only the &quot;a&quot; keycap appears. What am I missing?</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=427&amp;forumpostid=1461.html#ForumPost_1461'>#</a></span><a style='text-decoration:none' name='ForumPost_1461'></a> RE: Touch and hold keys &nbsp; <span class='date'>2016-02-16 06:59:00.383</span></th></tr><tr id='forumpost_1461'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>I&#039;m only guessing but it&#039;s possible you&#039;ve added the touch and hold (or longpress) keys for a mobile layout and are testing on a tablet, or vice versa?
+<br />
+
+<br />
+If you don&#039;t want to have separate layouts for mobile and tablet, just delete one of the platforms in the touch layout designer, and then Keyman will just use the alternative platform. Having separate platforms is helpful for complex keyboards as a tablet device can usefully show more keys than a  mobile.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=427&amp;forumpostid=1462.html#ForumPost_1462'>#</a></span><a style='text-decoration:none' name='ForumPost_1462'></a> RE: Touch and hold keys &nbsp; <span class='date'>2016-02-16 08:42:58.043</span></th></tr><tr id='forumpost_1462'><td class='nickname' width='25%'>Steven White<br /></td><td class='text' width='75%'><div class='text'>Thanks, Marc, that was the answer. I was creating a layout for tablet and testing on a phone. Now it is working.
+<br />
+
+<br />
+</div></td></tr></table></p>

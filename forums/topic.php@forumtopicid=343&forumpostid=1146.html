@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Deleting Previous rule and inserting new on key combination - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=14.html'>General</a> &gt; <a href='topic.php@forumtopicid=343.html'>Deleting Previous rule and inserting new on key combination</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Deleting Previous rule and inserting new on key combination</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=343&amp;forumpostid=1145.html#ForumPost_1145'>#</a></span><a style='text-decoration:none' name='ForumPost_1145'></a> Deleting Previous rule and inserting new on key combination &nbsp; <span class='date'>2013-07-21 19:30:33.707</span></th></tr><tr id='forumpost_1145'><td class='nickname' width='25%'>Sougata Das<br /></td><td class='text' width='75%'><div class='text'>Hi,
+<br />
+I have been using a Bengali Phonetic typing software &quot;Celcius Keyring&quot; which is now not supported in Win7/Win8 also the product is not available any more for online licensing. Since I have a lot of documents already created in that software which uses a non-unicode proprietary font. I need a way to be able to edit those documents in their Keyboard scheme.
+<br />
+ 
+<br />
+I bought 2 licenses of Keyman Desktop and now find that I need to develop a keyboard of my own so I downloaded Developer trial to roll out my own.
+<br />
+
+<br />
+So my questions are:
+<br />
+1. Is the source code (.KMN)for Bangla Isis layout by Gautam Sengupta available ?? (Being close, that would help me learn and customize)
+<br />
+2. For inserting &quot;MATRAs/Aakaars&quot; I have created a store named &quot;forAKAAR&quot; of all the characters in concern. They can be inserted before or after the character. Eg.:  
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">
+<br />
+any&#40;forAKAAR&#41; +&#039;a&#039; &gt; context U+00A1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c Insert the&nbsp; Aa-kaar After Character&nbsp; 
+<br />
+any&#40;forAKAAR&#41; +&#039;e&#039; &gt; U+00DD index&#40;forAKAAR,1&#41;&nbsp; c Insert the E-Kaar before the Character
+<br />
+</td>
+	</tr>
+</table>
+
+<br />
+Now my problem is that the legacy software has a &quot;ee&quot; for another which inserts after the character. The rule of the second line gets fired for the first &quot;e&quot;, keypress and updates what is onscreen, for the second &quot;e&quot; which to the user is &quot;ee&quot; the previous rule should be deleted preserving the correct index for the store and the new character inserted after it.
+<br />
+Since the font is non-unicode I am having hard time figuring out what to do. In unicode it would be
+<br />
+
+<br />
+Character Typed + &#039;e&#039;  &gt; U+09C7 BENGALI_VOWEL_SIGN_E
+<br />
+Character Typed + &#039;ee&#039; &gt; U+09C0 BENGALI_VOWEL_SIGN_II
+<br />
+
+<br />
+I don&#039;t have a clue here, could anyone help.
+<br />
+
+<br />
+Regards 
+<br />
+Sougata Das</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=343&amp;forumpostid=1146.html#ForumPost_1146'>#</a></span><a style='text-decoration:none' name='ForumPost_1146'></a> RE: Deleting Previous rule and inserting new on key combination &nbsp; <span class='date'>2013-07-21 19:38:47.927</span></th></tr><tr id='forumpost_1146'><td class='nickname' width='25%'>Sougata Das<br /></td><td class='text' width='75%'><div class='text'>I forgot to mention it is the same as typing &quot;i&quot; and &quot;ii&quot; in Bangla ISIS Keyboard, I just need different combinations with different outputs. BTW is there a FAQ or How to section somewhere here around for those important &quot;GOTCHAS&quot;</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=343&amp;forumpostid=1147.html#ForumPost_1147'>#</a></span><a style='text-decoration:none' name='ForumPost_1147'></a> RE: Deleting Previous rule and inserting new on key combination &nbsp; <span class='date'>2013-07-22 09:04:31.037</span></th></tr><tr id='forumpost_1147'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Hi Sougata,
+<br />
+
+<br />
+Thanks for the questions.  The first thing to remember is that Keyman works not on a sequence of keys, but rather on the current context and current keystroke.  The context is essentially what is already in the document at the cursor point.  So for example, you could do something like this:
+<br />
+
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">any&#40;forAKAAR&#41; + &#039;e&#039; &gt; U+00DD context&#40;1&#41;
+<br />
+U+00DD any&#40;forAKAAR&#41; + &#039;e&#039; &gt; context&#40;2&#41; $ee_char
+<br />
+&nbsp; &nbsp;c where $ee_char is the EE-Kaar character
+<br />
+</td>
+	</tr>
+</table>
+
+<br />
+
+<br />
+The second rule above will delete the U+00DD, and insert the $ee_char after the forAKAAR character.  If it needed to go before the character, then you could do this instead:
+<br />
+
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">U+00DD any&#40;forAKAAR&#41; + &#039;e&#039; &gt; $ee_char context&#40;2&#41;
+<br />
+</td>
+	</tr>
+</table>
+
+<br />
+
+<br />
+Note that I am using the context() statement instead of the index() statement, as we just want to emit the exact same character from the context, so we don&#039;t need index()&#039;s mapping functionality.
+<br />
+
+<br />
+Sorry, but the source to the ISIS keyboards is not available.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=343&amp;forumpostid=1148.html#ForumPost_1148'>#</a></span><a style='text-decoration:none' name='ForumPost_1148'></a> RE: Deleting Previous rule and inserting new on key combination &nbsp; <span class='date'>2013-07-22 16:33:07.910</span></th></tr><tr id='forumpost_1148'><td class='nickname' width='25%'>Sougata Das<br /></td><td class='text' width='75%'><div class='text'>[quote=&quot;Marc Durdin&quot;]Hi Sougata,
+<br />
+The first thing to remember is that Keyman works not on a sequence of keys, but rather on the current context and current keystroke.  The context is essentially what is already in the document at the cursor point.[/quote]
+<br />
+Thanks Marc, this should get things moving and align my approach in the right direction. Till I stumble into something else, thanks.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=343&amp;forumpostid=1363.html#ForumPost_1363'>#</a></span><a style='text-decoration:none' name='ForumPost_1363'></a> RE: Deleting Previous rule and inserting new on key combination &nbsp; <span class='date'>2015-11-23 21:35:09.033</span></th></tr><tr id='forumpost_1363'><td class='nickname' width='25%'>Sougata Das<br /></td><td class='text' width='75%'><div class='text'>Long time. I couldn&#039;t complete my keyboard back in 2013.I have some spare time now and would like to resume the development.
+<br />
+How can I insert matraas to conjuncts ?? 
+<br />
+
+<br />
+The conjuncts are 2, 3, 4 or 5 key pressed in sequence. The output is a combination of characters or sometimes a single character dedicated to a particular conjunct-combination.
+<br />
+
+<br />
+Now a conjunct can have matraas inserted before or after following a single/double vowel key combinations.
+<br />
+
+<br />
+For Example (Only KeyCombos and required outputs are shown):
+<br />
+
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">
+<br />
+&#039;s&#039; + &#039;b&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&gt; U+00FC 
+<br />
+&#039;s&#039; + &#039;h&#039; + &#039;b&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&gt; U+006E U+00C4 
+<br />
+&#039;s&#039; + &#039;h&#039; + &#039;c&#039; + &#039;h&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&gt; U+00D5 U+0051 
+<br />
+&#039;s&#039; + &#039;h&#039; + &#039;c&#039; + &#039;h&#039; + &#039;h&#039; &nbsp; &nbsp;&gt; U+00D5 U+0052 
+<br />
+&#039;s&#039; + &#039;h&#039; + &#039;h&#039; + &#039;`&#039; + &#039;N&#039; &nbsp; &nbsp;&gt; U+006F U+00B7 
+<br />
+&#039;s&#039; + &#039;h&#039; + &#039;h&#039; + &#039;N&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&gt; U+006F U+00B7 
+<br />
+&#039;s&#039; + &#039;h&#039; + &#039;h&#039; + &#039;b&#039;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&gt; U+00D6 U+0068 
+<br />
+&#039;s&#039; + &#039;h&#039; + &#039;h&#039; + &#039;k&#039;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&gt; U+00D7 U+004C 
+<br />
+&#039;s&#039; + &#039;h&#039; + &#039;h&#039; + &#039;m&#039;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&gt; U+00D6 U+006A 
+<br />
+&#039;s&#039; + &#039;h&#039; + &#039;h&#039; + &#039;p&#039;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&gt; U+00D6 U+0066 
+<br />
+&#039;s&#039; + &#039;h&#039; + &#039;h&#039; + &#039;p&#039; + &#039;h&#039; &nbsp; &nbsp;&gt; U+00D6 U+0067 
+<br />
+&#039;s&#039; + &#039;h&#039; + &#039;h&#039; + &#039;T&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&gt; U+00F8 
+<br />
+&#039;s&#039; + &#039;h&#039; + &#039;h&#039; + &#039;T&#039; + &#039;h&#039; &nbsp; &nbsp;&gt; U+00F9 
+<br />
+&#039;s&#039; + &#039;h&#039; + &#039;l&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&gt; U+006E U+00D4 
+<br />
+&#039;s&#039; + &#039;h&#039; + &#039;m&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&gt; U+006E U+00C8 
+<br />
+&#039;s&#039; + &#039;h&#039; + &#039;n&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&gt; U+006E U+00C0 
+<br />
+&#039;s&#039; + &#039;h&#039; + &#039;r&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&gt; U+006E U+00CB 
+<br />
+&#039;s&#039; + &#039;h&#039; + &#039;t&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&gt; U+00F7 
+<br />
+&#039;s&#039; + &#039;k&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&gt; U+00FA 
+<br />
+&#039;s&#039; + &#039;k&#039; + &#039;h&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&gt; U+00D8 U+004D 
+<br />
+&#039;s&#039; + &#039;k&#039; + &#039;r&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&gt; U+00FB 
+<br />
+&#039;s&#039; + &#039;l&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&gt; U+0070 U+00D4 
+<br />
+&#039;s&#039; + &#039;m&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&gt; U+00D8 U+006A 
+<br />
+&#039;s&#039; + &#039;n&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&gt; U+00D8 U+0065 
+<br />
+&#039;s&#039; + &#039;p&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&gt; U+00D8 U+0066 
+<br />
+&#039;s&#039; + &#039;p&#039; + &#039;h&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&gt; U+00D8 U+0067 
+<br />
+&#039;s&#039; + &#039;r&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&gt; U+0070 U+00CB 
+<br />
+&#039;s&#039; + &#039;T&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&gt; U+00D8 U+0056 
+<br />
+&#039;s&#039; + &#039;t&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&gt; U+00D9 U+00B9 
+<br />
+&#039;s&#039; + &#039;t&#039; + &#039;h&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&gt; U+00D8 U+0062 
+<br />
+&#039;s&#039; + &#039;t&#039; + &#039;r&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&gt; U+00D8 U+0153 
+<br />
+&#039;s&#039; + &#039;T&#039; + &#039;r&#039;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&gt; U+00D8 U+0056 U+00CC 
+<br />
+</td>
+	</tr>
+</table>
+
+<br />
+
+<br />
+I guess the right hand side of the equation of line 1 wraps down to line 2 to make keyman work on the context but not sure if context is just the character at cursor or the array till it hits space. The question still remains how do I insert matraas before or after. 
+<br />
+
+<br />
+This time I have figured upto 272 different combinations for conjuncts. The typing feel in the old software is like transliteration. I wish I could attach a font and some sample.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=343&amp;forumpostid=1364.html#ForumPost_1364'>#</a></span><a style='text-decoration:none' name='ForumPost_1364'></a> RE: Deleting Previous rule and inserting new on key combination &nbsp; <span class='date'>2015-11-23 21:36:55.410</span></th></tr><tr id='forumpost_1364'><td class='nickname' width='25%'>Sougata Das<br /></td><td class='text' width='75%'><div class='text'>BTW, Forgot to mention. If I can actually do this can I post this on Github ?</div></td></tr></table></p>

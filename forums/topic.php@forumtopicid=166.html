@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Unknown error when compiling keyboard - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=8.html'>Bugs and Features</a> &gt; <a href='topic.php@forumtopicid=166.html'>Unknown error when compiling keyboard</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Unknown error when compiling keyboard</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=166&amp;forumpostid=549.html#ForumPost_549'>#</a></span><a style='text-decoration:none' name='ForumPost_549'></a> Unknown error when compiling keyboard &nbsp; <span class='date'>2007-09-19 05:08:18.063</span></th></tr><tr id='forumpost_549'><td class='nickname' width='25%'>Sven Siegmund<br /></td><td class='text' width='75%'><div class='text'>Hello,
+<br />
+
+<br />
+I use Keyman Developer 6.0.164.0 with Windows XP SP2. When I try to compile my keyboard, I get this error:
+<br />
+
+<br />
+-----------
+<br />
+Exception &#039;EAccessViolation&#039; in module kmcmpdll.dll at 00004D51
+<br />
+Access violation at address 3C105D51 in module &#039;kmcmpdll.dll&#039;. Read of address 028C2000
+<br />
+
+<br />
+Source file: UNKNOWN, Line UNKNOWN
+<br />
+
+<br />
+Call stack:
+<br />
+:3C105D51 [kmcmpdll.dll]
+<br />
+
+<br />
+Registers:
+<br />
+EAX = 028C2000  CS = 001B  EIP = 3C105D51  Flags = 00010216
+<br />
+EBX = 028BEFE8  SS = 0023  ESP = 003BF3C0    EBP = 02949794
+<br />
+ECX = 00000009  DS = 0023  ESI = 00000033    FS  = 003B
+<br />
+EDX = 00000002  ES = 0023  EDI = 00000000    GS  = 0000
+<br />
+Code at CS:EIP
+<br />
+66 83 38 10 75 F7 83 C0 02 C3 90 57 5D 10 3C 23 
+<br />
+Stack:
+<br />
+3C105B23 028BFD64 02949790 3C102746 028BFB70 
+<br />
+02949794 013A1AA4 00000000 00000000 00000000 
+<br />
+00000000 00000000 00000000 00000000 3C105D51 
+<br />
+013A1A05 01E2267C 01E58A0B 3C105D51 00004D51 
+<br />
+-----------
+<br />
+
+<br />
+I don&#039;t get any error when I try to compile any other keyboard (one of the sample or the SIL IPA Unicode keyboard). So there should be nothing fundamentally wrong with my installation of Keyman Developer. 
+<br />
+
+<br />
+I only found that in Options/Character Map I cannot rebuild the Character Database. When I downloaded MDAC 2.5 SP3 as recommended, it won&#039;t install. It says that &quot;MDAC 2.8 RTM is incompatible with this version of Windows. All of its features are currently part of Windows.&quot; 
+<br />
+
+<br />
+Maybe there is someting bad with my source code, here it is for you to check:
+<br />
+
+<br />
+
+<br />
+
+<br />
+-----------
+<br />
+c Keyboard for writing click languages, especially N|uu
+<br />
+
+<br />
+VERSION 6.0                 c This keyboard is for use with Keyman 6.0
+<br />
+NAME &quot;Nuu 1.0ger&quot;              c German keyboard layout enriched with click signs
+<br />
+
+<br />
+begin Unicode &gt; use(Main) 
+<br />
+
+<br />
+group(Main) using keys
+<br />
+
+<br />
++ [K_BKQUOTE] &gt; dk(circumflex)
+<br />
++ [SHIFT K_BKQUOTE] &gt; dk(ring)
+<br />
++ [K_EQUAL] &gt; dk(aigu)
+<br />
++ [SHIFT K_EQUAL] &gt; dk(grave)
+<br />
++ [RALT K_RBRKT] &gt; dk(nasal)
+<br />
+
+<br />
+store(klapky) [K_1] [K_2] [K_3] [K_4] [K_5] [K_6] [K_7] [K_8] [K_9] [K_0] [K_HYPHEN] [K_Q] [K_W] [K_E] [K_R] [K_T] [K_Y] [K_U] [K_I] [K_O] [K_P] [K_LBRKT] [K_RBRKT] [K_A] [K_S] [K_D] [K_F] [K_G] [K_H] [K_J] [K_K] [K_L] [K_COLON] [K_QUOTE] [K_BKSLASH] [K_oE2] [K_Z] [K_X] [K_C] [K_V] [K_B] [K_N] [K_M] [K_COMMA] [K_PERIOD] [K_SLASH] [SHIFT K_1] [SHIFT K_2] [SHIFT K_3] [SHIFT K_4] [SHIFT K_5] [SHIFT K_6] [SHIFT K_7] [SHIFT K_8] [SHIFT K_9] [SHIFT K_0] [SHIFT K_HYPHEN] [SHIFT K_Q] [SHIFT K_W] [SHIFT K_E] [SHIFT K_R] [SHIFT K_T] [SHIFT K_Y] [SHIFT K_U] [SHIFT K_I] [SHIFT K_O] [SHIFT K_P] [SHIFT K_LBRKT] [SHIFT K_RBRKT] [SHIFT K_A] [SHIFT K_S] [SHIFT K_D] [SHIFT K_F] [SHIFT K_G] [SHIFT K_H] [SHIFT K_J] [SHIFT K_K] [SHIFT K_L] [SHIFT K_COLON] [SHIFT K_QUOTE] [SHIFT K_BKSLASH] [SHIFT K_oE2] [SHIFT K_Z] [SHIFT K_X] [SHIFT K_C] [SHIFT K_V] [SHIFT K_B] [SHIFT K_N] [SHIFT K_M] [SHIFT K_COMMA] [SHIFT K_PERIOD] [SHIFT K_SLASH] [RALT K_2] [RALT K_3] [RALT K_7] [RALT K_8] [RALT K_9] [RALT K_0] [RALT K_HYPHEN] [RALT K_oE2] [RALT K_M] 
+<br />
+
+<br />
+store(znaky) &quot;1234567890ßqwertzuiopü+asdfghjklöä#&lt;yxcvbnm,.-&quot; &quot;!&quot; U+0022 &quot;§$%&amp;/()=?QWERTZUIOPÜ*ASDFGHJKLÖÄ&#039;&gt;YXCVBNM;:_&quot; &quot;²³{[]}\|µ&quot;
+<br />
+
+<br />
+store(circumflexable) &quot;AaEeIiOoUuCcGgHJjSsWw&quot; [SHIFT K_Z] [K_Z] [SHIFT K_Y] [K_Y] [K_SPACE]
+<br />
+store(circumflexed) U+00C2 U+00E2 U+00CA U+00EA U+00CE U+00EE U+00D4 U+00F4 U+00DB U+00FB U+0108 U+0109 U+011C U+011D U+0124 U+0134 U+0135 U+015C U+015D U+0174 U+0175 U+0176 U+0177 U+1E90 U+1E91 U+005E
+<br />
+
+<br />
+store(ringable) &quot;AaUuw&quot; [K_Z] [K_SPACE] 
+<br />
+store(ringed) U+00C5 U+00E5 U+016E U+016F U+1E98 U+1E99 U+00B0
+<br />
+
+<br />
+store(aiguable) &quot;AaEeIiOoUu&quot; [SHIFT K_Z] [K_Z] &quot;CcLlNnSs&quot; [SHIFT K_LBRKT] [K_LBRKT] &quot;Gg&quot; [SHIFT K_Y] [K_Y] &quot;KkMmPpWw&quot; [K_SPACE] 
+<br />
+store(aigued) U+00C1 U+00E1 U+00C9 U+00E9 U+00CD U+00ED U+00D3 U+00F3 U+00DA U+00FA U+00DD U+00FD U+0106 U+0107 U+0139 U+0140 U+0143 U+0144 U+015A U+015B U+01D7 U+01D8 U+01F4 U+01F5 U+0179 U+0180 U+1E30 U+1E31 U+1E3E U+1E3F U+1E54 U+1E55 U+1E82 U+1E83 U+00B4
+<br />
+
+<br />
+store(gravable) &quot;AaEeIiOoUu&quot; [SHIFT K_LBRKT] [K_LBRKT] &quot;Ww&quot; [SHIFT K_Z] [K_Z] [K_SPACE]
+<br />
+store(graved) U+00C0 U+00E0 U+00C8 U+00E8 U+00CC U+00EC U+00D2 U+00F2 U+00D9 U+00F9 U+01DB U+01DC U+1E80 U+1E81 U+1EF2 U+1EF3 U+0060
+<br />
+
+<br />
+store(nasalable) &quot;NnOoVv&quot; [K_SPACE]
+<br />
+store(nasaled) U+00D1 U+00F1 U+00D5 U+00F5 U+1E7C U+1E7D U+007E 
+<br />
+
+<br />
+store(altgrable) [RALT K_2] [RALT K_3] [RALT K_7] [RALT K_8] [RALT K_9] [RALT K_0] [RALT K_HYPHEN] [RALT K_Q] [RALT K_E] [RALT K_oE2] [RALT K_M] [K_R] [K_T] [K_Y] [K_U] [K_I] 
+<br />
+store(altgred) U+00B2 U+00B3 U+007B U+005B U+005D U+007D U+005C U+0040 U+20AC U+007C U+00B5 U+01C0 U+01C1 U+01C3 U+01C2 U+0298
+<br />
+
+<br />
++ any(klapky) &gt; index(znaky,1)
+<br />
++ any(altgrable) &gt; index(altgred,1)
+<br />
+dk(circumflex) + any(circumflexable) &gt; index(circumflexed,1)
+<br />
+dk(ring) + any(ringable) &gt; index(ringed,1)
+<br />
+dk(aigu) + any(aiguable) &gt; index(aigued,1)
+<br />
+dk(grave) + any(gravable) &gt; index(graved,1)
+<br />
+dk(nasal) + any(nasalable) &gt; index(nasaled,1)
+<br />
+------------
+<br />
+
+<br />
+Thank you for your answer.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=166&amp;forumpostid=551.html#ForumPost_551'>#</a></span><a style='text-decoration:none' name='ForumPost_551'></a> RE: Unknown error when compiling keyboard &nbsp; <span class='date'>2007-09-19 12:52:16.940</span></th></tr><tr id='forumpost_551'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>The issue is with the length of the store &#039;klapky&#039;.  In version 6.0 of the compiler, it is limited to 255 characters per store.  Each virtual key takes 4 bytes, so this store is about 400 bytes as it stands.
+<br />
+
+<br />
+The easiest solution is to break the store down into multiple stores.
+<br />
+
+<br />
+Version 7.0 does not have this limitation in store length.
+<br />
+
+<br />
+When checking the issue, I noted a couple of issues with the keyboard (which you would no doubt have picked up if the compiler wasn&#039;t crashing!):
+<br />
+
+<br />
+1. The klapky and znaky stores are different lengths, which is a problem for <table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">+ any&#40;klapky&#41; &gt; index&#40;znaky,1&#41;</td>
+	</tr>
+</table>
+
+<br />
+2. Each of the deadkey rules such as <table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">dk&#40;circumflex&#41; + any&#40;circumflexable&#41; &gt; index&#40;circumflexed,1&#41;</td>
+	</tr>
+</table>
+ needs to change the index to <table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">index&#40;circumflexed,2&#41;</td>
+	</tr>
+</table>
+ to match the index up to the any on the left hand side of the rule.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=166&amp;forumpostid=552.html#ForumPost_552'>#</a></span><a style='text-decoration:none' name='ForumPost_552'></a> RE: Unknown error when compiling keyboard &nbsp; <span class='date'>2007-09-19 22:55:17.847</span></th></tr><tr id='forumpost_552'><td class='nickname' width='25%'>Sven Siegmund<br /></td><td class='text' width='75%'><div class='text'>Hi Marc, 
+<br />
+
+<br />
+thank you for your reply and your suggestrions. I have corrected the keyboard and it works.
+<br />
+
+<br />
+Best regards,
+<br />
+
+<br />
+Sven Siegmund</div></td></tr></table></p>

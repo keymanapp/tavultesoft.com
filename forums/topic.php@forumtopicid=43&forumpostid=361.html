@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Recovering _old_ data - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=13.html'>General</a> &gt; <a href='topic.php@forumtopicid=43.html'>Recovering _old_ data</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Recovering _old_ data</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=43&amp;forumpostid=132.html#ForumPost_132'>#</a></span><a style='text-decoration:none' name='ForumPost_132'></a> Recovering _old_ data &nbsp; <span class='date'>2006-06-17 22:48:19.187</span></th></tr><tr id='forumpost_132'><td class='nickname' width='25%'>Paul R<br /></td><td class='text' width='75%'><div class='text'>Looks like I&#039;ve had my head buried in the sand too long.  I used Keyman extensively back in the early 90&#039;s, the latest upgrade being version 3.2.  I had my own font and developed a kmn keyboard to suit.  It ran nicely in Windows 3.11 :)
+<br />
+
+<br />
+The problem is, I am still working with the same language group and would like to recover the data we produced back then.  I&#039;m concerned about compatibility with Windows XP.
+<br />
+
+<br />
+The font is pre Unicode, and the kmn file is version 3.2 format.
+<br />
+
+<br />
+Where do I start??
+<br />
+</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=43&amp;forumpostid=133.html#ForumPost_133'>#</a></span><a style='text-decoration:none' name='ForumPost_133'></a> RE: Recovering _old_ data &nbsp; <span class='date'>2006-06-19 11:10:59.297</span></th></tr><tr id='forumpost_133'><td class='nickname' width='25%'>Andrew C.<br />Keyboard Designer</td><td class='text' width='75%'><div class='text'>Hi Paul,
+<br />
+
+<br />
+One question? Can the language group you are working with be fully represented in Unicode? Ie. are there and missing characters? If not then it should be straight forward.
+<br />
+
+<br />
+SIL have some useful resources:
+<br />
+<ul>Converting Keyman 3.2 Keyboards to Keyman 6: How to get your legacy keyboards to work where they shouldn’t. <a href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;item_id=Keyman32to60Tutorial&amp;highlight=keyman~3.2" target="_blank" class="postlink">http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;item_id=Keyman32to60Tutorial&amp;highlight=keyman~3.2</a></ul>
+<br />
+<ul>How to Write a Conversion Mapping for your Legacy Font.
+<br />
+<a href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;item_id=UTTWriteMap" target="_blank" class="postlink">http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;item_id=UTTWriteMap</a></ul>
+<br />
+<ul>Unicode Transition Tutorial Links
+<br />
+<a href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;cat_id=UnicodeTutorials" target="_blank" class="postlink">http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;cat_id=UnicodeTutorials</a></ul>
+<br />
+SIL also produce a encoding converter called TECKit <a href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;cat_id=TECkit" target="_blank" class="postlink">http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;cat_id=TECkit</a>. You can create a mapping file for your legacy fonts to unicode. There is a plugin for Microsoft Word that allows you to run the conversion in place within the word document. Its also possible to daisy chain conversions. It can handle unicode normalization and allows you to change fonts during the conversion process.
+<br />
+
+<br />
+Should enable you to move your old word files to unicode.
+<br />
+
+<br />
+Andrew
+<br />
+<a href="http://www.openroad.net.au" target="_blank" class="postlink">http://www.openroad.net.au</a></div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=43&amp;forumpostid=137.html#ForumPost_137'>#</a></span><a style='text-decoration:none' name='ForumPost_137'></a> RE: Recovering _old_ data &nbsp; <span class='date'>2006-06-21 20:30:40.730</span></th></tr><tr id='forumpost_137'><td class='nickname' width='25%'>Paul R<br /></td><td class='text' width='75%'><div class='text'>Thanks Andrew, I&#039;ll progressively work through your suggestions
+<br />
+
+<br />
+Regards,
+<br />
+
+<br />
+Paul R</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=43&amp;forumpostid=356.html#ForumPost_356'>#</a></span><a style='text-decoration:none' name='ForumPost_356'></a> RE: Recovering _old_ data &nbsp; <span class='date'>2007-01-28 01:18:10.887</span></th></tr><tr id='forumpost_356'><td class='nickname' width='25%'>vikram barthwal<br /></td><td class='text' width='75%'><div class='text'>Can you integrate the teckit like software into keyman which can convert ansi to unicode or viceversa.
+<br />
+
+<br />
+i have made a maping for converting a hindi ansi font to unicode. in teckit.
+<br />
+
+<br />
+but i will be glad if u make it some product like this in keyman so that i can integrate in my keyman keyboard.
+<br />
+
+<br />
+thanks
+<br />
+vikram
+<br />
+</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=43&amp;forumpostid=361.html#ForumPost_361'>#</a></span><a style='text-decoration:none' name='ForumPost_361'></a> RE: Recovering _old_ data &nbsp; <span class='date'>2007-01-29 10:18:46.230</span></th></tr><tr id='forumpost_361'><td class='nickname' width='25%'>Tavultesoft<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Hi Vikram,
+<br />
+
+<br />
+We do not plan to include any utility like TECKit in Keyman at this time.
+<br />
+
+<br />
+
+<br />
+Kind regards,
+<br />
+
+<br />
+Paul Durdin</div></td></tr></table></p>

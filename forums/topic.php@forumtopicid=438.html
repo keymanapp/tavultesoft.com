@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Unconditional using a Group. - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=8.html'>Bugs and Features</a> &gt; <a href='topic.php@forumtopicid=438.html'>Unconditional using a Group.</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Unconditional using a Group.</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=438&amp;forumpostid=1500.html#ForumPost_1500'>#</a></span><a style='text-decoration:none' name='ForumPost_1500'></a> Unconditional using a Group. &nbsp; <span class='date'>2016-02-26 03:46:59.860</span></th></tr><tr id='forumpost_1500'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>As I understand it, any group can only have a maximum of two Rules that fire in one iteration. One on a Context (with or without a key press) and one on a Match/Nomatch, and after this the Group is exited.
+<br />
+
+<br />
+   If I have read it correctly, Match &amp; Nomatch are not the exact inverse of one another.
+<br />
+
+<br />
+   My question is, is there a way to chain Groups unconditionally?
+<br />
+
+<br />
+   Something like a simple <table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">Use&#40;NextGroup&#41;</td>
+	</tr>
+</table>
+ as the last line in a Group.
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">Match&nbsp; &nbsp;&gt; Use&#40;NextGroup&#41;
+<br />
+Nomatch &gt; Use&#40;NextGroup&#41;</td>
+	</tr>
+</table>
+
+<br />
+   Could not be relied on to always jump to Group(NextGroup).
+<br />
+
+<br />
+Regards
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=438&amp;forumpostid=1503.html#ForumPost_1503'>#</a></span><a style='text-decoration:none' name='ForumPost_1503'></a> RE: Unconditional using a Group. &nbsp; <span class='date'>2016-02-26 07:55:57.550</span></th></tr><tr id='forumpost_1503'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Yes, you have a correct understanding. The gap between <span style="font-weight: bold">match</span> and <span style="font-weight: bold">nomatch</span> is to do with how <span style="font-weight: bold">nomatch</span> handles non-character keys for &#039;using keys&#039; groups. It turns out that for most keyboards, if a key such as /F12/ is pressed, you don&#039;t want it to be handled in a <span style="font-weight: bold">nomatch</span> rule. Conversely, if the key would normally generate a character on the system keyboard, it should fire the <span style="font-weight: bold">nomatch</span>.
+<br />
+
+<br />
+However, there are cases where this would be desirable, such as for a preprocessing group, and I do have an issue in the queue to add this as a feature, tentatively called <span style="font-weight: bold">nomatch(all)</span>. Not sure when/if this will happen though.
+<br />
+
+<br />
+For context-only groups, <span style="font-weight: bold">match</span> and <span style="font-weight: bold">nomatch</span> are exact inverse.</div></td></tr></table></p>

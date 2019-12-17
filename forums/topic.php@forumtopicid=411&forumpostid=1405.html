@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Two or more letter contexts stored in a string. - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=14.html'>General</a> &gt; <a href='topic.php@forumtopicid=411.html'>Two or more letter contexts stored in a string.</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Two or more letter contexts stored in a string.</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=411&amp;forumpostid=1401.html#ForumPost_1401'>#</a></span><a style='text-decoration:none' name='ForumPost_1401'></a> Two or more letter contexts stored in a string. &nbsp; <span class='date'>2016-02-06 00:14:56.467</span></th></tr><tr id='forumpost_1401'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>Hi,
+<br />
+
+<br />
+   I have created a <span style="font-weight: bold">Store</span>(vowels) with a string of single characters, ie ‘<span style="font-style: italic">aeiouAEIOU</span>’, for a ‘<span style="font-weight: bold">Any</span>()’ statement. I then created a matching <span style="font-weight: bold">Store</span>(accents), ie ‘<span style="font-style: italic">áéíóúÁÉÍÓÚ</span>’ for an ‘<span style="font-weight: bold">Index</span>() statement. I then created a rule to use all this:
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">Store&#40;vowels&#41;&nbsp; &#039;aeiouAEIOU&#039;
+<br />
+Store&#40;accents&#41; &#039;áéíóúÁÉÍÓÚ&#039;
+<br />
+Any&#40;vowels&#41; + &quot;&#039;&quot; &gt; Index&#93;&#40;accents,1&#41;</td>
+	</tr>
+</table>
+
+<br />
+This all works, and I think I understand it.
+<br />
+   So my question, can I create a rule that is fired from a list of two letter contexts.
+<br />
+eg <span style="font-weight: bold">Store</span>(doubles) &#039;<span style="font-style: italic">arerirorur</span>’; being <span style="text-decoration: underline">ar</span> <span style="text-decoration: underline">er</span> <span style="text-decoration: underline">ir</span> <span style="text-decoration: underline">or</span> <span style="text-decoration: underline">ur</span>?
+<br />
+
+<br />
+And a supplementary question; is it possible to pad an &#039;<span style="font-weight: bold">Any</span>()&#039; statement to match an &#039;<span style="font-weight: bold">Index</span>()&#039; statement? eg 
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">Store&#40;doubles&#41; &quot;ar&#039;er&#039;ir&#039;or&#039;ur&quot;
+<br />
+Store&#40;accents&#41; &quot;ar-er-ir-or-ur&quot;
+<br />
+Any&#40;doubles&#41; &gt; Index&#40;accents,1&#41;</td>
+	</tr>
+</table>
+
+<br />
+Regards
+<br />
+Julian Griffin</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=411&amp;forumpostid=1405.html#ForumPost_1405'>#</a></span><a style='text-decoration:none' name='ForumPost_1405'></a> RE: Two or more letter contexts stored in a string. &nbsp; <span class='date'>2016-02-06 08:04:14.687</span></th></tr><tr id='forumpost_1405'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>No, at this time, multi-character matches are not supported.
+<br />
+
+<br />
+You can do padding with formatting, e.g.
+<br />
+
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">store&#40;input&#41;&nbsp; &#039;a&#039; &#039;e&#039; &#039;i&#039; &#039;o&#039; &#039;u&#039;
+<br />
+store&#40;output&#41; &#039;A&#039; &#039;E&#039; &#039;I&#039; &#039;O&#039; &#039;U&#039;
+<br />
+</td>
+	</tr>
+</table>
+
+<br />
+</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=411&amp;forumpostid=1411.html#ForumPost_1411'>#</a></span><a style='text-decoration:none' name='ForumPost_1411'></a> RE: Two or more letter contexts stored in a string. &nbsp; <span class='date'>2016-02-06 10:39:41.553</span></th></tr><tr id='forumpost_1411'><td class='nickname' width='25%'>br Julian Griffin OSL<br /></td><td class='text' width='75%'><div class='text'>Thank you Marc, that is clear. I can stop exploring that possible solution.
+<br />
+
+<br />
+   Knowing what cannot be done can be as important as knowing what can be done. Actually when I&#039;m choosing software, I first look for its limitations.
+<br />
+
+<br />
+Thank you once again.
+<br />
+Regards
+<br />
+Julian Griffin
+<br />
+</div></td></tr></table></p>

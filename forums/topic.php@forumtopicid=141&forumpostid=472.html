@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Keyboard change with control-shift does not always work - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=7.html'>Bugs and Features</a> &gt; <a href='topic.php@forumtopicid=141.html'>Keyboard change with control-shift does not always work</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Keyboard change with control-shift does not always work</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=141&amp;forumpostid=470.html#ForumPost_470'>#</a></span><a style='text-decoration:none' name='ForumPost_470'></a> Keyboard change with control-shift does not always work &nbsp; <span class='date'>2007-05-19 04:18:17.290</span></th></tr><tr id='forumpost_470'><td class='nickname' width='25%'>Amaryllis<br /></td><td class='text' width='75%'><div class='text'>I am using two different keyboards for the greek language and I want users to be able to switch between them using the control-shift combination.
+<br />
+
+<br />
+Here is what happens while testing the above:
+<br />
+
+<br />
+In keyman configuration, keyboards appear in the following order:
+<br />
+1. English Windows
+<br />
+2. Greek automated
+<br />
+3. Greek for all
+<br />
+
+<br />
+I start from the English Windows keyboard.
+<br />
+Alt-shift ---&gt; Greek automated 
+<br />
+Alt-shift ---&gt; English Windows keyboard.
+<br />
+Alt-shift ---&gt; Greek automated
+<br />
+Control – shift ---&gt; No change (I should have gotten my second greek keyboard, Greek for all)
+<br />
+Alt-shift ---&gt; English Windows keyboard.
+<br />
+Alt-shift ---&gt; Greek for all!!!!  It looks as though when I pressed control - shift previously, keyman memorized the change.
+<br />
+Control – shift ---&gt; Greek automated. This time the control-shift works! However, if I press control-shift again, it does not revert to Greek for all!
+<br />
+Alt-shift ---&gt; English Windows keyboard.
+<br />
+etc.
+<br />
+
+<br />
+In other words, control-shift works on Greek for all (the second greek keyboard defined in the configuration section) but not on greek automated. 
+<br />
+
+<br />
+I have noticed that this happens when I use Word.
+<br />
+When I use the keyboards from within a form (for example, now), the keyboard interchange works fine.
+<br />
+
+<br />
+Any idea why this happens?
+<br />
+
+<br />
+Thanks in advance for any help.
+<br />
+Amaryllis</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=141&amp;forumpostid=472.html#ForumPost_472'>#</a></span><a style='text-decoration:none' name='ForumPost_472'></a> RE: Keyboard change with control-shift does not always work &nbsp; <span class='date'>2007-05-22 10:39:00.337</span></th></tr><tr id='forumpost_472'><td class='nickname' width='25%'>Tavultesoft<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Hi Amaryllis,
+<br />
+
+<br />
+Thanks for the extra information! I&#039;ve just done some more testing with this and have found a few odd issues which we&#039;ll have to look into.
+<br />
+
+<br />
+I will get back to you as soon as we&#039;ve made some progress.
+<br />
+
+<br />
+Kind regards,
+<br />
+
+<br />
+Paul Durdin</div></td></tr></table></p>

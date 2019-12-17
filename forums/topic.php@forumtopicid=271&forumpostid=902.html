@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Where does the bookmarklet not work? - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=15.html'>General</a> &gt; <a href='topic.php@forumtopicid=271.html'>Where does the bookmarklet not work?</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Where does the bookmarklet not work?</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=271&amp;forumpostid=897.html#ForumPost_897'>#</a></span><a style='text-decoration:none' name='ForumPost_897'></a> Where does the bookmarklet not work? &nbsp; <span class='date'>2010-06-03 05:13:13.673</span></th></tr><tr id='forumpost_897'><td class='nickname' width='25%'>Jim Darlack<br /></td><td class='text' width='75%'><div class='text'>Where does the bookmarklet <span style="font-style: italic">not</span> work? For instance, the bookmarklet works just fine for me in a standard form field (see the search field in the top-right of my school&#039;s website <a href="http://www.gordonconwell.edu" target="_blank" class="postlink">http://www.gordonconwell.edu</a>) or on Google&#039;s search page. However, on some fields it does not work (for instance in the search field in GMail, or the &quot;status&quot; field in Facebook).</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=271&amp;forumpostid=898.html#ForumPost_898'>#</a></span><a style='text-decoration:none' name='ForumPost_898'></a> RE: Where does the bookmarklet not work? &nbsp; <span class='date'>2010-06-03 10:16:05.580</span></th></tr><tr id='forumpost_898'><td class='nickname' width='25%'>Tavultesoft<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Thank you for reporting these two locations where the bookmarklet isn&#039;t working.
+<br />
+
+<br />
+We were aware of a limitation in the current release with Gmail and we know how to fix that one.  The status field in Facebook is a little more complex but we&#039;ll investigate it further and work on a fix.
+<br />
+
+<br />
+We don&#039;t have a big list of places where it isn&#039;t working (Gmail was the only one on our list) -- so if you find any more, please do report them!</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=271&amp;forumpostid=901.html#ForumPost_901'>#</a></span><a style='text-decoration:none' name='ForumPost_901'></a> RE: Where does the bookmarklet not work? &nbsp; <span class='date'>2010-06-04 01:17:50.597</span></th></tr><tr id='forumpost_901'><td class='nickname' width='25%'>Jim Darlack<br /></td><td class='text' width='75%'><div class='text'>Is there a particular rhyme or reason that it might not work in certain fields? I ask because I&#039;ve noticed that the bookmarklet does not work in my school&#039;s course management system rich text editor (run with the program &#039;sakai&#039;). It seems that it has something to do with the editor being loaded in an inline frame. (When I split the editor out of the frame, the bookmarklet does work.)</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=271&amp;forumpostid=902.html#ForumPost_902'>#</a></span><a style='text-decoration:none' name='ForumPost_902'></a> RE: Where does the bookmarklet not work? &nbsp; <span class='date'>2010-06-04 11:18:01.167</span></th></tr><tr id='forumpost_902'><td class='nickname' width='25%'>Tavultesoft<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Yes, there are two scenarios in which the attachment is not automatically occurring:
+<br />
+
+<br />
+* contentEditable elements (such as div)
+<br />
+* elements within iframes (as KeymanWeb does not currently enumerate editable elements within iframes).
+<br />
+
+<br />
+You can attach manually to elements within iframes using KeymanWeb.AttachToControl (http://www.tavultesoft.com/keymandev/documentation/70/reference_kmw_AttachToControl.html).  contentEditable divs are a bit more complex and are not currently supported with KeymanWeb.  We are currently working on full support for both of these scenarios.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=271&amp;forumpostid=907.html#ForumPost_907'>#</a></span><a style='text-decoration:none' name='ForumPost_907'></a> RE: Where does the bookmarklet not work? &nbsp; <span class='date'>2010-06-08 19:48:59.207</span></th></tr><tr id='forumpost_907'><td class='nickname' width='25%'>Tavultesoft<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>I&#039;m pleased to announce that we have released an update to the Bookmarklet that works now with Gmail.  We have also dramatically simplified the Bookmarklet signup -- see <a href="http://www.tavultesoft.com/keymanweb/bookmarklet.php" target="_blank">http://www.tavultesoft.com/keymanweb/bookmarklet.php</a>
+<br />
+
+<br />
+We are still working on a solution for the Facebook contentEditable div.  We know how to solve the problem -- it is just a case of making sure we get all the details right!</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=271&amp;forumpostid=908.html#ForumPost_908'>#</a></span><a style='text-decoration:none' name='ForumPost_908'></a> RE: Where does the bookmarklet not work? &nbsp; <span class='date'>2010-06-08 19:50:12.927</span></th></tr><tr id='forumpost_908'><td class='nickname' width='25%'>Tavultesoft<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>I would also note that this update to KeymanWeb adds support for elements within IFRAMEs, so I would hope that this resolves the issue for your sakai editor in the inline frame.</div></td></tr></table></p>

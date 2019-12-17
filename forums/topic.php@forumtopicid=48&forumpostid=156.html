@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic using the same key for several rules - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=8.html'>Bugs and Features</a> &gt; <a href='topic.php@forumtopicid=48.html'>using the same key for several rules</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic using the same key for several rules</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=48&amp;forumpostid=151.html#ForumPost_151'>#</a></span><a style='text-decoration:none' name='ForumPost_151'></a> using the same key for several rules &nbsp; <span class='date'>2006-07-12 23:01:15.503</span></th></tr><tr id='forumpost_151'><td class='nickname' width='25%'>Gayan Gayan Raj<br /></td><td class='text' width='75%'><div class='text'>Hi Im trying to create a phonetic keyboard layout for
+<br />
+Sinhala (sri lankan) language. but  the thing is
+<br />
+I have to use same key several times for a rule
+<br />
+ 
+<br />
+Example: group(Ayanna) using keys
+<br />
+         + &#039;a&#039; &gt; u+0d85
+<br />
+         &#039;a&#039; + &#039;a&#039; &gt; u+0d86
+<br />
+         &#039;a&#039; + &#039;i&#039; &gt; u+2546
+<br />
+   bui when i debug this i only get the convertions for
+<br />
++ &#039;a&#039; &gt; u+0d85. why is that and how im gonna do this please help me.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=48&amp;forumpostid=156.html#ForumPost_156'>#</a></span><a style='text-decoration:none' name='ForumPost_156'></a> RE: using the same key for several rules &nbsp; <span class='date'>2006-07-13 09:26:33.390</span></th></tr><tr id='forumpost_156'><td class='nickname' width='25%'>Mr Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>This is due to the way that Keyman works - by context rather than by sequence.  Documentation on this can be found at:
+<br />
+
+<br />
+<a href="http://tavultesoft.com/keymandev/documentation/help/guide/rules.php" target="_blank">http://tavultesoft.com/keymandev/documentation/help/guide/rules.php</a>
+<br />
+
+<br />
+In your example, you would need to use:
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">&nbsp; &nbsp; &nbsp; &nbsp;+ &#039;a&#039; &gt; u+0d85
+<br />
+u+0d85 + &#039;a&#039; &gt; u+0d86
+<br />
+u+0d85 + &#039;i&#039; &gt; u+2546</td>
+	</tr>
+</table>
+
+<br />
+Using context rather than sequence makes Keyman much more powerful and flexible - and it becomes far easier to create complex keyboards once you understand this completely.  I would recommend going through the tutorial as it is a good place to learn about some more of Keyman&#039;s development features:
+<br />
+
+<br />
+<a href="http://tavultesoft.com/keymandev/documentation/help/tutorial/tute_A_01.php" target="_blank">http://tavultesoft.com/keymandev/documentation/help/tutorial/tute_A_01.php</a></div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=48&amp;forumpostid=158.html#ForumPost_158'>#</a></span><a style='text-decoration:none' name='ForumPost_158'></a> RE: using the same key for several rules &nbsp; <span class='date'>2006-07-13 15:30:58.530</span></th></tr><tr id='forumpost_158'><td class='nickname' width='25%'>Gayan <br /></td><td class='text' width='75%'><div class='text'>Thank you Marc.
+<br />
+
+<br />
+it worked.
+<br />
+
+<br />
+I have a another Q for you. are fimilar with Japanese IME??
+<br />
+in that we can have a menu with words to choose while we are typing (it&#039;s like a pop up window). can we do that in Keymaan??</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=48&amp;forumpostid=161.html#ForumPost_161'>#</a></span><a style='text-decoration:none' name='ForumPost_161'></a> RE: using the same key for several rules &nbsp; <span class='date'>2006-07-14 09:06:23.530</span></th></tr><tr id='forumpost_161'><td class='nickname' width='25%'>Mr Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>This is possible with the IMX functionality in Keyman, but takes a bit more work to get going.  We have a Chinese IMX keyboard at the following URL that you can see as an example:
+<br />
+
+<br />
+<a href="http://www.tavultesoft.com/keyman/downloads/keyboards/details.php?KeyboardID=355" target="_blank">http://www.tavultesoft.com/keyman/downloads/keyboards/details.php?KeyboardID=355</a>
+<br />
+
+<br />
+There is sample source code included with Keyman Developer (look in C:\Program Files\Tavultesoft\Keyman Developer\IMC) and documentation on creating IMX solutions is available at:
+<br />
+
+<br />
+<a href="http://www.tavultesoft.com/keymandev/documentation/help/imx/imxintro.php" target="_blank">http://www.tavultesoft.com/keymandev/documentation/help/imx/imxintro.php</a></div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=48&amp;forumpostid=162.html#ForumPost_162'>#</a></span><a style='text-decoration:none' name='ForumPost_162'></a> RE: using the same key for several rules &nbsp; <span class='date'>2006-07-14 12:32:20.590</span></th></tr><tr id='forumpost_162'><td class='nickname' width='25%'>Gayan<br /></td><td class='text' width='75%'><div class='text'>Ok I try with that.
+<br />
+
+<br />
+Why my keyboard is slow when i type??
+<br />
+in M word or aother applications??
+<br />
+
+<br />
+</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=48&amp;forumpostid=218.html#ForumPost_218'>#</a></span><a style='text-decoration:none' name='ForumPost_218'></a> menu based dll files &nbsp; <span class='date'>2006-08-27 22:24:06.317</span></th></tr><tr id='forumpost_218'><td class='nickname' width='25%'>Gayan<br /></td><td class='text' width='75%'><div class='text'>Hi Mark,
+<br />
+
+<br />
+ I&#039;m Gayan again! I&#039;m trying to create a dll file for keyman and i have no idea to create it. Marc could you can lend me a good sample file to study. please m(__)m
+<br />
+
+<br />
+Gayan</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=48&amp;forumpostid=219.html#ForumPost_219'>#</a></span><a style='text-decoration:none' name='ForumPost_219'></a> RE: menu based dll files &nbsp; <span class='date'>2006-08-28 21:29:53.080</span></th></tr><tr id='forumpost_219'><td class='nickname' width='25%'>Gayan<br /></td><td class='text' width='75%'><div class='text'>Hey Marc,
+<br />
+
+<br />
+you didn&#039;t answer to my ???&#039;s are you on vacation??
+<br />
+
+<br />
+Gayan</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=48&amp;forumpostid=220.html#ForumPost_220'>#</a></span><a style='text-decoration:none' name='ForumPost_220'></a> RE: menu based dll files &nbsp; <span class='date'>2006-08-30 12:30:09.410</span></th></tr><tr id='forumpost_220'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Have a look at the sample IMX in the C:\Program Files\Tavultesoft\Keyman Developer\IMC directory.
+<br />
+
+<br />
+When Keyman 7 is released, we plan to release the IMX source for the Chinese KMX keyboard referenced at <a href="https://secure.tavultesoft.com/forums/topic.php?ForumTopicID=48&amp;ForumPostID=161#ForumPost_161" target="_blank" class="postlink">https://secure.tavultesoft.com/forums/topic.php?ForumTopicID=48&amp;ForumPostID=161#ForumPost_161</a>
+<br />
+</div></td></tr></table></p>

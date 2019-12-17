@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic New Glyphs with no unicode - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=14.html'>General</a> &gt; <a href='topic.php@forumtopicid=339.html'>New Glyphs with no unicode</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic New Glyphs with no unicode</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><p class='forumnav' style='font-size: x-small'>&laquo; First Page&nbsp;|&nbsp;&lsaquo; Previous 10&nbsp;|&nbsp;<a href='topic.php@forumtopicid=339&amp;start=10.html'>Next 10 &rsaquo;</a>&nbsp;|&nbsp;<a href='topic.php@forumtopicid=339&amp;start=10.html'>Last Page &raquo;</a></p><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=339&amp;forumpostid=1104.html#ForumPost_1104'>#</a></span><a style='text-decoration:none' name='ForumPost_1104'></a> New Glyphs with no unicode &nbsp; <span class='date'>2013-02-20 14:35:08.457</span></th></tr><tr id='forumpost_1104'><td class='nickname' width='25%'>Rajendra<br /></td><td class='text' width='75%'><div class='text'>Hi,
+<br />
+The new script / language for which we are trying to develop the new keyboards using Keyman developer has some totally new glyphs for which there is no Unicode identified yet.
+<br />
+Please advise me on how to map the new glyphs in the Keyman developer tool and how do we bring these new glyphs in to Keyman character map.
+<br />
+Your help is greatly appreciated.
+<br />
+Thank you in advance.
+<br />
+</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=339&amp;forumpostid=1105.html#ForumPost_1105'>#</a></span><a style='text-decoration:none' name='ForumPost_1105'></a> RE: New Glyphs with no unicode &nbsp; <span class='date'>2013-02-21 16:26:20.743</span></th></tr><tr id='forumpost_1105'><td class='nickname' width='25%'>Jeremy Kirkham<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Hi Rajendra,
+<br />
+
+<br />
+There is an area of Unicode known as private use area which should contain the glyphs you have created.
+<br />
+
+<br />
+To find the private use area, firstly select the font you wish to use by right clicking on the Character Map and selecting &quot;font&quot;. Then you will need to type the greater than symbol &gt; in the &quot;filter by&quot; input box in the Character Map and then scroll to the Private Use Area in the Character Map.  You should then be able to drag and drop your glyphs onto the keyboard.
+<br />
+
+<br />
+Regards,
+<br />
+Jeremy</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=339&amp;forumpostid=1106.html#ForumPost_1106'>#</a></span><a style='text-decoration:none' name='ForumPost_1106'></a> RE: New Glyphs with no unicode &nbsp; <span class='date'>2013-02-21 21:41:54.230</span></th></tr><tr id='forumpost_1106'><td class='nickname' width='25%'>Rajendra<br /></td><td class='text' width='75%'><div class='text'>Thanks for the response.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=339&amp;forumpostid=1110.html#ForumPost_1110'>#</a></span><a style='text-decoration:none' name='ForumPost_1110'></a> RE: New Glyphs with no unicode &nbsp; <span class='date'>2013-03-25 16:06:31.860</span></th></tr><tr id='forumpost_1110'><td class='nickname' width='25%'>Middlepath Technology Solutions Pvt Ltd<br /></td><td class='text' width='75%'><div class='text'>I have created some new characters using private key editor. How do I bring in those characters into keyman developer to use in my keyboard?</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=339&amp;forumpostid=1111.html#ForumPost_1111'>#</a></span><a style='text-decoration:none' name='ForumPost_1111'></a> RE: New Glyphs with no unicode &nbsp; <span class='date'>2013-03-25 16:15:42.513</span></th></tr><tr id='forumpost_1111'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>You can refer to private use characters by Unicode character reference in the keyboard source, for example:
+<br />
+
+<br />
+  + [K_A] &gt; U+E080</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=339&amp;forumpostid=1112.html#ForumPost_1112'>#</a></span><a style='text-decoration:none' name='ForumPost_1112'></a> RE: New Glyphs with no unicode &nbsp; <span class='date'>2013-03-25 19:49:51.150</span></th></tr><tr id='forumpost_1112'><td class='nickname' width='25%'>Middlepath Technology Solutions Pvt Ltd<br /></td><td class='text' width='75%'><div class='text'>Thanks.  I think I was not clear, my question is where do I upload the new characters in keyman. When I go to the character map - private use area in keyman developer currently there are no characters. How do I bring the new characters into the keyman character map?. I am assuming that unless I bring the characters into the map I will not be able to use the code.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=339&amp;forumpostid=1115.html#ForumPost_1115'>#</a></span><a style='text-decoration:none' name='ForumPost_1115'></a> RE: New Glyphs with no unicode &nbsp; <span class='date'>2013-03-26 08:15:43.837</span></th></tr><tr id='forumpost_1115'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>The steps to see the private use area characters are as described by Jeremy; I quote:
+<br />
+
+<br />
+
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none'  class="bb_quote">To find the private use area, firstly select the font you wish to use by right clicking on the Character Map and selecting &quot;font&quot;. Then you will need to type the greater than symbol &gt; in the &quot;filter by&quot; input box in the Character Map and then scroll to the Private Use Area in the Character Map. You should then be able to drag and drop your glyphs onto the keyboard. </td>
+	</tr>
+</table>
+<br />
+
+<br />
+You can always reference the private use area characters in your keyboard without changing font first; if you select the font later the characters will then appear.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=339&amp;forumpostid=1116.html#ForumPost_1116'>#</a></span><a style='text-decoration:none' name='ForumPost_1116'></a> RE: New Glyphs with no unicode &nbsp; <span class='date'>2013-03-26 19:02:36.927</span></th></tr><tr id='forumpost_1116'><td class='nickname' width='25%'>Middlepath Technology Solutions Pvt Ltd<br /></td><td class='text' width='75%'><div class='text'>I do understand how to access the private use characters. My question is how will the new characters appear in the private use area. I have to upload it somewhere right? How does keyman know my new characters. </div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=339&amp;forumpostid=1120.html#ForumPost_1120'>#</a></span><a style='text-decoration:none' name='ForumPost_1120'></a> RE: New Glyphs with no unicode &nbsp; <span class='date'>2013-03-26 21:23:18.460</span></th></tr><tr id='forumpost_1120'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>Keyman Developer will read the private use characters from your font and display them in the Character Map - you don&#039;t need to upload or import it specially into Keyman Developer.  The only thing you need to do is select your font in the Character Map and enter &quot;&gt;&quot; into the filter box, which tells the Character Map to use show all the characters in the selected font, rather than all the characters in the Unicode Standard.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=339&amp;forumpostid=1121.html#ForumPost_1121'>#</a></span><a style='text-decoration:none' name='ForumPost_1121'></a> RE: New Glyphs with no unicode &nbsp; <span class='date'>2013-03-26 21:37:02.133</span></th></tr><tr id='forumpost_1121'><td class='nickname' width='25%'>Middlepath Technology Solutions Pvt Ltd<br /></td><td class='text' width='75%'><div class='text'>I have not created a font. i have just created 6 new characters in private character editor(from Microsoft) and linked it to all fonts before saving. </div></td></tr></table><p class='forumnav' style='font-size: x-small'>&laquo; First Page&nbsp;|&nbsp;&lsaquo; Previous 10&nbsp;|&nbsp;<a href='topic.php@forumtopicid=339&amp;start=10.html'>Next 10 &rsaquo;</a>&nbsp;|&nbsp;<a href='topic.php@forumtopicid=339&amp;start=10.html'>Last Page &raquo;</a></p></p>

@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic keyboards suddenly stop working properly? - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=330.html'>Beta</a> &gt; <a href='topic.php@forumtopicid=299.html'>keyboards suddenly stop working properly?</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic keyboards suddenly stop working properly?</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=299&amp;forumpostid=990.html#ForumPost_990'>#</a></span><a style='text-decoration:none' name='ForumPost_990'></a> keyboards suddenly stop working properly? &nbsp; <span class='date'>2011-04-30 18:54:46.093</span></th></tr><tr id='forumpost_990'><td class='nickname' width='25%'>Radu C<br /></td><td class='text' width='75%'><div class='text'>Hi there,
+<br />
+
+<br />
+Apologies in advance for a long post.
+<br />
+
+<br />
+I&#039;m experiencing a frustrating problem where I will switch Keyman off, and then switch it back on and the keyboards will not work properly. Any keys registered to special characters will still display those characters, but any of the character sequences that normally turn into another character will no longer do so. (e.g. for a keyboard where : + a = ä, I&#039;d get :a)
+<br />
+
+<br />
+The problem is that I can&#039;t figure out what is causing this behaviour. I can often switch Keyman off and on without issue, but at some (seemingly arbitrary) point, it will exhibit this bug. 
+<br />
+
+<br />
+Once it has started doing this, none of my keyboards will process character sequences properly (well, one seems to work sometimes when the others don&#039;t for some reason). The only solution I have found is to exit Keyman and relaunch it -- but sometimes this does not work either, and the software will refuse to switch to any keyboard at all. At this point it sometimes gives me an error about hook .dlls, but I&#039;ve terminated all the processes that are related to dlls it says are conflicting, to no avail.
+<br />
+
+<br />
+I&#039;m running Windows 7 Home Premium x64. I have purchased a copy of Keyman 7, but I figured I&#039;d try the Keyman 8 beta on this computer because of the x64 support.
+<br />
+
+<br />
+Any idea what might be causing this, even in general terms? I&#039;d love to narrow this down and make this consistently reproducible.
+<br />
+
+<br />
+Thanks,
+<br />
+
+<br />
+Radu
+<br />
+</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=299&amp;forumpostid=992.html#ForumPost_992'>#</a></span><a style='text-decoration:none' name='ForumPost_992'></a> RE: keyboards suddenly stop working properly? &nbsp; <span class='date'>2011-05-02 11:27:22.277</span></th></tr><tr id='forumpost_992'><td class='nickname' width='25%'>Peirce Baehr<br /></td><td class='text' width='75%'><div class='text'>Radu, 
+<br />
+
+<br />
+Thanks for your detailed post. I&#039;d love to help you solve this issue. Could you send us a support diagnostic? Instructions are here:
+<br />
+  <a href="http://www.tavultesoft.com/kb/?id=40" target="_blank">http://www.tavultesoft.com/kb/?id=40</a>
+<br />
+
+<br />
+Also, could you answer the following questions: 
+<br />
+1) What edition of Keyman Desktop are you using? Light or Pro?
+<br />
+2) What applications are you experiencing the problem in? Does it occur, for example, in MS Word? In Notepad? 
+<br />
+3) Is the problem happening in both 32-bit and 64-bit applications? 
+<br />
+4) How are you switching keyboards? For example, from the Keyman menu, with a hotkey, from the Keyman Toolbox, from the Language Switcher?
+<br />
+
+<br />
+Answers to any of these questions will help me understand the problem better. </div></td></tr></table></p>

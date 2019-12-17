@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic keyman developer issues - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=8.html'>Bugs and Features</a> &gt; <a href='topic.php@forumtopicid=341.html'>keyman developer issues</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic keyman developer issues</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=341&amp;forumpostid=1113.html#ForumPost_1113'>#</a></span><a style='text-decoration:none' name='ForumPost_1113'></a> keyman developer issues &nbsp; <span class='date'>2013-03-25 19:59:43.453</span></th></tr><tr id='forumpost_1113'><td class='nickname' width='25%'>Middlepath Technology Solutions Pvt Ltd<br /></td><td class='text' width='75%'><div class='text'>I have a couple of issues with Keyman developer and need some help,
+<br />
+
+<br />
+1. Some of the characters are not getting displayed when I test my keyboard. A box is displayed in place of the actual character. The source compiled successfully.
+<br />
+
+<br />
+2. In word doc. when I test my keyboard(via desktop) Alt and ctrl do not work for some of the keys and in some cases it brings up a menu.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=341&amp;forumpostid=1114.html#ForumPost_1114'>#</a></span><a style='text-decoration:none' name='ForumPost_1114'></a> RE: keyman developer issues &nbsp; <span class='date'>2013-03-26 08:13:06.413</span></th></tr><tr id='forumpost_1114'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>1. This is usually because the incorrect font is selected.  If you are testing within Keyman Developer, you can change the font with the Character Font option in the View menu.
+<br />
+
+<br />
+2. Can you show an example of the rule which is not matching in Word?</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=341&amp;forumpostid=1117.html#ForumPost_1117'>#</a></span><a style='text-decoration:none' name='ForumPost_1117'></a> RE: keyman developer issues &nbsp; <span class='date'>2013-03-26 19:11:27.877</span></th></tr><tr id='forumpost_1117'><td class='nickname' width='25%'>Middlepath Technology Solutions Pvt Ltd<br /></td><td class='text' width='75%'><div class='text'> I have mapped alt 1 to | and ctrl 1 to \. When I click alt 1 in word I get the &#039;save as&#039;screen. ctrl 1 does not do anything. similarly  alt 2 takes me to the undo menu and ctrl 2 does nothing.
+<br />
+</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=341&amp;forumpostid=1118.html#ForumPost_1118'>#</a></span><a style='text-decoration:none' name='ForumPost_1118'></a> RE: keyman developer issues &nbsp; <span class='date'>2013-03-26 19:20:34.670</span></th></tr><tr id='forumpost_1118'><td class='nickname' width='25%'>Middlepath Technology Solutions Pvt Ltd<br /></td><td class='text' width='75%'><div class='text'>I changed the font and tried, the characters are still not getting displayed. Is there a universal font wherein all the characters get displayed? one example,
+<br />
+Alt K_7 is mapped to U+23D7 which does not show when I test my keyboard. I tried Courier new unicode, Arial, Arial unicode</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=341&amp;forumpostid=1119.html#ForumPost_1119'>#</a></span><a style='text-decoration:none' name='ForumPost_1119'></a> RE: keyman developer issues &nbsp; <span class='date'>2013-03-26 21:22:07.373</span></th></tr><tr id='forumpost_1119'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none'  class="bb_quote">I changed the font and tried, the characters are still not getting displayed. Is there a universal font wherein all the characters get displayed? one example,
+<br />
+Alt K_7 is mapped to U+23D7 which does not show when I test my keyboard. I tried Courier new unicode, Arial, Arial unicode</td>
+	</tr>
+</table>
+<br />
+
+<br />
+Once you have installed your keyboard, you can use the Font Helper (http://help.keymandesktop.com/docs/basic_fonthelper.php) to list the fonts which will support the characters in your keyboard.
+<br />
+
+<br />
+
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none'  class="bb_quote">I have mapped alt 1 to | and ctrl 1 to \. When I click alt 1 in word I get the &#039;save as&#039;screen. ctrl 1 does not do anything. similarly alt 2 takes me to the undo menu and ctrl 2 does nothing.</td>
+	</tr>
+</table>
+<br />
+
+<br />
+Can you give me an example of the rules from the keyboard so  I can examine that further here?  Alternatively, you can email the whole keyboard source file to <a href="mailto:support@tavultesoft.com">support@tavultesoft.com</a> and reference this discussion.  Also, which version of Word are you using?  Sending us a diagnostic report may also help us solve this (http://www.tavultesoft.com/kb?id=40)</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=341&amp;forumpostid=1126.html#ForumPost_1126'>#</a></span><a style='text-decoration:none' name='ForumPost_1126'></a> RE: keyman developer issues &nbsp; <span class='date'>2013-04-09 14:54:15.380</span></th></tr><tr id='forumpost_1126'><td class='nickname' width='25%'>Middlepath Technology Solutions Pvt Ltd<br /></td><td class='text' width='75%'><div class='text'>I have sent my source code and a mail regarding my issue on 5th April to your support ID but have not received any reply.
+<br />
+It works fine in the &#039;test keyboard&#039;  option of keyman developer but in the keyman desktop editor and MS word most of the characters are not getting printed. </div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=341&amp;forumpostid=1127.html#ForumPost_1127'>#</a></span><a style='text-decoration:none' name='ForumPost_1127'></a> RE: keyman developer issues &nbsp; <span class='date'>2013-04-09 16:29:20.570</span></th></tr><tr id='forumpost_1127'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>We&#039;ve responded to your support case.  It took some time to review the keyboard and font.  Can you send us a screenshot of how the font is appearing wrongly in Word and the test window in Keyman Desktop?</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=341&amp;forumpostid=1134.html#ForumPost_1134'>#</a></span><a style='text-decoration:none' name='ForumPost_1134'></a> RE: keyman developer issues &nbsp; <span class='date'>2013-05-31 19:24:21.570</span></th></tr><tr id='forumpost_1134'><td class='nickname' width='25%'>middlepath technology solutions<br /></td><td class='text' width='75%'><div class='text'>Hello,
+<br />
+
+<br />
+with num lock on i am using the following rules,
+<br />
+
+<br />
+[NCAPS SHIFT K_NP7]&gt; some character
+<br />
+[CAPS SHIFT K_NP7] &gt; some character 
+<br />
+
+<br />
+This is causing num lock to turn off and home[np7] is activated
+<br />
+ 
+<br />
+[NCAPS K_NP7]&gt; some character
+<br />
+[CAPS K_NP7]&gt; some character.
+<br />
+
+<br />
+These 2 rules work fine. Please advice.
+<br />
+
+<br />
+Thanks</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=341&amp;forumpostid=1137.html#ForumPost_1137'>#</a></span><a style='text-decoration:none' name='ForumPost_1137'></a> RE: keyman developer issues &nbsp; <span class='date'>2013-06-06 09:47:35.217</span></th></tr><tr id='forumpost_1137'><td class='nickname' width='25%'>Jeremy Kirkham<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>The reason this is occuring is that the SHIFT key is overriding the Numlock - this is built into the hardware and cannot be changed.
+<br />
+
+<br />
+Example: With Numlock on, [SHIFT K_NP7] will activate home.
+<br />
+With Numlock off, [SHIFT K_NP7] will activate 7.
+<br />
+
+<br />
+We advise not using SHIFT with the numberpad because of this reason.
+<br />
+
+<br />
+</div></td></tr></table></p>

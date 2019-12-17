@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Not working with Pagemaker - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=13.html'>General</a> &gt; <a href='topic.php@forumtopicid=123.html'>Not working with Pagemaker</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Not working with Pagemaker</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=123&amp;forumpostid=424.html#ForumPost_424'>#</a></span><a style='text-decoration:none' name='ForumPost_424'></a> Not working with Pagemaker &nbsp; <span class='date'>2007-03-02 14:52:14.443</span></th></tr><tr id='forumpost_424'><td class='nickname' width='25%'>vasu<br /></td><td class='text' width='75%'><div class='text'>I just want to know, if any body has tried to use Keyman with PageMaker,  It is not working for me.  It works well with Corel Draw and Ms Word, but not with Pagemaker.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=123&amp;forumpostid=425.html#ForumPost_425'>#</a></span><a style='text-decoration:none' name='ForumPost_425'></a> RE: Not working with Pagemaker &nbsp; <span class='date'>2007-03-03 03:44:26.570</span></th></tr><tr id='forumpost_425'><td class='nickname' width='25%'>KAB Graphics<br /></td><td class='text' width='75%'><div class='text'>Dear vasu
+<br />
+Did you use Unicode fonts with Pagemaker? Pagemaker does not work with unicode fonts. Pagemaker supports only ANSI fonts.
+<br />
+
+<br />
+Coreldraw &amp; MS Office works with unicode fonts.
+<br />
+
+<br />
+But if you are using a ansi fonts then :
+<br />
+Tips : PageMaker 6.5 /7.0/7.01 
+<br />
+· In the Paragraph option of the Type menu, click the spacing button. The &#039;Spacing Attributes&#039; dialog box appears. In that, for the Letter space, the minimum, desired and the maximum should be set zero. Similarly for proper justification, you have to specify the letter spacing off in other applications too. 
+<br />
+· To see Indian Script fonts in Story editor, set Indian language font as default font. To do so in PM 4, select the preferences option from Edit menu and select Indian language font in story view fonts option. In PM 5, select preferences option from File menu and click on &#039;Other&#039; box. In the &#039;story editor&#039; option set Indian language font as the default font. 
+<br />
+· Before entering text in PageMaker 6.0, select the &#039;Preferences&#039; option from the File menu. Click on the &#039;More&#039; Button and disable &#039; 
+<br />
+Typographic Quotes&#039; option.- 
+<br />
+While justifying a paragraph, by default, PageMaker tries to put microspaces between characters. This does not matter for English text, but for Indian scripts where the matras have to be exactly attached to the consonants, this will create misalignment of characters inside words. By specifying proper values for the paragraph specification, this can be avoided. 
+<br />
+· Backspacing during data entry - Since PageMaker is not designed for Indian Scripts, for proper anchoring etc. certain characters are formed synthetically with the help of invisible characters. As a result while back spacing during data entry in PageMaker one has to be careful that actual character is actually rubbed rather than just the invisible component of the synthetic character. In this case the cursor will be on the character rather than on the right of the character. One more backspace will rub the actual character and cursor will be again to the right of the previous character. 
+<br />
+
+<br />
+Kind Regards
+<br />
+Arun Sarkar</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=123&amp;forumpostid=716.html#ForumPost_716'>#</a></span><a style='text-decoration:none' name='ForumPost_716'></a> RE: Not working with Pagemaker &nbsp; <span class='date'>2009-02-06 03:37:08.677</span></th></tr><tr id='forumpost_716'><td class='nickname' width='25%'>SIBHU COMPUTERS<br /></td><td class='text' width='75%'><div class='text'>Dear Sir,
+<br />
+
+<br />
+I am using a tamil font in pagemaker 6.5. I&#039;m able to use the font without any difficulty. But one character lee which has been given in the character for the letter - does not print properly if a pdf file is created from this.
+<br />
+
+<br />
+Can any one help me how this can be solved.
+<br />
+
+<br />
+With regds,
+<br />
+P.Pragatheeswaran</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=123&amp;forumpostid=719.html#ForumPost_719'>#</a></span><a style='text-decoration:none' name='ForumPost_719'></a> RE: Not working with Pagemaker &nbsp; <span class='date'>2009-02-06 17:12:39.450</span></th></tr><tr id='forumpost_719'><td class='nickname' width='25%'>Tavultesoft<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>The problem is not Keyman, but the font coding.  If the codepoint for optional hyphen (code point 173) is used for a letter, Pagemaker (and many other applications) will often ignore it.  One solution is to create a modified version of the font with the character located to a different codepoint, then use search and replace to recode the character in the document.
+<br />
+
+<br />
+(This problem is well known in other languages that use fonts with non-standard coding.) 
+<br />
+
+<br />
+Please email <a href="mailto:support@tavultesoft.com">support@tavultesoft.com</a> if you need to follow this up.</div></td></tr></table></p>

@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forum Topic Using Group for Key Remapping then Combination - Tavultesoft</title>
+
+<style media='print' type='text/css'> 
+	@import "../inc/style9.css";
+  @import "../inc/print.css";
+  	#global_nav, #header_nav { display: none }
+  .screen_only { display: none }
+</style>
+<style media="screen" type="text/css">
+	@import "../inc/style9.css";
+	@import "../inc/layout8.css";
+  	#global_nav, #header_nav { display: none }
+  .print_only { display: none }
+  
+  #getstartedlink { font-weight: bold; color: #ad4a28; }
+</style>
+<!--[if lt IE 8]><style type='text/css'>#menu_search { display: none !important; }</style><![endif]-->
+<![if gt IE 7]><style type='text/css'>#menu_search_ie { display: none !important; }</style><![endif]><style media='all' type='text/css'>
+              #banner {display: none} 
+              #mainColumn {width: 100%} 
+          </style><style media='all' type='text/css'> 
+              #localnav {display: none} 
+              #mainColumn {width: 100%} 
+          </style><!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="/inc/ie6.css" /> 
+<![endif]--> 
+<script type='text/javascript'><!--
+  function detect_screen_width()
+  {
+    var w;
+    if(typeof(screen.availWidth) != 'undefined') w = screen.availWidth; else w = screen.width;
+    if(w && w < 1024) document.writeln("<style media='screen' type='text/css'> #banner { display: none; } #footer, #container, #tavultesoft_logo { width: auto } #home_subColumn { width: 235px }<\/style>");
+  }
+  detect_screen_width();
+//--></script>
+<script type='text/javascript'><!--
+startList = function() {
+	if (document.all&&document.getElementById) {
+		navRoot = document.getElementById("nav");
+		for (i=0; i<navRoot.childNodes.length; i++) {
+			node = navRoot.childNodes[i]; 
+			if (node.nodeName=="LI") {
+				node.onmouseover=function() {
+					this.className+=" over";
+				}
+				node.onmouseout=function() {
+          this.className=this.className.replace(/ over/g, "");
+				}
+			}
+		}
+	}
+}
+window.onload=startList;
+//--></script>
+</head>
+<body>  <div id="container">
+    <div id="pagelocation"></div>
+    <div id="tavultesoft_logo"><a href='http://tavultesoft.com/' id='tavultesoft_banner'></a>
+      
+      
+    </div>
+		
+    <div id="content">
+    		<div id="mainColumn">
+          <div id="breadcrumbsandlogininfo">
+    	 	    <div class="breadcrumbsandlogininfo_content">
+              <div id="breadcrumbs"><a href='http://tavultesoft.com/'>Home</a> &gt; <a href='index.html'>Forums</a> &gt; <a href='category.php@forumcategoryid=14.html'>General</a> &gt; <a href='topic.php@forumtopicid=399.html'>Using Group for Key Remapping then Combination</a></div><div id="logininfo"></div><div id="breadcrumbs_breaker">&nbsp;</div></div></div><div class='mainColumn_content' id='mainColumn_content'><h1>Topic Using Group for Key Remapping then Combination</h1><p>We have two new locations for Keyman technical support:</p>
+<ul>
+  <li><a href='https://community.software.sil.org/c/keyman'>SIL Keyman Community</a> - for general Keyman technical support</li>
+  <li><a href='http://stackoverflow.com/questions/ask?tags=keyboard,unicode'>Stack Overflow</a> - for support on creating keyboard layouts with Keyman Developer</li>
+</ul>
+<p>The Tavultesoft Forums are now read only.</p>
+<hr><table class='forums display'><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=399&amp;forumpostid=1365.html#ForumPost_1365'>#</a></span><a style='text-decoration:none' name='ForumPost_1365'></a> Using Group for Key Remapping then Combination &nbsp; <span class='date'>2015-11-24 18:30:49.657</span></th></tr><tr id='forumpost_1365'><td class='nickname' width='25%'>Sougata Das<br /></td><td class='text' width='75%'><div class='text'>I am using a legacy ANSI Font which has the characters laid in its own fashion. 
+<br />
+So my idea is process a group say group(remap) first for key remap then process further entries in another group say group(conjunct). How can I do this ?
+<br />
+For example:
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">
+<br />
+group&#40;remap&#41; using keys
+<br />
+&#039;c&#039; &gt; &#039;L&#039;&nbsp; &nbsp;c This is remap
+<br />
+
+<br />
+group&#40;conjunct&#41;
+<br />
+&#039;L&#039; + &#039;L&#039; &gt;&nbsp; U+201A c This is a conjunct
+<br />
+</td>
+	</tr>
+</table>
+
+<br />
+
+<br />
+So my questions are how can I fire another group from one, is this approach right or there are elegant ways to do it. Please help
+<br />
+</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=399&amp;forumpostid=1366.html#ForumPost_1366'>#</a></span><a style='text-decoration:none' name='ForumPost_1366'></a> RE: Using Group for Key Remapping then Combination &nbsp; <span class='date'>2015-11-24 19:34:06.543</span></th></tr><tr id='forumpost_1366'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'>There are two ways to accomplish this. Both would expect you to type &quot;cc&quot; for this conjunct example.
+<br />
+
+<br />
+(a) Use a non-using-keys group. This will post-process the context, so don&#039;t use the + symbol:
+<br />
+
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">group&#40;remap&#41; using keys
+<br />
++ &#039;c&#039; &gt; &#039;L&#039;
+<br />
+match &gt; use&#40;conjunct&#41;
+<br />
+
+<br />
+group&#40;conjunct&#41;
+<br />
+&#039;LL&#039; &gt; U+201A</td>
+	</tr>
+</table>
+
+<br />
+
+<br />
+(b) Pre-process conjuncts. This will work on the keystrokes instead:
+<br />
+
+<br />
+<table width="90%" style='border:none' cellspacing="1" cellpadding="3" border="0" align="center">
+<tr> 
+	  <td style='border:none' ><span class="genmed"><b>:</b></span></td>
+	</tr>
+	<tr>
+	  <td style='border:none' class="bb_code">begin &gt; use&#40;conjunct&#41;
+<br />
+
+<br />
+group&#40;conjunct&#41; using keys
+<br />
+&#039;L&#039; + &#039;c&#039; &gt; U+201A
+<br />
+nomatch &gt; use&#40;remap&#41;
+<br />
+
+<br />
+group&#40;remap&#41; using keys
+<br />
++ &#039;c&#039; &gt; &#039;L&#039;</td>
+	</tr>
+</table>
+</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=399&amp;forumpostid=1367.html#ForumPost_1367'>#</a></span><a style='text-decoration:none' name='ForumPost_1367'></a> RE: Using Group for Key Remapping then Combination &nbsp; <span class='date'>2015-11-24 19:47:08.500</span></th></tr><tr id='forumpost_1367'><td class='nickname' width='25%'>Sougata Das<br /></td><td class='text' width='75%'><div class='text'>Thank you so much Marc. I have to try, to get grip on it.
+<br />
+
+<br />
+Can you point me to a link to understand the <span style="font-weight: bold">non-using-keys and context post processing</span> topics.</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=399&amp;forumpostid=1368.html#ForumPost_1368'>#</a></span><a style='text-decoration:none' name='ForumPost_1368'></a> RE: Using Group for Key Remapping then Combination &nbsp; <span class='date'>2015-11-24 20:38:31.917</span></th></tr><tr id='forumpost_1368'><td class='nickname' width='25%'>Marc Durdin<br />Tavultesoft Staff</td><td class='text' width='75%'><div class='text'><a href="http://help.keyman.com/developer/language/guide/groups" target="_blank">http://help.keyman.com/developer/language/guide/groups</a> and <a href="http://help.keyman.com/developer/9.0/guides/develop/advanced-keyboard-development-example" target="_blank">http://help.keyman.com/developer/9.0/guides/develop/advanced-keyboard-development-example</a> may help?
+<br />
+</div></td></tr><tr><th colspan='2'><span class='quote'><a href='topic.php@forumtopicid=399&amp;forumpostid=1369.html#ForumPost_1369'>#</a></span><a style='text-decoration:none' name='ForumPost_1369'></a> RE: Using Group for Key Remapping then Combination &nbsp; <span class='date'>2015-11-24 20:59:07.317</span></th></tr><tr id='forumpost_1369'><td class='nickname' width='25%'>Sougata Das<br /></td><td class='text' width='75%'><div class='text'>Thanks</div></td></tr></table></p>
