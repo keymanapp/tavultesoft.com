@@ -1,0 +1,347 @@
+/* CSS Document */
+
+body{
+	margin:0;
+	padding:0;
+	/*background-color:#f3e5de;*/
+	/*background: url("/images/bg.png") repeat-x white fixed;*/
+	text-align:center; /* for older versions of IE (5.0 5.5) */
+}
+
+html {
+	overflow-y: scroll;
+  padding: 0;
+}
+
+#container{
+	width:800px;
+	margin: auto auto;
+	text-align:center;
+}
+
+#tavultesoft_logo{
+	width:800px;
+	height:80px;
+	text-align:right;
+	background:url("/images/80/banner.png") no-repeat;
+	background-color:#6a2915;
+  position: relative; top: 0; left: 0;
+}
+
+#tavultesoft_banner{
+  position: absolute;
+  display: block;
+  top: 18px;
+  width: 382px;
+  left: 0;
+  height: 62px;
+}
+
+#tavultesoft_logo_print {
+  float: right;
+  display: none
+}
+
+#tavultesoft_logo p{
+	text-align:right;
+  padding: 3px 6px;
+}
+
+#banner{
+	width:800px;
+	height:150px;
+	margin: 0;
+	padding: 0;
+}
+
+/* Global navigation */
+#pagelocation {
+  display: none;
+  font-size: 0.6em;
+  text-align: left
+}
+
+#global_nav{
+	background:url('/images/topbar_bg.jpg') repeat-x;
+	background-color:#868686;
+  -moz-border-radius: 0 0 8px 8px;
+  border-radius: 0 0 8px 8px;
+  -webkit-border-radius: 0 0 8px 8px;
+}
+
+#global_nav ul{
+	list-style:none;
+	background: none;
+	margin:0px;
+	padding:0px;
+}
+
+#global_nav li{	
+	display:inline;
+	background: none;
+	padding:0;
+	margin:0;
+}
+
+/* Breadcrumbs */
+
+#breadcrumbsandlogininfo {
+  padding: 1px 2px 0px 0px;
+}
+
+#breadcrumbs{
+  padding: 2px 4px;
+  float: left;
+}
+
+#logininfo{
+  padding:1px 4px 1px 10px;
+}
+
+#breadcrumbs_breaker {
+  line-height: 0;
+  height: 0;
+  clear: both;
+  font-size: 1pt; /* for IE ... */
+}
+
+/* Main body */
+#content{
+  width: 800px;	
+	background-color: white;
+}
+
+/* main column */
+#home_mainColumn{
+	float:left;
+	width:545px;
+	background-color:#ffffff;
+	text-align:left;
+}
+
+.home_mainColumn_content{
+	padding:10px;
+}
+
+/* sub column for news, or any announcment on main page */
+#home_subColumn{
+	float:left;
+	width:254px;
+	text-align:left;
+}
+
+#home_subColumn_box {
+	background-color:  #f3e5de;
+	margin-bottom: -1px;
+	border-left: solid 1px #ad4a28;
+	border-bottom: solid 1px #ad4a28;
+}
+
+.home_subColumn_content{
+	padding:10px;
+}
+
+/* For other pages */
+#localnav{
+	float:left;
+	width:199px;
+	text-align:left;
+	background-color:  #f3e5de;
+	border-right: solid 1px #ad4a28;
+	border-bottom: solid 1px #ad4a28;
+	margin-bottom: -1px;
+}
+
+.localnav_content{
+	padding:10px 10px 10px 2px;
+}
+
+#mainColumn{
+	float:right;
+	width:600px;
+	background-color:#ffffff;
+	text-align:left;
+}
+
+.mainColumn_content{
+	padding:0px 10px;
+}
+
+.popup_content {
+  padding: 8px;
+  text-align: left;
+}
+
+/* footer */
+#prefooter, #postfooter {
+	clear:both;
+	}
+	
+#footer{
+	clear:both;
+	background:url("/images/80/footer.png") repeat-x;
+	background-color:#ad4a28;
+	padding:4px;
+  margin-top: 12px;
+	font: 10.7px Tahoma;
+	text-align: left;
+}
+
+#copyright {
+  padding: 0 8px 2px 0;
+  clear: both;
+  color: #bb8888;
+  float: right;
+  font-size: 9.3px;
+}
+
+#footer_tav_logo
+{
+  float: left;
+  width: 128px;
+  height: 55px;
+  background:url("/images/logo-white-transparent.png") no-repeat;
+  margin: 26px 4px 0 24px;
+}
+
+#footer_tav_logo_blank
+{
+  float: left;
+  width: 128px;
+  height: 55px;
+  margin: 26px 4px 0 24px;
+}
+
+#footer_base
+{
+  float: left;
+}
+
+#footer_base ul 
+{
+  margin: 0;
+  padding: 0;
+}
+#footer_base ul li a {
+  color: #bb8888;
+}
+#footer_base ul li
+{
+  list-style: none;
+  float: left;
+  font-size: 9.3px;
+  margin-left: 8px;
+}
+
+#footer_logos img
+{
+  float: right; border: none;
+}
+
+#footer_links {
+  float: left;
+  padding-left: 32px;
+}
+
+#footer_links p {
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+#footer_links ul {
+  float: left;
+  padding-right: 32px;
+}
+
+#footer_links ul {
+  margin-top: 2px;
+  list-style: none;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+#footer_links li {
+  list-style: none;
+  line-height: 16px;
+}
+
+#footer_links a {
+  color: #cccccc;
+}
+
+#footer_searchbox { line-height: 24px; margin-top: 6px }
+
+#footer_links #footer_updates ul li { margin-bottom: 4px }
+
+#footer_links #footer_updates ul li a { margin: 4px 0; padding: 1px 0 1px 0px; line-height: 1.4em; display: block; height: 14px; width: 55px; }
+#footer_links #footer_updates ul { margin-right: 0 }
+#footer_twitter { background: transparent url('/images/80/t_mini-b.png') no-repeat scroll 0 0; }
+#footer_facebook { background: transparent url('/images/facebook.png') no-repeat scroll 0 0; }
+#footer_blog { background: transparent url('/images/80/blog-icon-box-orange-16.png') no-repeat scroll 0 0; }
+
+#footer_logos { position: relative; left: 0; top: 0 }
+#footer_logos img { width:107px; height:33px; position: absolute; right: 8px; top: 80px; }
+
+#footer_links div { float: left }
+
+/* other stuff */
+#featuredkeyboards{
+	margin-bottom:20px;
+}
+
+/* Features */
+
+.feature_container {
+  position: relative; left: 0; height: 60%; border: solid 1px #159bc7; width: 700px; font-size: 1.2em; padding: 8px; margin: 0 0 40px 30px;
+}
+
+div.feature_header { padding-top:8px; font: bold 16px Verdana,Tahoma,sans-serif }
+img.feature_header { vertical-align: middle; padding-right: 8px; display: inline; }
+.feature_title { border: solid 1px #159bc7; width: 700px; padding: 8px; font: bold 18.7px Tahoma; margin: 0 0 0 30px; background: #159bc7; color: white }
+
+.feature {
+  top: 0px;
+  display: none;
+}
+
+.feature_selected {
+  top: 0px;
+  display: block;
+}
+
+.feature_navcontainer {
+  float: right; margin-bottom: 12px;
+}
+
+.feature_nav {
+  float: left;
+  font: 10.7px Tahoma;
+  margin-left: 6px;
+}
+
+.feature_nav a {
+  text-decoration: none;
+ }
+ 
+.feature_nav img { border: none; width: 17px; height: 17px; }
+
+.feature_nav a img.unselected { display: inline; }
+.feature_nav a img.selected { display: none; }
+
+.feature_nav a.selected img.unselected { display: none }
+.feature_nav a.selected img.selected { display: inline }
+
+.feature_container ul {
+  margin: 16px;
+  padding: 0;
+}
+
+.feature_container li {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2em;
+  }
+
+#sysreqhelp table.display td, #sysreqhelp table.display th {font-size: 0.8em}
+#sysreqhelp p, #sysreqhelp li { font-size: 0.7em; padding: 0 8px 0 8px }
+

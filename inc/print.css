@@ -1,0 +1,35 @@
+
+    #global_nav, #localnav, #header_nav, #footer_links {display: none} 
+    #container, #banner, #tavultesoft_logo {border: none; width: auto; height: auto}
+    #tavultesoft_logo_print {display: block; width: 3.2in; bottom: 0}
+    #pagelocation {display: block}
+    #mainColumn {width: 100%} 
+
+    
+    
+.feature {
+}
+
+.feature_navcontainer {
+  display: none;
+}
+
+.feature_container {
+}
+
+div.feature_header { padding-top:8px; font: bold 12pt Verdana,Tahoma,sans-serif }
+img.feature_header { float: left; vertical-align: middle; padding-right: 8px }
+.feature_title { font: bold 14pt Tahoma; margin: 0 0 0 30px; }
+
+.feature_container ul {
+  margin: 16px;
+  padding: 0;
+}
+
+.feature_container li {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2em;
+  }
+
+.print_only { display: block }
