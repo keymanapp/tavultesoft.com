@@ -1,0 +1,804 @@
+/* CSS Document */
+
+body{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+input{ 
+	font-size: small; 
+	font-family: Verdana,Arial,Swiss,sans-serif; 
+	margin: 0px 
+}
+select{ 
+	font-size: small; 
+	font-family: Verdana,Arial,Swiss,sans-serif; 
+	margin: 0px 
+}
+
+body a{
+	color:#ad4a28;
+}
+
+#tavultesoft_logo p{
+	color:#ffffff;
+	font:10.7px Tahoma;
+	margin:0px;
+	padding:3px;
+}
+
+#tavultesoft_logo p a{
+	color:#ffffff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#tavultesoft_logo p a:hover{
+	color:#ffffff;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+/* Breadcrumbs and Login info */
+
+#breadcrumbsandlogininfo {
+  background-color:white;
+}
+
+.breadcrumbsandlogininfo_content {
+	padding: 2px 4px 1px 12px;
+}
+
+#logininfo {
+  text-align: right;
+	font-size:0.8em;
+}
+
+#breadcrumbs {
+  text-align: left;
+	font-size: 10.7px;
+  border: solid 1px #c0c0c0;
+  color: #c0c0c0;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+#breadcrumbs a:hover{
+	text-decoration:underline;
+}
+
+#breadcrumbs a{
+	text-decoration:none;
+  color: #808080;
+  font-weight: normal;
+}
+
+/* footer */
+#footer{
+	font-size:0.6em;
+	color:#ffffff;
+  -moz-border-radius: 8px 8px 0 0;
+  -webkit-border-radius: 8px 8px 0 0;
+  border-radius: 8px 8px 0 0;
+}
+
+#footer a{
+	color:#ffffff;
+	text-decoration:none;
+}
+
+#footer a:hover{
+	text-decoration:underline;
+}
+
+/* Styles For home page */
+.home_mainColumn_content p{
+	font-size:0.8em;
+}
+
+.home_mainColumn_content h2 {
+  margin-top: 30px;
+}
+
+.home_subColumn_content p{
+	font-size:0.8em;
+}
+
+#home_list{
+	font-size:0.9em;
+}
+
+#home_list li{
+	list-style-image:url("/images/mls/home_tick.gif");
+	padding:1px 0 1px 5px; 
+}
+
+.home_mainColumn_content ul li{
+	font-size:0.8em;
+	padding-bottom:4px;
+}
+
+.home_subColumn_content h1{
+	border-bottom:1px solid #ad4a28;
+  padding-bottom:5px;
+}
+
+/* Local Navigation. */
+.localnav_content ul li a:hover{
+	text-decoration:underline;
+}
+
+.localnav_content ul {
+	padding-left:16px;
+	padding-top:0px;
+	font-size:0.8em;
+	margin:0;
+}
+
+.localnav_content ul li ul li a{
+	font-weight:normal;
+	font-size:1.2em;
+}
+
+.localnav_content ul li a{
+	color:#ad4a28;
+	text-decoration:none;
+}
+
+.localnav_content ul li ul li {
+  padding:2px 0 2px 0;
+}
+
+.localnav_content ul li {
+	list-style:none;
+	font-weight:bold;
+	padding:12px 0 0px 0;
+}
+
+/* mainColumn */
+.mainColumn_content p{
+	font-size:0.8em;
+}
+.mainColumn_content ul li p{
+	font-size:1em;
+}
+
+.mainColumn_content ul li{
+	font-size:0.8em;
+	padding-bottom:4px;
+}
+
+/* Styles for other stuff */
+.readmore{ 
+	text-align:right;
+}
+.readmore a{
+	color:#ad4a28;
+}
+
+h1{
+	font-size:1.1em;
+}
+
+h2{
+	font-size:0.9em;
+	margin-bottom:5px;
+}
+
+h3{
+	font-size:0.8em;
+	margin-bottom:0px;
+}
+
+div.highlight {
+  border: solid 1px #ad4a28;
+  background: #f3e5de;
+  padding: 0 8px;
+}
+
+p.note {
+  font-size:0.6em;
+  border: solid 1px #f3e5de;
+  padding: 4px
+}
+
+/* Events */
+
+#events {
+  font-size:0.8em 
+}
+
+#events p {
+  margin: 8px 0px 8px 0px 
+}
+
+/* News */
+
+.news {
+  font-size:0.8em
+}
+
+.news ul {
+	padding-left:0px;
+	padding-top:0px;
+	margin:0;
+}
+
+.news ul li p {margin: 0; }
+
+.news ul li {
+	list-style:none;
+	font-weight:normal;
+	padding:2px 0 7px 0;
+}
+
+.news ul li a{
+	color:#ad4a28;
+}
+
+#featuredkeyboards {
+  font-size:0.8em;
+  text-align: center
+}
+
+#keymanweb {
+  font-size:0.8em;
+  text-align: center
+}
+
+ol { font-size: 0.8em }
+
+ol.faq li p { font-size:1em }
+ol.faq li ul li {font-size:1em}
+ol.faq li p.question { font-weight: bold }
+
+/* Form Styles */
+
+table.Form tr td.form_field, table.Form tr td.form_button, table.Form tr td.form_caption, table.Form tr td.form_commnt, table.Form tr td.form_comment_small,
+  table.Form tr td.form_error, table.Form tr td.form_required { border: none }
+.Form { font-size:0.8em; padding-left: 0px; margin-left: 0px; }
+.form_field { padding-left: 12px; padding-bottom: 4px }
+.form_caption { }
+.form_comment { font-weight: bold; padding-top: 8px; padding-bottom: 8px; font-size: medium }
+.form_comment_small { font-weight: bold; padding-top: 8px; padding-bottom: 8px }
+.form_required { color: black; font-weight: bold }
+.form_button { padding-left: 12px; padding-top: 8px }
+.form_error { color: red; }
+
+.form_help { display: none; font-size: x-small; border: solid 1px gray; padding: 2px; background-color: #ffffc0; margin-top: 4px }
+.form_help_icon { }
+
+/* Display tables */
+
+table.forums { width: 100% }
+table.forums tr td { border: solid 1px #f3e5de }
+table.forums tr td.count { text-align: center }
+table.forums tr th { border: solid 1px #f3e5de; font-size:small; vertical-align: top; font-weight: bold }
+table.forums tr th .date { font-weight: normal; font-size: x-small }
+table.forums tr td.nickname { font-size:x-small; vertical-align: top; padding-top: 8px; padding-bottom: 8px }
+table.forums tr td.text .text { border: none }
+table.forums tr th .quote { font-weight: normal; font-size: x-small; float: right }
+
+.forumnav { font-size: x-small; text-align: right; margin: 2px }
+
+.bb_quote { background-color: #e8f0f0 }
+.bb_code {
+    font-family: Courier,'Courier New',sans-serif;
+    font-size: 11px;
+    color: rgb(0, 102, 0);
+    background-color: rgb(250, 250, 250);
+    border: solid 1px rgb(209, 215, 220); }
+
+table.display { font-size: 0.8em; border-collapse:	collapse; }
+li table.display { font-size: 1em; border-collapse:	collapse; }
+table.grid tr td { border: solid 1px #f3e5de; }
+table.display tr td { padding: 2px 8px; }
+table.display tr th { padding: 2px 8px; background: #f3e5de }
+table.display tr td.headerrow { font-size: medium; font-weight: bold; border-top: none; border-left: none; border-right: none; padding-bottom: 8px }
+table.display tr td.blankrow {  border-left: none; border-right: none; border-bottom: none }
+table.display tr.downloadrow td { background: #f3e5de; border: 1px solid #ad4a28 }
+table.download { border: 1px solid #ad4a28 }
+table.display tr td.displaycaption { padding-right: 100px; font-weight: bold; background: #f3e5de }
+table.display tr td.displayvalue { padding-right: 100px }
+table.small  tr td, table.small tr th { font-size: 9.3px }
+
+td.money, th.money { text-align: right; white-space: nowrap }
+
+span.km {font-weight: bold; color:black}
+span.lsw {font-style: italic; font-weight: bold; color: black}
+
+/* Case table */
+
+table.display tr td.displaycase        { background: #dddddd; color: #444444; font-size: 8pt; padding: 2px 8px }
+table.display tr td.displaycasecomment { border-left: none; border-right: none; padding: 2px; padding-bottom: 24px }
+table.display tr td.displaycasecomment2 { border-left: none; border-right: none; padding: 2px }
+table.display tr td.displaycasefile    { border-top: none; border-left: none; border-right: none; padding: 2px; padding-bottom: 24px }
+
+/* Downloads */
+
+div.dload { border: 1px solid #159bc7; background: #dcf0f7; padding: 8px; margin: 16px 0; width: 65% }
+div.dloadtitle { font: bold 21.3px Tahoma,Arial,sans-serif; color: #404040; vertical-align: middle; }
+div.dloadlink { float: right; font: bold 13.3px Tahoma,Arial,sans-serif; color: #404040;}
+div.dloadlink img { vertical-align: middle; border: none; margin-top:-24px;}
+div.dloadbuild { font: 13.3px Tahoma,Arial,sans-serif; color: #404040; margin-top: 4px; }
+
+table.dload      { font-size: 0.8em; width: 100%; border: 4px solid #f3e5de; background-color: #f3e5de }
+table.dload td.dloadtitle    { width: 100%; margin-top: 4px; padding-left: 14px; background-color: #FFFFFF; font-weight: bold }
+table.dload td.dloaddesc     { width: 100%; padding-top: 4px; }
+table.dload td.dloadfile     { width: 100%; padding-top: 4px; }
+table.dload td a { text-decoration: none }
+table.dload td a:hover { text-decoration: underline }
+
+table.dlsimple   { width: 100%; }
+table.dlsimple td.dloadtitle { width: 100%; margin-top: 4px; font-family: Verdana,Arial,Swiss,sans-serif; font-weight: bold; color: maroon}
+table.dlsimple td.dloaddesc  { width: 100%; padding-top: 4px; padding-left: 10px}
+table.dlsimple td.dloadfile  { width: 100%; padding-top: 4px; }
+
+/* Feature List */
+
+table.fl          {font-size: 0.8em; padding: 2px; border-collapse: collapse; width: 100% }
+table.fl th       {background: #f3e5de; padding: 2px 8px }
+table.fl td       {border-top: 1px solid #f3e5de; padding: 2px 8px}
+table.fl td.fl    {width: 500px}
+table.fl td.f     {text-align: left; vertical-align: middle; width: 75%}
+table.fl td       {text-align: center; vertical-align: middle}
+table.fl td.f h3  {text-align: left; vertical-align: middle; margin-bottom: 2px }
+table.fl td.f p  {text-align: left; vertical-align: middle; margin-top: 0px }
+
+table.fl2 td.flhd  {font-weight: bold; border-top: solid 1px black; width: 500px; text-align: left}
+table.fl2          {font-size: 10.7px; padding: 2px; border-collapse:	collapse }
+table.fl2 td       {text-align: center; border-bottom: solid 1px #f3e5de; padding: 2px 8px; vertical-align: middle; width: 100px}
+table.fl2 td.fl    {text-align: left; width: 300px}
+table.fl2 th       {text-align: center; background-color: #f3e5de; padding: 2px 8px }
+
+/* Keyboard list display */
+
+table.keyboarddisplay { font-size:0.8em; border-collapse:	collapse; }
+table.keyboarddisplay tr td { border: 1px solid black; padding: 2px; }
+table.keyboarddisplay tr td.name        { width:  50%; font-size: medium; font-weight: bold; background: #f3e5de; padding: 2px }
+table.keyboarddisplay tr td.author      { width:  30%; text-align: center; background: #f3e5de; padding: 2px }
+table.keyboarddisplay tr td.charset     { width:  10%; text-align: center; background: #f3e5de; padding: 2px }
+table.keyboarddisplay tr td.licence     { width:  10%; text-align: center; background: #f3e5de; padding: 2px }
+table.keyboarddisplay tr td.description { width: 100%; padding: 2px }
+table.keyboarddisplay tr td.keyboarddownload { width: 100%; padding: 2px; border-top: none }
+
+/* Knowledge base */
+
+div.kb {}
+p.kbinfo { font-size: x-small }
+
+.genmed .button { background-color: rgb(239, 239, 239); color: rgb(0, 0, 0); font: normal 10.7px Arial }
+.gensmall .helpline {border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; }
+
+/*	start drop down menu	*/
+
+#global_nav { height: 26px; }
+#global_nav ul{
+	font-weight:normal;
+	font-size:13.3px;
+}
+
+#global_nav li a{
+	text-decoration:none;
+	color:#ffffff;
+	font-weight:bold;
+	text-size:13.3px !important;
+}
+
+#global_nav li a:hover{
+	color:black; background:white; //#333333;
+	display:block
+}
+
+#global_nav li a .sel { display: none; border: none }
+#global_nav li a .unsel { display: block; border: none }
+#global_nav li a:hover .sel { display: block; border: none }
+#global_nav li a:hover .unsel { display: none; border: none }
+
+/*	start drop down menu	*/
+
+#nav li {
+  float:left; list-style:none; display:block; padding:0 0 0px 0px; background: #ad4a28;
+	 position:relative; text-align:center; cursor:default; margin:0;}	
+
+#nav li a { display: block;
+  text-decoration: none; font-family:Tahoma, Arial, Helvetica, sans-serif;  font-weight:bold;
+	padding: 5px 10px; margin:0;}
+
+#nav li ul {
+  display:none; position:absolute; top:100%;left:0; margin:0; border: solid 1px #888888; 
+  -moz-box-shadow: 0 3px 8px 3px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 3px 8px 3px rgba(0,0,0,0.5);
+  box-shadow: 0 3px 8px 3px rgba(0,0,0,0.5);
+  padding:0 0 0 0;
+	float:none; clear:both; font-weight: normal; font-size: 10.7px; z-index: 200;
+  
+}
+
+#nav li ul li	{clear:both; float:none;}	
+#nav li ul li	{padding:0; position:relative; margin:0; }	
+#nav li ul li a {
+  display:block; font-weight: normal; color:black; padding:4px 16px 4px 12px; margin:0; max-width: 170px; white-space: nowrap; text-align:left;
+	background:none white;}
+#nav li ul li a:hover {color:black; background:#f3e5de;}
+
+#nav li ul	{clear:both; float:none;}
+/* #nav li>ul {top:auto; left:auto;}*/
+#nav li:hover ul, #nav li.over ul {display:block}
+/* Fix IE. Hide from IE Mac \*/
+* html #nav ul li {float:left; height:1%;}
+* html #nav ul li a {height:1%;}	/* End */
+/*	end drop down menu	*/
+
+#nav li ul li a#kbdlink { font-weight: bold }
+#nav li ul li a#getstartedlink { font-weight: bold }
+
+/* Currency Selector */
+
+#currencydiv { left: 0; top: 0; width: 200px; height: 250px; overflow:auto; position: absolute; z-index: 100; font: 10.7px Tahoma; display: block; visibility: hidden; border: solid 1px #ad4a28; background: white; }
+#currencydiv .currencyname { padding: 2px 4px; display: block; text-align: left; }
+#currencydiv .currencyid { float: right; display: block; padding: 2px 4px; text-align: center; }
+#currencydiv a { text-decoration: none }
+#currencydiv a:hover * { background: #f3e5de; }
+#currencydiv .endprimary { border-bottom: solid 1px #ad4a28; padding-bottom: 4px; margin-bottom: 4px; }
+
+.currencyref { text-decoration: none; font: 13.3px Tahoma }
+.currencyref img { border: none; vertical-align: middle; margin-bottom: 4px }
+
+.screenshot a img { border: none }
+
+table.grid tr.subtotal td { border-top: none; border-bottom: none; font-weight: bold; padding-bottom: 16px; border-top: solid 2px black; border-bottom: solid 1px black; }
+table.display.grid tr.subtotal td { border-top: none; border-bottom: none; font-weight: bold; padding-bottom: 16px; border-top: solid 2px black; border-bottom: solid 1px black; }
+table.display.grid tr.subsubtotal td { border-top: none; border-bottom: none; font-weight: bold; font-style: italic; padding-bottom: 16px; border-top: solid 2px black; border-bottom: solid 1px black; }
+tr.subitem td { font-style: italic; }
+
+/* Download popup form */
+
+#DWFW_BG { display: none; 
+  background: black; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60); 
+  opacity: 0; z-index: 100; position: fixed; left: 0; top: 0; width: 100%; height: 100%; 
+}
+#DWFW_Download { 
+  display: none; padding: 16px 20px 16px 20px; position: absolute; left: 30%; width: auto; 
+  height: auto; border: 5px solid #159bc7; background: #dcf0f7; z-index: 102; 
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-box-shadow: 0 4px 12px 4px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 4px 12px 4px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 12px 4px rgba(0,0,0,0.5);
+}
+#DWFW_Header { font: bold 16px Tahoma; }
+.DWFW_Blurb { font: 13.3px Tahoma; padding: 10px 0; }
+.DWFW_Blurb_Small { font: 10.7px Tahoma; padding: 8px 0; }
+.DWFW_Cancel { position: absolute; right: 20px; bottom: 20px; }
+#DWFW_Email { width: 200px; }
+#DWFW_FormContainer { font: 13.3px Tahoma; }
+.DWFW_FormElement { padding: 4px 0px; }
+#DWFW_FormContainer form {margin: 0; padding: 0}
+#DWFW_Submit { font: bold 16px Tahoma; padding: 2px 4px; margin-top: 12px; }
+
+.devdate { font: 13.3px Tahoma }
+
+  #DesktopDownload
+  {
+    display: none;
+    width: 700px; 
+    min-height: 300px; 
+    top: 160px;
+    position: absolute; 
+    background: white; 
+    border: 5px solid rgb(21, 155, 199); 
+    -moz-border-radius: 6px 6px 6px 6px;
+    z-index: 100;
+    margin-bottom: 200px;
+    -moz-box-shadow: 0 4px 12px 4px rgba(0,0,0,0.5);
+  }
+  
+  #DesktopDownload #DesktopDownloadSearch { width: 240px; border: solid 1px #cccccc }
+  #DesktopDownload h2
+  {
+    margin: 0;
+    padding: 0 0 4px 4px;
+    color: white;
+    background: #159BC7;
+    font-size: 21.3px;
+    border: none;
+    height: 25px;
+  }
+  
+  #DesktopDownload .KeyboardPage 
+  {
+    font-size: 15px; 
+    height: 34px;
+    clear: left;
+  }
+  
+  #DesktopDownload .KeyboardPage .KeyboardName:hover
+  {
+    background: #35bbe7;
+    border: solid 1px #35bbe7;
+  }
+
+  #DesktopDownload .KeyboardPage .KeyboardName
+  {
+    background: #159bc7;
+    border: 1px solid #159BC7;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    margin: 6px;
+    padding: 4px;
+  }
+  
+  #DesktopDownload .KeyboardPage .KeyboardRecommended
+  {
+    padding-top: 12px; 
+    padding-left: 4px; 
+    font-size: 11px;
+    font-weight: bold;
+    color: #ad4a28;
+  }
+  
+  #DesktopDownload .Keyboard#AdditionalKeyboardsLink
+  {
+    font-size: 11px;
+  }
+  
+  #DesktopDownloadCommon
+  {
+    color: #664444;
+    font-size: 14.7px;
+    padding: 16px 0 0 64px;
+  }
+  
+  #DesktopDownloadEntry
+  {
+    height: 24px;
+    font-size: 14.7px;
+    padding: 4px 4px;
+  }
+  
+  #DesktopDownloadEntry #DesktopDownloadButton
+  {
+    vertical-align: bottom;
+  }
+  
+  #DesktopDownloadEntry a {
+    font-size: 10.7px;
+    margin: 6px 8px;
+    float: right;
+  }
+  
+  #DesktopDownloadResults {
+    min-height: 209px;
+    border-bottom: solid 1px #159BC7;
+    border-top: solid 1px #159BC7;
+    overflow-y: expand;
+  }
+
+  #DesktopDownloadControl p {
+    margin: 0;
+    padding: 0;
+  }
+
+  #DesktopDownloadControl {
+    font-size: 10.7px;
+    padding: 8px 4px 2px;
+    height: 20px;
+  }
+  
+  #DesktopDownloadStandalone {
+    float: left;
+  }
+  
+  #DesktopDownloadCancel {
+    float: right;
+  }
+
+  #DesktopDownload .searching { background: url('/images/ajax-loader.gif') no-repeat top right; }
+  
+  #DesktopDownloadResults .Match { color: #159bc7; }
+  #DesktopDownloadResults .LanguageCountry { font-size: 10.7px; color: #888888 }
+  
+  #DesktopDownloadResults .Keyboard { 
+    position: relative; 
+    left: 0; 
+    top: 0; 
+    height: 18px; 
+    clear: both;
+    padding: 4px;
+    cursor: pointer;
+  }
+  
+  #DesktopDownloadResults .KeyboardName { float: left; font-size: 13.3px }
+  #DesktopDownloadResults .KeyboardStar { float: right; }
+  #DesktopDownloadResults .ksk_starrating { float: left; }
+
+  #DesktopDownloadResults.KeyboardSelected .Keyboard.Selected:hover {
+    background: #DCF0F7;
+  }
+
+  #DesktopDownloadResults.KeyboardSelected .Keyboard.Selected:hover .KeyboardDetail {
+    display: block;
+  }
+  
+  #DesktopDownloadResults.KeyboardSelected .KeyboardClose {
+    height: 16px; width: 16px;
+    background: url('/images/close.gif') no-repeat top left;
+    float: right;
+    padding: 0 8px 8px 0;
+  }
+/*
+  #DesktopDownloadResults.KeyboardSelected .Keyboard:hover {
+    background: white;
+  }
+
+  #DesktopDownloadResults.KeyboardSelected .Keyboard:hover .KeyboardDetail {
+    display: none;
+  }
+*/
+  #DesktopDownloadResults .Keyboard:hover,
+  #DesktopDownloadResults .Keyboard.Selected {
+    background: #DCF0F7;
+  }
+/*  #DesktopDownloadResults .Keyboard:hover .KeyboardDetail,*/
+  #DesktopDownloadResults .Keyboard.Selected .KeyboardDetail { 
+    display: block;
+  }
+  #DesktopDownloadResults .Keyboard .KeyboardDetail { 
+    display: none;
+    cursor: default;
+    background: white; 
+    border: none; 
+    -moz-border-radius: 0 16px 16px 16px; 
+    -webkit-border-radius: 0 16px 16px 16px; 
+    border-radius: 0 16px 16px 16px; 
+    padding: 0px;
+    margin-left: 100px; 
+    margin-top: 22px;
+    position: absolute;
+    width: 660px;
+    -moz-box-shadow: 0 4px 12px 4px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 4px 12px 4px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 12px 4px rgba(0,0,0,0.5);
+    z-index: 200;
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+  #DesktopDownloadResults .KeyboardDesc {
+    clear: right;
+    padding: 0 8px;
+  }
+  #DesktopDownloadResults .Keyboard .KeyboardDetail p,
+  #DesktopDownloadResults .Keyboard .KeyboardDetail li
+  { 
+    font-size: 12px;
+    line-height: 1.5em;
+    padding-bottom: 0;
+  }
+
+  #DesktopDownloadResults .KeyboardDetailsLink {
+    float: right;
+    padding: 8px 12px 10px
+  }
+  #DesktopDownloadResults .KeyboardDetailsLink a img {
+    border: none;
+  }
+
+  #DesktopDownloadResults .KeyboardDownload .KeyboardDownloadButton {
+    float: right;
+    margin-top: 24px;
+  }
+
+  #DesktopDownloadResults .KeyboardDownload .KeyboardDownloadForm {
+    float: left;
+  }
+  
+  #DesktopDownloadResults .KeyboardDownloadCheck {
+    padding: 4px 4px 0 88px;
+  }
+
+  #DesktopDownloadResults .KeyboardDownloadEmail {
+    padding: 4px 0;
+  }
+  
+  #DesktopDownloadResults .KeyboardDownloadClear { clear: both; }
+
+  #DesktopDownloadResults .KeyboardDownload {
+    clear: right;
+    padding: 8px 12px 10px;
+    border-top: solid 1px #cccccc;
+    background: url('/images/80/download_gradient.png') repeat-x top left;
+    background-color: #159BC7;
+    -moz-border-radius: 0 0 16px 16px; 
+    -webkit-border-radius: 0 0 16px 16px; 
+    border-radius: 0 0 16px 16px; 
+  }
+  
+  #DesktopDownloadResults .KeyboardDownload {
+    font-size: 10.3px
+  }
+  
+  #DesktopDownloadResults .KeyboardDownload a {
+    margin-left: 8px;
+  }
+  
+  #DesktopDownloadResults .KeyboardAuthor,
+  #DesktopDownloadResults .KeyboardDownloadSize {
+    float: left;
+    color: #888888;
+    font-size: 10.7px;
+    margin: 12px 12px 0 12px;
+  }
+
+  #DesktopDownloadResults .KeyboardAuthor span,
+  #DesktopDownloadResults .KeyboardDownloadSize span {
+    color: #444444;
+  }
+
+  #DesktopDownloadResults .KeyboardSize {
+    float: left;
+    font-size: 10.7px;
+    margin: 12px 12px 0 12px;
+  }
+  
+  #DesktopDownloadResults .KeyboardTitle {
+    -moz-border-radius: 0 16px 0 0;
+    background: #cccccc;
+    color: #444444;
+    font-weight: bold;
+    padding: 4px;
+    height: 16px;
+    margin-bottom: 4px;
+  }
+
+  #DesktopDownloadResults #DesktopDownloadHint {
+    background: url("/images/info2.png") no-repeat scroll 16px 40px transparent;
+    font-size: 16px;
+    height: 48px;
+    padding: 40px 16px 0 64px;
+  }
+  
+  #ie7 #DesktopDownload * { z-index: 100; position: relative; left: 0; top: 0 }
+  
+  #ie7 #DesktopDownloadResults .Keyboard .KeyboardDetail *
+  {
+    position: relative;
+    left: 0; top: 0;
+    z-index: 200 !important;
+  }
+
+  #ie7 #DesktopDownloadResults .Keyboard .KeyboardDetail
+  {
+    margin-left: 0;
+    left: 100px;
+    top: 0;
+    z-index: 200 !important;
+  }
+  
+  #ie6 #DesktopDownloadResults .Keyboard .KeyboardDetail,
+  #ie7 #DesktopDownloadResults .Keyboard .KeyboardDetail,
+  #ie8 #DesktopDownloadResults .Keyboard .KeyboardDetail
+  {
+    border-bottom: 1.5px solid #cccccc !important; 
+    border-left: 1px solid #dddddd !important; 
+    border-top: 1px solid #eeeeee !important; 
+    border-right: 1px solid #dddddd !important;
+  }
+
+  #ie6 #DWFW_Download,
+  #ie7 #DWFW_Download {
+    width: 400px;
+  }
+  
+  
+  
+  
+  
