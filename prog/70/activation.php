@@ -42,7 +42,8 @@
   }
 
   if($licno->OnlineProductID == 1246) {
-    LogErrorExit("Please contact the seller or developer for Activation Code.");
+      /* Do not activate per request of vendor */
+      LogErrorExit("Please contact the seller or developer for Activation Code.");
   }
 
   echo $machdata->ActivationResponseBlob;

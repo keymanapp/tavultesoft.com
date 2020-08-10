@@ -15,7 +15,7 @@
   if(!CheckResult($result, $error)) {
     $result = "<p style='color:red'>$error</p>";
   }
-  
+
   function CheckResult(&$result, &$error) {
     if(!isset($_POST['ActivationRequestBlob'])) {
       return true;
@@ -29,15 +29,21 @@
 
     $licno = new CRM_Activation_LicenceNumber();
     $FLicenceNumber = '';
-    
+
     $machdata = new CRM_Activation_MachineData();
     if(!$machdata->Validate($blob, '', $err)) {
       $error = "Invalid input: request was not valid.  Make sure you paste the request data unmodified: $err.";
       return false;
     }
 
-    if(!$licno->Validate($machdata->LicenceNumber)) { 
+    if(!$licno->Validate($machdata->LicenceNumber)) {
       $error = "Activation Request licence number was not valid";
+      return false;
+    }
+
+    if($licno->OnlineProductID == 1246) {
+      /* Do not activate per request of vendor */
+      $error = "Please contact the seller or developer for Activation Code.";
       return false;
     }
 
