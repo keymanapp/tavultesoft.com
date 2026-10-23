@@ -1,0 +1,18 @@
+RewriteEngine On
+
+# Redirect home page
+RewriteRule ^index\.php$|^$ http://help.keyman.com/products/desktop/ [R,L]
+# Redirect version history
+RewriteRule ^versionhistory([^/]*)\.php$ http://help.keyman.com/products/desktop/versionhistory$1.php [R,L]
+# Redirect /70/
+RewriteRule ^70/([^/]+)\.html$ http://help.keyman.com/products/desktop/7.0/$1.php [R,L]
+# Redirect /70/index.html
+RewriteRule ^70/?$ http://help.keyman.com/products/desktop/7.0/ [R,L]
+# Redirect /help/ (desktop 6.2)
+RewriteRule ^help/(.*)$|^help$ http://help.keyman.com/products/desktop/6.0/$1 [R,L]
+# Redirect /5.1/
+RewriteRule ^5.1/(.*)$|^5.1$ http://help.keyman.com/products/desktop/5.0/5.1/specification.pdf [R,L]
+# Redirect /km5/
+RewriteRule ^km5/(.*)$|^km5$ http://help.keyman.com/products/desktop/5.0/$1 [R,L]
+# Redirect /km4/
+RewriteRule ^km4/(.*)$|^km4$ http://help.keyman.com/products/desktop/4.0/$1 [R,L]
