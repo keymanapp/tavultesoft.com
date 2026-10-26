@@ -4,10 +4,10 @@ RewriteCond %{QUERY_STRING} ^$
 RewriteRule ^index\.php$ /forums/ [R,L]
 # Redirect index.php with category
 RewriteCond %{QUERY_STRING} ^ParentForumCategoryID=(\d+)$ [NC]
-RewriteRule ^(index\.php)?$  index.php@parentforumcategoryid=$1.html [R,L]
+RewriteRule ^(index\.php)?$  index.php@parentforumcategoryid=%1.html [R,L]
 # Redirect category.php
 RewriteCond %{QUERY_STRING} ^ForumCategoryID=(\d+)$ [NC]
-RewriteRule ^(category\.php)?$ category.php@forumcategoryid=$1.html [R,L]
+RewriteRule ^(category\.php)?$ category.php@forumcategoryid=%1.html [R,L]
 # Redirect topic.php
 RewriteCond %{QUERY_STRING} ^ForumTopicID=(\d+)$ [NC]
-RewriteRule ^(topic\.php)?$ topic.php@forumtopicid=$1.html [R,L]
+RewriteRule ^(topic\.php)?$ topic.php@forumtopicid=%1.html [R,L]

@@ -11,11 +11,11 @@ if ! [ -f "$BOOTSTRAP" ] || ! source "$BOOTSTRAP"; then
 fi
 ## END STANDARD SITE BUILD SCRIPT INCLUDE
 
-readonly TAVULTESOFT_CONTAINER_NAME=r-keymanweb-com-website
-readonly TAVULTESOFT_CONTAINER_DESC=r-keymanweb-com-app
-readonly TAVULTESOFT_IMAGE_NAME=r-keymanweb-com-website
-readonly HOST_TAVULTESOFT_COM=r.keymanweb.com.localhost
-readonly PORT_TAVULTESOFT_COM=8062
+readonly TAVULTESOFT_CONTAINER_NAME=tavultesoft-com-website
+readonly TAVULTESOFT_CONTAINER_DESC=tavultesoft-com-app
+readonly TAVULTESOFT_IMAGE_NAME=tavultesoft-com-website
+readonly HOST_TAVULTESOFT_COM=tavultesoft.com.localhost
+readonly PORT_TAVULTESOFT_COM=8063
 
 source _common/keyman-local-ports.inc.sh
 source _common/docker.inc.sh

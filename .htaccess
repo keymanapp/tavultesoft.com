@@ -27,11 +27,11 @@ RewriteRule ^isis(/.*)? https://keyman.com/keyboards?q=isis" [R=301,L]
 # Redirect /keyboards?id
 # TODO: Check this works as expected.
 RewriteCond %{QUERY_STRING} (id|ID|KeyboardID|keyboardid)=([^&]+)
-RewriteRule ^keyboards(\/(index\.php)?)?$ https://keyman.com/keyboards/$2" [R=301,L]
+RewriteRule ^keyboards(\/(index\.php)?)?$ https://keyman.com/keyboards/%2" [R=301,L]
 # Redirect /keyboards?search
 # TODO: Check this works as expected.
 RewriteCond %{QUERY_STRING} (Search|q)=([^&]+)
-RewriteRule ^keyboards(\/(index\.php)?)?$ https://keyman.com/keyboards/?q=$2" [R=301,L]
+RewriteRule ^keyboards(\/(index\.php)?)?$ https://keyman.com/keyboards/?q=%2" [R=301,L]
 # Redirect /lswin, /lswin.php
 RewriteRule ^lswin(\.php.*|/.*)? https://laoscript.net/" [R=301,L]
 # Redirect /sinhala
@@ -104,7 +104,7 @@ RewriteRule ^support/uninstall https://keyman.com/uninstall/ [R,L]
 # support/exception
 # TODO: Check this works.
 RewriteCond %{QUERY_STRING} IssueID=([^&]+)
-RewriteRule ^support/exception.php https://keyman.com/go/desktop/10.0/view-exception?id=$1 [R,L]
+RewriteRule ^support/exception.php https://keyman.com/go/desktop/10.0/view-exception?id=%1 [R,L]
 # prog/70/crash
 RewriteRule ^prog/70/crash.php https://api.keyman.com/desktop/10.0/exception [QSA,P,L]
 
@@ -113,18 +113,18 @@ RewriteRule ^prog/70/crash.php https://api.keyman.com/desktop/10.0/exception [QS
 RewriteRule ^kb/browse.php https://help.keyman.com/knowledge-base [R,L]
 # kb
 RewriteCond %{QUERY_STRING} (ID|id|KnowledgeBaseID)=([^&]+)
-RewriteRule ^kb(/(index.php)?)? https://help.keyman.com/knowledge-base/$2 [R,L]
+RewriteRule ^kb(/(index.php)?)? https://help.keyman.com/knowledge-base/%2 [R,L]
 
 # go
 # go/download
 RewriteCond %{QUERY_STRING} Keyboard=([^&]+)
-RewriteRule ^go(/90)?/download.php https://keyman.com/keyboards/$1 [R,L]
+RewriteRule ^go(/90)?/download.php https://keyman.com/keyboards/%1 [R,L]
 
 # download_direct
 RewriteRule ^download_direct/charident.exe /closed" [R=301,L]
 RewriteRule ^download_direct/importkeyboard.exe /closed" [R=301,L]
 RewriteRule ^download_direct/keymandesktop.+ https://downloads.keyman.com/windows/stable/" [R=301,L]
-RewriteRule ^download_direct/keymandeveloper.+ https://downloads.keyman.com/developer/stable/" [R=301,L]            </rules>
+RewriteRule ^download_direct/keymandeveloper.+ https://downloads.keyman.com/developer/stable/" [R=301,L]
 
 # MIME Types
 AddType application/font-woff .woff
