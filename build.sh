@@ -19,6 +19,7 @@ readonly PORT_TAVULTESOFT_COM=8063
 
 source _common/keyman-local-ports.inc.sh
 source _common/docker.inc.sh
+source ./test.inc.sh
 
 ################################ Main script ################################
 
@@ -36,6 +37,19 @@ builder_describe \
 
 builder_parse "$@"
 
+function do_test() {
+  # note: no unit tests at this time, and phpunit not installed on this site
+  # test_docker_container $TAVULTESOFT_CONTAINER_DESC $PORT_TAVULTESOFT_COM "/_test"
+  test_keyman_htaccess
+  test_keyman_support_htaccess
+  test_keyman_documentation_htaccess
+  test_forums
+  test_prog_70_downloadkeyboards
+  test_prog_80_downloadkeyboards
+  test_prog_90_downloadkeyboards
+  test_prog_macosx_10_downloadkeyboards
+  test_root
+}
 
 builder_run_action configure  bootstrap_configure
 builder_run_action clean      clean_docker_container $TAVULTESOFT_IMAGE_NAME $TAVULTESOFT_CONTAINER_NAME
@@ -43,4 +57,4 @@ builder_run_action stop       stop_docker_container  $TAVULTESOFT_IMAGE_NAME $TA
 builder_run_action build      build_docker_container $TAVULTESOFT_IMAGE_NAME $TAVULTESOFT_CONTAINER_NAME $BUILDER_CONFIGURATION
 builder_run_action start      start_docker_container $TAVULTESOFT_IMAGE_NAME $TAVULTESOFT_CONTAINER_NAME $TAVULTESOFT_CONTAINER_DESC $HOST_TAVULTESOFT_COM $PORT_TAVULTESOFT_COM $BUILDER_CONFIGURATION
 
-builder_run_action test       test_docker_container $TAVULTESOFT_CONTAINER_DESC $PORT_TAVULTESOFT_COM "/_test"
+builder_run_action test       do_test

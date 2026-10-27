@@ -1,6 +1,6 @@
 RewriteEngine On
 # FAQMap RewriteMap
-RewriteRule "^keyman/support/faq(/d{3})\.php$" "https://help.keyman.com/knowledge-base/${faq-to-kb:$1}" [R,L]
+RewriteRule "^faq(\d{3})\.php$" "https://help.keyman.com/knowledge-base/${faq-to-kb:$1}" [R,L]
 # Rewrite support/FAQ.php
 RewriteRule ^faq\.php$ https://help.keyman.com/knowledge-base/ [R,L,NC]
 # Rewrite support/sysreq.php

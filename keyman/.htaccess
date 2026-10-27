@@ -1,5 +1,8 @@
 RewriteEngine On
 
+# Redirect keyman6-0-158-0.exe to /tamil (moved from root web.config)
+RewriteRule downloads/keyman6-0-158.+ /tamil/ [R,L]
+
 # Redirect all keyboard searches
 RewriteCond %{QUERY_STRING} ^$
 RewriteCond %{REQUEST_URI} !^/downloads/keyboards/(details|search)\.php
