@@ -1,0 +1,13 @@
+RewriteEngine On
+# Redirect index.php
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^index\.php$ /forums/ [R,L]
+# Redirect index.php with category
+RewriteCond %{QUERY_STRING} ^ParentForumCategoryID=(\d+)$ [NC]
+RewriteRule ^(index\.php)?$  /forums/index.php@parentforumcategoryid=%1.html [R,QSD,L]
+# Redirect category.php
+RewriteCond %{QUERY_STRING} ^ForumCategoryID=(\d+)$ [NC]
+RewriteRule ^(category\.php)?$ /forums/category.php@forumcategoryid=%1.html [R,QSD,L]
+# Redirect topic.php
+RewriteCond %{QUERY_STRING} ^ForumTopicID=(\d+)$ [NC]
+RewriteRule ^(topic\.php)?$ /forums/topic.php@forumtopicid=%1.html [R,QSD,L]

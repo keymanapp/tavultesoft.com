@@ -1,0 +1,22 @@
+RewriteEngine On
+
+# Redirect keyman6-0-158-0.exe to /tamil (moved from root web.config)
+RewriteRule downloads/keyman6-0-158.+ /tamil/ [R,L]
+
+# Redirect all keyboard searches
+RewriteCond %{QUERY_STRING} ^$
+RewriteCond %{REQUEST_URI} !^/downloads/keyboards/(details|search)\.php
+RewriteRule ^downloads/keyboards.* https://keyman.com/keyboards [R,L]
+# Redirect /keyman/downloads
+RewriteRule ^downloads https://keyman.com/desktop/download [R=301,L]
+# Redirect download.php
+RewriteRule ^download(\.php|/) https://keyman.com/desktop/download.php [R,L]
+# Redirect download*.php
+RewriteRule ^download([a-z]+)\.php https://keyman.com/downloads/archive/ [R,L]
+# Redirect faq.php
+RewriteRule ^faq\.php https://help.keyman.com/products/desktop/9.0/docs/common.php [R,L]
+# Redirect feature pages
+RewriteRule ^(unicode|info|trialpay|toolbox|start|setup|new|language-switching|languages|keyboards|intro|help|features|expertise|everywhere|editions|compatibility|benefits|index)\.php$|^$ https://keyman.com/desktop/ [R,L]
+RewriteRule ^$ https://keyman.com/desktop/ [L,R]
+# Redirect /keyman/register etc
+RewriteRule ^(register|upgrade|buy\.php|corpedition\.php|upgrade\.php) /closed [R=301,L]

@@ -34,20 +34,20 @@
 
     if(!array_key_exists($OnlineProductID, $versions)) {
       $Error = 'Invalid OnlineProductID';
-    } 
+    }
     else {
       $v = $versions[$OnlineProductID];
       if($v['version'] == $Version || $OnlineProductID == 4) {
         // We don't have any updates for Developer 7.x
         $Message = 'No updates are currently available.';
       } else {
-        $Message = "An update, version ${v['version']}, is available for download from http://keyman.com/downloads/archive but is not currently available as an automatic update.";
+        $Message = "An update, version {$v['version']}, is available for download from http://keyman.com/downloads/archive but is not currently available as an automatic update.";
         $update = "<update ".
-          "onlineproductid='${v['id']}' ".
+          "onlineproductid='{$v['id']}' ".
           "oldversion='$Version' ".
-          "newversion='${v['version']}' ".
-          "installurl='${v['url']}' ".
-          "installsize='${v['size']}' ".
+          "newversion='{$v['version']}' ".
+          "installurl='{$v['url']}' ".
+          "installsize='{$v['size']}' ".
           "patchurl='' ".
           "patchsize='0' />";
       }
@@ -59,7 +59,7 @@
     // We don't need to list update details for older versions with Raw=1 because
     // these were only called from the installer. Most people installing older versions
     // will have the latest older version.
-    
+
     if(!empty($Error)) {
       echo "fatal=$Error";
     }
@@ -73,7 +73,7 @@
 
     echo '<?xml version="1.0" encoding="utf-8"?>';
     echo "<updatecheck>";
-    
+
     echo $update;
 
     if(!empty($Error)) {

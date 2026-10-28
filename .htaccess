@@ -1,0 +1,129 @@
+RewriteEngine On
+ErrorDocument 404 /error404.php
+
+# Redirect beta
+RewriteRule ^beta.* https://keyman.com/beta/ [R,L]
+# regtest-dtd
+RewriteRule ^keymandev/regtest\.dtd$ https://api.keyman.com/schemas/regtest/regtest.dtd [R=301,L]
+
+# 2019-08-19 cauterizing tavultesoft.com landing pages
+# Redirect /70
+RewriteRule ^70(/.*)? https://keyman.com/desktop/ [R=301,L]
+# Redirect /burmese
+RewriteRule ^burmese(/.*)? https://keyman.com/burmese/ [R=301,L]
+# Redirect /ethiopic
+RewriteRule ^ethiopic(/.*)? https://keyman.com/amharic/ [R=301,L]
+# Redirect /eurolatin
+RewriteRule ^eurolatin(/.*)? https://keyman.com/eurolatin/ [R=301,L]
+# Redirect /greek
+RewriteRule ^greek(/.*)? https://keyman.com/greek/ [R=301,L]
+# Redirect /ipa
+RewriteRule ^ipa(/.*)? https://keyman.com/ipa/ [R=301,L]
+# Redirect /isis
+RewriteRule ^isis(/.*)? https://keyman.com/keyboards?q=isis [R=301,L]
+
+# Redirect /keyboards?id
+# TODO: Check this works as expected.
+RewriteCond %{QUERY_STRING} (id|ID|KeyboardID|keyboardid)=([^&]+)
+RewriteRule ^keyboards(\/(index\.php)?)?$ https://keyman.com/keyboards/%2 [R=301,QSD,L]
+# Redirect /keyboards?search
+# TODO: Check this works as expected.
+RewriteCond %{QUERY_STRING} (Search|q)=([^&]+)
+RewriteRule ^keyboards(\/(index\.php)?)?$ https://keyman.com/keyboards/?q=%2 [R=301,QSD,L]
+# Redirect /lswin, /lswin.php
+RewriteRule ^lswin(\.php.*|/.*)? https://laoscript.net/ [R=301,L]
+# Redirect /sinhala
+RewriteRule ^sinhala(/.*)? https://keyman.com/sinhala/ [R=301,L]
+# Redirect /tamil
+RewriteRule ^tamil(/.*)? https://keyman.com/tamil/ [R=301,L]
+# Redirect /tibetan
+RewriteRule ^tibetan(/.*)? https://keyman.com/tibetan/ [R=301,L]
+# Redirect /index.php
+RewriteRule ^((index\.php)|(\?.*)?)$ https://keyman.com/ [R=301,L]
+# Redirect /products.php
+RewriteRule ^products\.php https://keyman.com/ [R=301,L]
+# Redirect /support.php
+RewriteRule ^support\.php https://help.keyman.com/ [R=301,L]
+# Redirect /testimonials.php
+RewriteRule ^testimonials\.php https://keyman.com/testimonials [R=301,L]
+
+# 2019-08-19 redirect Keyman Developer pages
+# Redirect /keymandev/register
+RewriteRule ^keymandev/register /closed [R=301,L]
+# Redirect /keymandev/documentation
+RewriteRule ^keymandev/(documentation|support) https://help.keyman.com/developer [R=301,L]
+# Redirect /keymandev/download[s]
+RewriteRule ^keymandev/download https://keyman.com/developer/download [R=301,L]
+# Redirect /keymandev/quality/
+RewriteRule ^keymandev/quality/(whitepaper.+\.pdf) https://help.keyman.com/developer/keyboards/whitepaper/$1 [R=301,L]
+# Redirect /keymandev/visualkeyboard.dtd
+RewriteRule ^keymandev/visualkeyboard.dtd https://api.keyman.com/schemas/visualkeyboard/visualkeyboard.dtd [R=301,L]
+# Redirect /keymandev pages
+RewriteRule (^keymandev/(.+)\.php)|(^keymandev(/?)) https://keyman.com/developer/ [R=301,L]
+
+# 2019-08-19 redirect Keymanweb pages
+# Redirect /keymanweb bookmarklet
+RewriteRule ^keymanweb/bookmarklet\.php https://keyman.com/bookmarklet/ [R=301,L]
+# Redirect /keymanweb pages
+RewriteRule ^keymanweb https://keyman.com/developer/keymanweb/ [R=301,L]
+
+# 2019-08-19 redirect Keyman pages: see keyman/.htaccess
+
+# 2019-09-30 redirect embedded purchase pages to a page with license information
+# 8.0/9.0 inline wizard
+RewriteRule ^buy/[89]0/wizard.php https://keyman.com/downloads/archive/legacy-embed.php [R=301,L]
+
+# 2019-08-19 shutdown pages that have no redirect to a helpful information page
+# buy ctc08, pay, search, tsactsrv, video
+RewriteRule ^(buy|ctc08|pay|search|tsactsrv|video)(/.*)?$ /closed [R=301,L]
+# account pages
+RewriteRule ^account/ /closed [R=301,L]
+# root pages
+RewriteRule ^(about|code|contact|news|newsitem|oldnews|pricelist|privacy|resellers|sendmessage|services|sitefeedback|terms)\.php.*$ /closed [R=301,L]
+# orderform.pdf
+RewriteRule ^(orderform\.pdf)$ /closed [R=301,L]
+
+# 2019-12-18 Rewrite and redirect additional pages and API endpoints
+# submitdiag
+# TODO: Check this works as there's no way to set server vars from here
+RewriteRule ^prog/submitdiag.php https://api.keyman.com/desktop/10.0/submitdiag [P,L]
+# partners
+RewriteRule ^partners /closed [R=301,L]
+# keep-in-touch
+RewriteRule ^prog/90/keepintouch https://keyman.com/desktop/keepintouch-100 [R=301,L]
+# language-lookup
+RewriteRule ^prog/70/languagelookup https://www.ethnologue.com/ [R,L]
+# download-locales
+RewriteRule ^prog/(70|100)/downloadlocales/all.php /prog/100/downloadlocales/locale-global-download.kmp [R,L]
+# support/
+RewriteRule ^support/(index.php)?$ https://help.keyman.com/products/desktop/9.0/ [R,L]
+# support/uninstall
+RewriteRule ^support/uninstall https://keyman.com/uninstall/ [R,L]
+# support/exception
+# TODO: Check this works.
+RewriteCond %{QUERY_STRING} IssueID=([^&]+)
+RewriteRule ^support/exception.php https://keyman.com/go/desktop/10.0/view-exception?id=%1 [R,L]
+# prog/70/crash
+RewriteRule ^prog/70/crash.php https://api.keyman.com/desktop/10.0/exception [QSA,P,L]
+
+# kb
+# kb/browse
+RewriteRule ^kb/browse.php https://help.keyman.com/knowledge-base [R,L]
+# kb
+RewriteCond %{QUERY_STRING} (ID|id|KnowledgeBaseID)=([^&]+)
+RewriteRule ^kb(/(index.php)?)? https://help.keyman.com/knowledge-base/%2 [R,QSD,L]
+
+# go
+# go/download
+RewriteCond %{QUERY_STRING} Keyboard=([^&]+)
+RewriteRule ^go(/90)?/download.php https://keyman.com/keyboards/%1 [R,QSD,L]
+
+# download_direct
+RewriteRule ^download_direct/charident.exe /closed [R=301,L]
+RewriteRule ^download_direct/importkeyboard.exe /closed [R=301,L]
+RewriteRule ^download_direct/keymandesktop.+ https://downloads.keyman.com/windows/stable/ [R=301,L]
+RewriteRule ^download_direct/keymandeveloper.+ https://downloads.keyman.com/developer/stable/ [R=301,L]
+
+# MIME Types
+AddType application/font-woff .woff
+AddType application/x-kmp .kmp

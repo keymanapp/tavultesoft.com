@@ -1,0 +1,11 @@
+RewriteEngine On
+# FAQMap RewriteMap
+RewriteRule "^faq(\d{3})\.php$" "https://help.keyman.com/knowledge-base/${faq-to-kb:$1}" [R,L]
+# Rewrite support/FAQ.php
+RewriteRule ^faq\.php$ https://help.keyman.com/knowledge-base/ [R,L,NC]
+# Rewrite support/sysreq.php
+RewriteRule ^sysreq\.php$ http://help.keyman.com/products/desktop/9.0/docs/about_requirements.php [R,L]
+# Rewrite support/index.php or root
+RewriteRule ^(|index\.php)$ http://help.keyman.com/products/desktop/9.0/ [R,L]
+# locale editor
+RewriteRule ^locale https://help.keyman.com/products/desktop/12.0/docs/advanced_locale_edit.php [R,L]
