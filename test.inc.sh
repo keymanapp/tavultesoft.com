@@ -1,7 +1,5 @@
 set -eu
 
-testhost="tavultesoft.com.localhost:8063"
-
 function test_redirect() {
   local origin="$1"
   local expectedTarget="$2"
@@ -175,4 +173,17 @@ function test_root() {
   test_redirect "/download_direct/importkeyboard.exe"  "http://$testhost/closed"
   test_redirect "/download_direct/keymandesktop/anything"  "https://downloads.keyman.com/windows/stable/"
   test_redirect "/download_direct/keymandeveloper/anything"  "https://downloads.keyman.com/developer/stable/"
+}
+
+function test_all_redirects() {
+  export testhost="$1"
+  test_keyman_htaccess
+  test_keyman_support_htaccess
+  test_keyman_documentation_htaccess
+  test_forums
+  test_prog_70_downloadkeyboards
+  test_prog_80_downloadkeyboards
+  test_prog_90_downloadkeyboards
+  test_prog_macosx_10_downloadkeyboards
+  test_root
 }
