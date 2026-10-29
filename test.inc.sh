@@ -1,15 +1,17 @@
 set -eu
 
 function test_redirect() {
-  local origin="$1"
-  local expectedTarget="$2"
-  local url="$testhost$origin"
+  local origin expectedTarget url result actualTarget
+  origin="$1"
+  expectedTarget="$2"
+  url="$testhost$origin"
+
   builder_echo grey "Testing $url"
-  local result="$(curl --silent -f -I "$url")"
-  # echo "$result"
-  local actualTarget="$(echo "$result" | grep -i "Location:" | cut -d' ' -f2 -)"
+  result="$(curl --silent -f -I "$url" | sed 's/\r$//')"
+  actualTarget="$(echo "$result" | grep -i "Location:" | cut -d' ' -f2 -)"
+
   if [[ "$actualTarget" != "$expectedTarget" ]]; then
-    builder_echo error "URL '$url' did not redirect to expected '$expectedTarget'"
+    builder_echo error "URL '$url' did not redirect to expected '$expectedTarget' (received '$actualTarget')"
     echo
     echo "$result"
     echo

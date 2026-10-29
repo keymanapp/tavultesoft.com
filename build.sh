@@ -45,7 +45,7 @@ builder_parse "$@"
 function do_test() {
   # tavultesoft.com-specific tests
   if ! builder_has_option --no-redirect-check; then
-    test_all_redirects "$HOST_TAVULTESOFT_COM:$PORT_TAVULTESOFT_COM" # from test.inc.sh
+    test_all_redirects "http://$HOST_TAVULTESOFT_COM:$PORT_TAVULTESOFT_COM" # from test.inc.sh
   fi
   # shared standard tests
   test_docker_container $TAVULTESOFT_CONTAINER_DESC $PORT_TAVULTESOFT_COM "/forums"
