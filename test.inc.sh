@@ -1,18 +1,17 @@
 set -eu
 
-# testhost="https://tavultesoft.keyman-staging.com"
-testhost="http://tavultesoft.com.localhost:8063"
-
 function test_redirect() {
-  local origin="$1"
-  local expectedTarget="$2"
-  local url="$testhost$origin"
+  local origin expectedTarget url result actualTarget
+  origin="$1"
+  expectedTarget="$2"
+  url="$testhost$origin"
+
   builder_echo grey "Testing $url"
-  local result="$(curl --silent -f -I "$url")"
-  # echo "$result"
-  local actualTarget="$(echo "$result" | grep -i "Location:" | cut -d' ' -f2 -)"
+  result="$(curl --silent -f -I "$url" | sed 's/\r$//')"
+  actualTarget="$(echo "$result" | grep -i "Location:" | cut -d' ' -f2 -)"
+
   if [[ "$actualTarget" != "$expectedTarget" ]]; then
-    builder_echo error "URL '$url' did not redirect to expected '$expectedTarget'"
+    builder_echo error "URL '$url' did not redirect to expected '$expectedTarget' (received '$actualTarget')"
     echo
     echo "$result"
     echo
@@ -176,4 +175,17 @@ function test_root() {
   test_redirect "/download_direct/importkeyboard.exe"  "$testhost/closed"
   test_redirect "/download_direct/keymandesktop/anything"  "https://downloads.keyman.com/windows/stable/"
   test_redirect "/download_direct/keymandeveloper/anything"  "https://downloads.keyman.com/developer/stable/"
+}
+
+function test_all_redirects() {
+  export testhost="$1"
+  test_keyman_htaccess
+  test_keyman_support_htaccess
+  test_keyman_documentation_htaccess
+  test_forums
+  test_prog_70_downloadkeyboards
+  test_prog_80_downloadkeyboards
+  test_prog_90_downloadkeyboards
+  test_prog_macosx_10_downloadkeyboards
+  test_root
 }
