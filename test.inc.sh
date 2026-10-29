@@ -3,11 +3,11 @@ set -eu
 function test_redirect() {
   local origin="$1"
   local expectedTarget="$2"
-  local url="http://tavultesoft.com.localhost:8063$origin"
+  local url="$testhost$origin"
   builder_echo grey "Testing $url"
   local result="$(curl --silent -f -I "$url")"
   # echo "$result"
-  local actualTarget="$(echo "$result" | grep "Location:" | cut -d' ' -f2 -)"
+  local actualTarget="$(echo "$result" | grep -i "Location:" | cut -d' ' -f2 -)"
   if [[ "$actualTarget" != "$expectedTarget" ]]; then
     builder_echo error "URL '$url' did not redirect to expected '$expectedTarget'"
     echo
@@ -26,7 +26,7 @@ function test_keyman_htaccess() {
   test_redirect "/keyman/downloadanything.php" "https://keyman.com/downloads/archive/"
   test_redirect "/keyman/faq.php" "https://help.keyman.com/products/desktop/9.0/docs/common.php"
   test_redirect "/keyman/unicode.php" "https://keyman.com/desktop/"
-  test_redirect "/keyman/register.php" "http://$testhost/closed"
+  test_redirect "/keyman/register.php" "$testhost/closed"
 }
 
 function test_keyman_support_htaccess() {
@@ -63,10 +63,10 @@ function test_keyman_documentation_htaccess() {
 }
 
 function test_forums() {
-  test_redirect "/forums/index.php" "http://$testhost/forums/"
-  test_redirect "/forums/index.php?ParentForumCategoryID=3" "http://$testhost/forums/index.php@parentforumcategoryid=3.html"
-  test_redirect "/forums/category.php?ForumCategoryID=45" "http://$testhost/forums/category.php@forumcategoryid=45.html"
-  test_redirect "/forums/topic.php?ForumTopicID=238" "http://$testhost/forums/topic.php@forumtopicid=238.html"
+  test_redirect "/forums/index.php" "$testhost/forums/"
+  test_redirect "/forums/index.php?ParentForumCategoryID=3" "$testhost/forums/index.php@parentforumcategoryid=3.html"
+  test_redirect "/forums/category.php?ForumCategoryID=45" "$testhost/forums/category.php@forumcategoryid=45.html"
+  test_redirect "/forums/topic.php?ForumTopicID=238" "$testhost/forums/topic.php@forumtopicid=238.html"
 }
 
 function test_prog_70_downloadkeyboards() {
@@ -86,7 +86,7 @@ function test_prog_macosx_10_downloadkeyboards() {
 }
 
 function test_root() {
-  test_redirect "/keyman/downloads/keyman6-0-158.exe" "http://$testhost/tamil/"
+  test_redirect "/keyman/downloads/keyman6-0-158.exe" "$testhost/tamil/"
   test_redirect "/beta/something" "https://keyman.com/beta/"
   test_redirect "/keymandev/regtest.dtd" "https://api.keyman.com/schemas/regtest/regtest.dtd"
   test_redirect "/70/anything" "https://keyman.com/desktop/"
@@ -116,7 +116,7 @@ function test_root() {
   test_redirect "/support.php" "https://help.keyman.com/"
   test_redirect "/testimonials.php" "https://keyman.com/testimonials"
 
-  test_redirect "/keymandev/register" "http://$testhost/closed"
+  test_redirect "/keymandev/register" "$testhost/closed"
   test_redirect "/keymandev/documentation" "https://help.keyman.com/developer"
   test_redirect "/keymandev/support" "https://help.keyman.com/developer"
   test_redirect "/keymandev/anything.php" "https://keyman.com/developer/"
@@ -129,31 +129,31 @@ function test_root() {
   test_redirect "/buy/80/wizard.php" "https://keyman.com/downloads/archive/legacy-embed.php"
   test_redirect "/buy/90/wizard.php" "https://keyman.com/downloads/archive/legacy-embed.php"
 
-  test_redirect "/buy/anything" "http://$testhost/closed"
-  test_redirect "/ctc08" "http://$testhost/closed"
-  test_redirect "/pay" "http://$testhost/closed"
-  test_redirect "/search/anything" "http://$testhost/closed"
-  test_redirect "/tsactsrv" "http://$testhost/closed"
-  test_redirect "/video" "http://$testhost/closed"
-  test_redirect "/account/" "http://$testhost/closed"
+  test_redirect "/buy/anything" "$testhost/closed"
+  test_redirect "/ctc08" "$testhost/closed"
+  test_redirect "/pay" "$testhost/closed"
+  test_redirect "/search/anything" "$testhost/closed"
+  test_redirect "/tsactsrv" "$testhost/closed"
+  test_redirect "/video" "$testhost/closed"
+  test_redirect "/account/" "$testhost/closed"
 
   # random subset of root pages
-  test_redirect "/about.php" "http://$testhost/closed"
-  test_redirect "/code.php" "http://$testhost/closed"
-  test_redirect "/contact.php" "http://$testhost/closed"
-  test_redirect "/services.php" "http://$testhost/closed"
-  test_redirect "/terms.php" "http://$testhost/closed"
+  test_redirect "/about.php" "$testhost/closed"
+  test_redirect "/code.php" "$testhost/closed"
+  test_redirect "/contact.php" "$testhost/closed"
+  test_redirect "/services.php" "$testhost/closed"
+  test_redirect "/terms.php" "$testhost/closed"
 
-  test_redirect "/orderform.pdf" "http://$testhost/closed"
+  test_redirect "/orderform.pdf" "$testhost/closed"
 
   # TODO: this is a rewrite, not a redirect
   # test_redirect "/prog/submitdiag.php" "https://api.keyman.com/desktop/10.0/submitdiag"
 
-  test_redirect "/partners" "http://$testhost/closed"
+  test_redirect "/partners" "$testhost/closed"
 
   test_redirect "/prog/90/keepintouch" "https://keyman.com/desktop/keepintouch-100"
-  test_redirect "/prog/70/downloadlocales/all.php" "http://$testhost/prog/100/downloadlocales/locale-global-download.kmp"
-  test_redirect "/prog/100/downloadlocales/all.php" "http://$testhost/prog/100/downloadlocales/locale-global-download.kmp"
+  test_redirect "/prog/70/downloadlocales/all.php" "$testhost/prog/100/downloadlocales/locale-global-download.kmp"
+  test_redirect "/prog/100/downloadlocales/all.php" "$testhost/prog/100/downloadlocales/locale-global-download.kmp"
 
   test_redirect "/support/" "https://help.keyman.com/products/desktop/9.0/"
   test_redirect "/support/uninstall" "https://keyman.com/uninstall/"
@@ -169,8 +169,8 @@ function test_root() {
 
   test_redirect "/go/90/download.php?Keyboard=khmer_angkor" "https://keyman.com/keyboards/khmer_angkor"
 
-  test_redirect "/download_direct/charident.exe"  "http://$testhost/closed"
-  test_redirect "/download_direct/importkeyboard.exe"  "http://$testhost/closed"
+  test_redirect "/download_direct/charident.exe"  "$testhost/closed"
+  test_redirect "/download_direct/importkeyboard.exe"  "$testhost/closed"
   test_redirect "/download_direct/keymandesktop/anything"  "https://downloads.keyman.com/windows/stable/"
   test_redirect "/download_direct/keymandeveloper/anything"  "https://downloads.keyman.com/developer/stable/"
 }
